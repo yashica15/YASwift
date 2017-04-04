@@ -1,0 +1,274 @@
+//
+//  APIKeys.swift
+//  SupplyMedicine
+//
+//  Created by GalaxyWeblinks on 12/21/15.
+//  Copyright © 2015 GalaxyWeblinks. All rights reserved.
+//
+
+import Foundation
+import Alamofire
+
+let kSessionUsername    =   "SessionUsername"
+let kSessionPassword    =   "SessionPassword"
+let kSessionToken       =   "SessionToken"
+
+let kAPI_SERVERBASEURL = "http://www.supplymedicine.in/api/v1/"
+
+//Path
+
+let kAPI_GETCITY                =   "get_city"
+let kAPI_REGISTER_USER          =   "register_user"
+let kAPI_REGISTER_GETPINCODE    =   "get_area_pin_code"
+let kAPI_REGISTER_LOGIN         =   "login"
+let kAPI_STORE_LIST             =   "store_list"
+let kAPI_ADD_MEMBER             =   "addpatient"
+let kAPI_ADD_ADDRESS            =   "manage_address"
+let kAPI_ADD_DOCTOR             =   "manage_doctor"
+let kAPI_PATIENT_LIST           =   "patientlist"
+let kAPI_ADDRESS_LIST           =   "addresslist"
+let kAPI_DOCTOR_LIST            =   "doctorlist"
+let KAPI_SEARCH_MEDICINE        =   "search_medicine"
+let KAPI_SEARCH_EQUIPMENT       =   "search_equipment"
+let kAPI_CONFIRM_OTP            =   "confirm_otp"
+let kAPI_GET_DIALYSISCENTER     =   "dialysiscitylist"
+let kAPI_BOOK_DIALYSISCENTER    =   "book_dialysis"
+let kAPI_ORDER_MEDICINE         =   "order_medicine"
+let kAPI_GET_PROFILE            =   "get_profile"
+let kAPI_UPDATE_PROFILE         =   "update_profile"
+let kAPI_BOOKEQUIPMENT          =   "book_equipment"
+let kAPI_FORGOTPASSWORD         =   "forgotpassword"
+let kAPI_CHANGEPASSWORD         =   "change_password"
+let kAPI_RESENDOTP              =   "resendotp"
+let kAPI_VENDORLIST             =   "vendor_list"
+let kAPI_ADDVENDOR              =   "vendor_rating"
+let kAPI_MEDICINELIST           =   "orderby_medicinelist"
+let kAPI_MEDICINE_DETAIL           =   "order_detail"
+let kAPI_MEDICINE_REORDER          =   "reorder"
+
+
+// Common Parameters
+let kNumberOfRecord = "recordperpage"
+let kPageNumber     = "pageno"
+let kPageCount      = 20
+let kTotalCount     = "totalrecord"
+
+// User Object
+let kToken       = "token"
+let kAccessToken = "access_token"
+let kDeviceId    = "deviceid"
+let kUserId      = "login_id"
+let kUserName    = "login_username"
+let kFullName    = "name"
+let kFirstName   = "firstname"
+let kMiddleName  = "midname"
+let kLastName    = "lastname"
+let kEmailId     = "email"
+let kPassword    = "password"
+let kGender      = "gender"
+let kState       = "state"
+let kCity        = "city"
+let kAddress     = "address"
+let kLandmark    = "landmark"
+let kMobilenumber = "phonenumber"
+let kPincode     = "pincode"
+let kDateOfBirth     = "dob"
+let kMaritalStatus    = "maritalstatus"
+let kAnniversary     = "anniversary"
+let kPincodeObject  = "pincodeObject"
+let kAreaObject = "areaObject"
+let kOTP = "otp"
+
+//Area Object
+let kAreaId      = "id"
+let kAreaName    = "name"
+let kCityList    = "citylist"
+
+//Pincode Object
+let kPincodeId    = "id"
+let kPincodeValue = "value"
+let kPincodelist  = "pincodelist"
+
+//Response Object
+let kResponseCode       = "code"
+let kResponseError      = "error"
+let kResponseSuccess    = "response"
+let kResponseResult     = "result"
+
+// Store Object
+
+let kStoreTitle     = "title"
+let kStoreId        = "id"
+let kStoreRating    = "rating"
+let kStoreAddress   = "address"
+let kStoreCity      = "city"
+let kStorePincode   = "pincode"
+let kStoreState     = "state"
+let kStoreAreaOfOperation   = "area of operation"
+let kStoreMaxDeliveryTime   = "max_del_time"
+let kStoreMinOrderAmount    = "min_order_amt"
+let kStoreDiscountSlab      = "discount_slab"
+let kStoreHomeDeliveryTime  = "home_delivery_time"
+let kStoreList              = "storelist"
+let kStoreDeliveryCharge    = "deliverycharge"
+let kStoreDiscountSlabList  = "discountslab"
+let kStoreDiscountMinAmount = "minimumamount"
+let kStoreDiscountMaxAmount = "maximumamount"
+let kStoreDiscountPercentage = "percentage"
+
+// StoreList RequestParameter
+let kCityId                 = "cityid"
+
+//Patient Obj
+let kPatientlist        = "patientlist"
+let kPatientID          = "patientid"
+let kPatientName        = "patientname"
+let kPatientRelation    = "relationship"
+let kPatientDOB         = "dob"
+let kPatientAge         = "age"
+let kPatientGender      = "gender"
+let kPatientBloodGroup  = "bloodgroup"
+let kPatientDelete      = "deletept"
+
+//Doctor Obj
+let kDoctorlist         = "doctorlist"
+let kDoctorID           = "doctorid"
+let kDoctorName         = "doctorname"
+let kDoctorAddress      = "address"
+let kDoctorState        = "state"
+let kDoctorCity         = "city"
+let kDoctorPincode      = "pincode"
+let kDoctorLandline     = "landline"
+let kDoctorMobile       = "mobile"
+let kDoctorDelete       = "deletedr"
+
+
+//Address Obj
+
+let kAddresslist        = "addresslist"
+let kAddressID          = "addressid"
+let kAddressType        = "addresstype"
+let kAddressUserName    = "yourname"
+let kAddressDetail      = "address"
+let kAddressLandmark    = "landmark"
+let kAddressState       = "state"
+let kAddressCity        = "city"
+let kAddressPincode     = "pincode"
+let kAddressDelete      = "deleteaddress"
+let kAddressDefault     = "defaultaddress"
+
+// Medicine Object
+let kMedicineId     = "medicineid"
+let kMedicineName   = "medicinename"
+let kMedicineStrip  = "strip"
+let kMedicineUnit   = "unit"
+let kMedicineMRP    = "mrp"
+let kMedicineQuantity = "quantity"
+let kMedicineAmount = "amount"
+let kMedicineList  = "medicinelist"
+
+// Search Medicine Parameter
+let kMedicineSearchKey = "str"
+
+// Order Object
+let kOrderOrderBy       = "orderby"
+let kOrderAllMedicine   = "allmedicine"
+let kOrderOrderBySequence = "orderbysequence"
+let kOrderMedicineList  = "medicinelist"
+let kOrderUploadPrescriptionLater = "upload_pres_latter"
+let kOrderFileData      = "filedata"
+let kOrderRemark        = "remark"
+let kOrderNearestLandmark = "nearestlandmark"
+let kOrderAddressId     = "addressid"
+let kOrderDoctorId      = "doctorid"
+let kOrderPatientId     = "patientid"
+let kOrderVendorId      = "vendorid"
+let kOrderPrescription  = "prescription"
+let kOrderId            = "orderid"
+let kMessage            = "message"
+let kOrderDiscountAmount    = "discountamount"
+let kOrderShippingCharges   = "shippingcharges"
+
+// Search_Equipment
+let kEquipmentList                  = "equipmentlist"
+let kEquipmentId                    = "equipmentid"
+let kEquipmentImgUrl                = "imgurl"
+let kEquipmentName                  = "productname"
+let kEquipmentSecurityDeposit       = "securitydeposit"
+let kEquipmentMonthlyRent           = "monthlyrentalcharge"
+let kEquipmentWeeklyRent            = "weeklyrentalcharge"
+let kEquipmentAccessoriesCharge     = "accessoriescharge"
+let kEquipmentDeliveryChrg          = "delivery_chrg"
+let kEquipmentVendorName            = "vendorname"
+let kEquipmentTechSpecification     = "tecinalspecification"
+
+// Search_Equipment Request Parameter
+let kEquipmentSearchKey             = "searchkeyword"
+
+//DialysisCenter Obj
+let kDialysisCenterlist             = "dialysuscenterlist"
+let kDialysisCenterID               = "dialysuscenterid"
+let kDialysisCenterName             = "dialysuscentername"
+let kDialysisCenterAddress          = "address"
+let kDialysisCenterCity             = "city"
+let kDialysisCenterDescription      = "description"
+let kDialysisCenterImgUrl           = "imgurl"
+let kDialysisCenterPhone            = "phoneno"
+
+//BookDialysis Obj
+let kBookDialysisName               = "patientname"
+let kBookDialysisEmail              = "emailid"
+let kBookDialysisCenterid           = "centerid"
+let kBookDialysisRemark             = "remark"
+let kBookDialysisMobileNo           = "mobileno"
+let kBookDialysisDate               = "date"
+
+//Book Equipment Obj
+let kEquipmentBookEId               = "equipmentid"
+let kEquipmentBookName              = "name"
+let kEquipmentBookEmail             = "email"
+let kEquipmentBookPhoneNo           = "phoneno"
+let kEquipmentBookAddress           = "address"
+let kEquipmentBookRemark            = "remark"
+let kEquipmentBookFromDate          = "fromdate"
+let kEquipmentBookToDate            = "todate"
+
+//Change Password Obj
+let kChangePwdCurrentPwd            = "currentpassword"
+let kChangePwdNewPwd                = "newpassword"
+let kChangePwdToken                 = "token"
+
+//Forgot Password Obj
+let kForgotEmail                    = "email"
+
+//Resend OTP
+let kResendOTP                      = "email"
+
+//Vendor list service name
+let kTokenForVendorList             = "token"
+
+//Vendor List parameters
+let kVendorlist                     = "vendorlist"
+let kVendorId                       = "vendorid"
+let kVendorNames                     = "vendorname"
+let kVendorStar                     = "star"
+let kVendorReview                   = "reviewdetails"
+
+//Add Vendor
+let kAddVendorToken                 = "token"
+let kAddVendorReviewStar            = "reviewstar"
+let kAddVendorReviewDetails         = "reviewdetails"
+let kAddVendorId                    = "vendorid"
+
+//ManageOrder Obj
+let kOrderList                  = "orderlist"
+let kVendorName                 = "vendorname"
+let kVendorDetail               = "address"
+let kOrderDate                  = "orderdate"
+let kOrderDeliverDate           = "delivereddate"
+let kOrderStatus                = "status"
+let kPrescription               = "fileurl"
+let kOrderFileUrl               = "path"
+let kOrderShipingCharges        = "shipinfgcharges"
+let kOrderMedicineCharges        = "total"
+

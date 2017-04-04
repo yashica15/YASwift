@@ -1,0 +1,138 @@
+//
+//  CustomPicker.swift
+//  SupplyMedicine
+//
+//  Created by galaxyi5mac on 21/12/15.
+//  Copyright © 2015 GalaxyWeblinks. All rights reserved.
+//
+
+import UIKit
+
+
+@objc protocol customPickerDelegate{
+    
+    optional func doneFromPicker(textField:UITextField,indexData:Int)
+    optional func insertData(textField:UITextField,indexData:Int) -> String
+}
+
+class CustomPicker: UIPickerView ,UIPickerViewDelegate,UIPickerViewDataSource,UITextFieldDelegate{
+    
+    var delegateCustomPicker:customPickerDelegate?
+    
+    @IBInspectable   var arrData : NSArray?
+    @IBInspectable  internal var tfInputField : UITextField?
+    let toolbar = UIToolbar()
+    
+    
+    // Only override drawRect: if you perform custom drawing.
+    // An empty implementation adversely affects performance during animation.
+    override func drawRect(rect: CGRect) {
+        
+        
+        
+        
+        // Drawing code
+        self.delegate=self
+        self.dataSource=self
+        self.reloadAllComponents()
+        
+        toolbar.frame = CGRectMake(0, -44, self.frame.size.width, 44)
+        toolbar.sizeToFit()
+        let cancelButton=UIBarButtonItem(title: "Cancel", style: .Plain, target: self, action: "onTap_Cancel")
+        let doneButton=UIBarButtonItem(title: "Done", style: .Done, target: self, action: "onTap_Done:")
+        let flexibleSpace=UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace , target: nil, action: nil)
+        toolbar.setItems([cancelButton,flexibleSpace,doneButton], animated: true)
+        self.superview?.addSubview(toolbar)
+        let nameArrayLength = arrData!.count
+        
+        for indexs in 0..<nameArrayLength {
+            print(index)
+            if let strDta:NSString  = arrData?.objectAtIndex(indexs) as? NSString {
+                
+                if  tfInputField?.text ==  strDta as String{
+                    self.selectRow(indexs, inComponent: 0, animated: true)
+                }
+                
+            }else{
+                
+                if  tfInputField?.text ==  delegateCustomPicker?.insertData!(tfInputField!,indexData:indexs){
+                    
+                    self.selectRow(indexs, inComponent: 0, animated: true)
+                }
+            }
+            
+            
+        }
+        
+   //  canPerformAction("paste:" as Selector, withSender: tfInputField)
+     
+   //     tfInputField?.delegate=self
+    }
+    
+    func setdata(arrDataInput:NSArray,tfInput:UITextField){
+        self.reloadAllComponents()
+        arrData=arrDataInput
+        tfInputField = tfInput
+        
+        
+    }
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return (arrData?.count)!;
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        
+        arrData?.objectAtIndex(row)
+        if let strDta:NSString  = arrData?.objectAtIndex(row) as? NSString {
+            
+            return strDta as String
+            
+        }else{
+            let strObjectToInsert = (delegateCustomPicker?.insertData!(tfInputField!,indexData: row))! as String
+            if strObjectToInsert == tfInputField!.text{
+                self.selectRow(row, inComponent: 0, animated: false)
+            }
+            return  strObjectToInsert
+        }
+        
+    }
+    
+    
+    func onTap_Cancel() {
+        print("Cancel")
+        tfInputField?.resignFirstResponder()
+        toolbar.removeFromSuperview();
+        
+    }
+    
+    
+    func onTap_Done(sender: UIBarButtonItem) {
+        print("Done")
+        if arrData?.count>0{
+        if let strDta:NSString  = arrData?.objectAtIndex(self.selectedRowInComponent(0)) as? NSString {
+            tfInputField?.text =  strDta as String
+        }else{
+            tfInputField?.text =   delegateCustomPicker?.insertData!(tfInputField!,indexData: self.selectedRowInComponent(0))
+        }
+        
+        tfInputField?.resignFirstResponder()
+        toolbar.removeFromSuperview();
+            delegateCustomPicker?.doneFromPicker!(tfInputField!,indexData: self.selectedRowInComponent(0))
+        }
+    }
+    
+    
+    // MARK: - UITableViewDataSource
+    
+    func removeAllViews(){
+        tfInputField?.resignFirstResponder()
+        toolbar.removeFromSuperview();
+        
+    }
+    
+   
+}
