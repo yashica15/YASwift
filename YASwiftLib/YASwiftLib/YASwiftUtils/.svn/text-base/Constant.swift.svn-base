@@ -1,0 +1,104 @@
+//
+//  Constant.swift
+//  SupplyMedicine
+//
+//  Created by GalaxyWeblinks on 12/21/15.
+//  Copyright © 2015 GalaxyWeblinks. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+#if DEBUG
+    let kDEBUG_MODE = true
+    let kSERVER_BASE_URL  = "google.com"
+#else
+    let kDEBUG_MODE = false
+#endif
+
+// UUID 
+let kUUID = Utility().deviceUUID()
+
+// IPHONE SCREEN WIDTH AND HEIGHT BOUND CONDITION
+let kIS_IPAD = UIDevice.currentDevice().userInterfaceIdiom == .Pad
+let kIS_IPHONE = UIDevice.currentDevice().userInterfaceIdiom == .Phone
+let kIS_RETINA = UIScreen.mainScreen().scale >= 2.0
+let kSYSTEM_VERSION = Float(UIDevice.currentDevice().systemVersion)
+
+let kSCREEN_X = UIScreen.mainScreen().bounds.origin.x
+let kSCREEN_Y = UIScreen.mainScreen().bounds.origin.y
+let kSCREEN_WIDTH = UIScreen.mainScreen().bounds.size.width
+let kSCREEN_HEIGHT = UIScreen.mainScreen().bounds.size.height
+
+let kSCREEN_MAX_LENGTH = max(kSCREEN_WIDTH, kSCREEN_HEIGHT)
+let kSCREEN_MIN_LENGTH = min(kSCREEN_WIDTH, kSCREEN_HEIGHT)
+
+let kIS_IPHONE_4_OR_LESS = (kIS_IPHONE && kSCREEN_MAX_LENGTH < 568.0)
+let kIS_IPHONE_5 = (kIS_IPHONE && kSCREEN_MAX_LENGTH == 568.0)
+let kIS_IPHONE_6 = (kIS_IPHONE && kSCREEN_MAX_LENGTH == 667.0)
+let kIS_IPHONE_6P = (kIS_IPHONE && kSCREEN_MAX_LENGTH == 736.0)
+
+// IOS version check
+let kIS_OS_7 = ((kSYSTEM_VERSION >= 7.0) && (kSYSTEM_VERSION < 8.0))
+let kIS_OS_7_OR_LATER = ((kSYSTEM_VERSION >= 7.0))
+let kIS_OS_8_OR_LATER = (kSYSTEM_VERSION >= 8.0)
+
+let kRATIO_WIDTH_4 = 0.85
+let kRATIO_HEIGHT_4 = 0.72
+let kRATIO_5 = 0.85
+let kRATIO_6 = 1.0
+let kRATIO_6_PLUS = 1.10
+
+//for Padding
+let padding: UIView = UIView(frame: CGRectMake(0, 0, 15, 40))
+////////////// Common Color Code ///////////////
+let colorClear = UIColor.clearColor()
+let colorWhite = UIColor.whiteColor()
+let colorBlack = UIColor.blackColor()
+let colorRed = UIColor.redColor()
+let colorGray = UIColor.grayColor()
+let colorDarkGray = UIColor.darkGrayColor()
+let colorLightGray = UIColor.lightGrayColor()
+let colorYellow = UIColor.yellowColor()
+let colorGreen = UIColor.greenColor()
+let colorCyan = UIColor.cyanColor()
+
+let colorThemeDark = UIColor(red: 0.0/255.0, green: 93.0/255.0, blue: 97.0/255.0, alpha: 1)
+let colorThemeLight = UIColor(red: 20.0/255.0, green: 160.0/255.0, blue: 160.0/255.0, alpha: 1)
+let colorThemeLightest = UIColor(red: 224.0/255.0, green: 254.0/255.0, blue: 255.0/255.0, alpha: 1)
+let colorTextColor = UIColor(red: 51.0/255.0, green: 51.0/255.0, blue: 51.0/255.0, alpha: 1)
+
+
+let colorGreenDelivered = UIColor(red: 26.0/255.0, green: 171.0/255.0, blue: 0.0/255.0, alpha: 1)
+let colorOrangePending = UIColor(red: 232.0/255.0, green: 172.0/255.0, blue: 81.0/255.0, alpha: 1)
+let colorRedCancelled = UIColor(red: 226.0/255.0, green: 35.0/255.0, blue: 42.0/255.0, alpha: 1)
+let colorBlueInTransit = UIColor(red: 58.0/255.0, green: 126.0/255.0, blue: 255.0/255.0, alpha: 1)
+
+// Constant Images
+let imageNavigationBar      = UIImage(named: "imgNavigationBar")
+let imageHelpRightBarButton = UIImage(named: "imgHelpRightBarButton")
+let imageAddRightBarButton  = UIImage(named: "imgAddButton")
+let imageChangePasswordRightBarButton  = UIImage(named: "iconChangePassword")
+let imageMenuLeftBarButton  = UIImage(named: "imgMenuLeftBarButton")
+let imageBackLeftBarButton  = UIImage(named: "imgBackLeftBarButton")
+let imageCheckMarkUncheck   = UIImage(named: "iconCheckbox")
+let imageCheckMarkCheck     = UIImage(named: "iconSelectedCheckbox")
+let imageDropDown           = UIImage(named: "imgDropDownIcon")
+let imageRadioUncheck       = UIImage(named: "iconRadioButton")
+let imageRadioCheck         = UIImage(named: "iconSelectedRadioButton")
+let imageCellBackground     = UIImage(named: "imgCellPatternBG")
+
+// TextField left padding frame.
+let textPaddingFrame = CGRectMake(0, 0, 10, 10)
+
+// Contact Numbers for Call
+let kContactHelp = "tel://+919830378500"
+
+let gArrGender=["Male", "Female"]
+let gArrRelationship=["Mother", "Father", "Spouse", "Sibling", "Children", "Friend", "Relative", "Other"]
+let gArrBloodGroup=["A+", "A-", "B+", "B-","AB+", "AB-", "O+", "O-"]
+let gArrState = ["Andaman and Nicobar Islands", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chandigarh", "Chhattisgarh", "Dadra and Nagar Haveli", "Daman and Diu", "Delhi", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jammu and Kashmir", "Jharkhand", "Karnataka", "Kerala", "Lakshadweep", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Puducherry", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telengana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal"]
+
+let gArrMaritalStatus=["Single", "Married", "Separated", "Divorced", "Widowed","Prefer not to answer"]
+
+
