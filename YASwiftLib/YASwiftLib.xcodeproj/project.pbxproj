@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3A752BB3B651672F5D81F05A /* Pods_YASwiftLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACDB767EC98042C19966C4E /* Pods_YASwiftLib.framework */; };
+		FC0228DA1E94B95400A33C8B /* YACustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0228D91E94B95400A33C8B /* YACustomNavigationBar.swift */; };
 		FC3926011E92218000935022 /* YALeftMenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3926001E92218000935022 /* YALeftMenuTVC.swift */; };
 		FC3926031E9221ED00935022 /* YAPickerViewInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3926021E9221ED00935022 /* YAPickerViewInputVC.swift */; };
 		FC3926071E92225100935022 /* YAImagePickerViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3926061E92225100935022 /* YAImagePickerViewVC.swift */; };
 		FC3926091E92243400935022 /* YASearchTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3926081E92243400935022 /* YASearchTableVC.swift */; };
 		FC39260B1E9224A900935022 /* YACollectionViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39260A1E9224A900935022 /* YACollectionViewVC.swift */; };
-		FC39260D1E92455A00935022 /* YAViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39260C1E92455A00935022 /* YAViewUtils.swift */; };
+		FC39260D1E92455A00935022 /* YAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39260C1E92455A00935022 /* YAView.swift */; };
 		FC8BB4ED1E9289BE00AE8A73 /* YACellCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8BB4EC1E9289BE00AE8A73 /* YACellCollectionView.swift */; };
 		FC92D4711E9273D600FD1263 /* YAData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC92D4701E9273D600FD1263 /* YAData.swift */; };
 		FC95ED1E1E8D11A00019CF08 /* YAAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95ED1D1E8D11A00019CF08 /* YAAppDelegate.swift */; };
@@ -23,14 +24,14 @@
 		FC95ED281E8D11A00019CF08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC95ED261E8D11A00019CF08 /* LaunchScreen.storyboard */; };
 		FCCFD64E1E8D2B5700E928AB /* YAAPIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD6431E8D2B5700E928AB /* YAAPIKeys.swift */; };
 		FCCFD64F1E8D2B5700E928AB /* YAAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD6441E8D2B5700E928AB /* YAAPIManager.swift */; };
-		FCCFD6501E8D2B5700E928AB /* YAArrayUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD6451E8D2B5700E928AB /* YAArrayUtils.swift */; };
+		FCCFD6501E8D2B5700E928AB /* YAArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD6451E8D2B5700E928AB /* YAArray.swift */; };
 		FCCFD6511E8D2B5700E928AB /* YAConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD6461E8D2B5700E928AB /* YAConstant.swift */; };
 		FCCFD6521E8D2B5700E928AB /* YACustomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD6471E8D2B5700E928AB /* YACustomPicker.swift */; };
 		FCCFD6531E8D2B5700E928AB /* YACustomRatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD6481E8D2B5700E928AB /* YACustomRatingControl.swift */; };
 		FCCFD6541E8D2B5700E928AB /* YAFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD6491E8D2B5700E928AB /* YAFonts.swift */; };
 		FCCFD6551E8D2B5700E928AB /* YAMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD64A1E8D2B5700E928AB /* YAMessage.swift */; };
-		FCCFD6561E8D2B5700E928AB /* YAStringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD64B1E8D2B5700E928AB /* YAStringUtils.swift */; };
-		FCCFD6571E8D2B5700E928AB /* YATextFieldUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD64C1E8D2B5700E928AB /* YATextFieldUtils.swift */; };
+		FCCFD6561E8D2B5700E928AB /* YAString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD64B1E8D2B5700E928AB /* YAString.swift */; };
+		FCCFD6571E8D2B5700E928AB /* YATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD64C1E8D2B5700E928AB /* YATextField.swift */; };
 		FCCFD6581E8D2B5700E928AB /* YAUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD64D1E8D2B5700E928AB /* YAUtility.swift */; };
 		FCD7829B1E9379F500B66099 /* YAImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7829A1E9379F500B66099 /* YAImage.swift */; };
 		FCD782A21E93B7C900B66099 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FCD782A11E93B7C900B66099 /* README.md */; };
@@ -40,12 +41,13 @@
 		8DEEB4A3073B6022DC6B6D73 /* Pods-YASwiftLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YASwiftLib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YASwiftLib/Pods-YASwiftLib.debug.xcconfig"; sourceTree = "<group>"; };
 		9ACDB767EC98042C19966C4E /* Pods_YASwiftLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YASwiftLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40852B90F19F4A8CC6269B7 /* Pods-YASwiftLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YASwiftLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-YASwiftLib/Pods-YASwiftLib.release.xcconfig"; sourceTree = "<group>"; };
+		FC0228D91E94B95400A33C8B /* YACustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YACustomNavigationBar.swift; sourceTree = "<group>"; };
 		FC3926001E92218000935022 /* YALeftMenuTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YALeftMenuTVC.swift; sourceTree = "<group>"; };
 		FC3926021E9221ED00935022 /* YAPickerViewInputVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YAPickerViewInputVC.swift; path = YASwiftLib/YALeftMenu/YAPickerViewInputVC.swift; sourceTree = SOURCE_ROOT; };
 		FC3926061E92225100935022 /* YAImagePickerViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YAImagePickerViewVC.swift; path = YASwiftLib/YALeftMenu/YAImagePickerViewVC.swift; sourceTree = SOURCE_ROOT; };
 		FC3926081E92243400935022 /* YASearchTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YASearchTableVC.swift; path = YASwiftLib/YALeftMenu/YASearchTableVC.swift; sourceTree = SOURCE_ROOT; };
 		FC39260A1E9224A900935022 /* YACollectionViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YACollectionViewVC.swift; path = YASwiftLib/YALeftMenu/YACollectionViewVC.swift; sourceTree = SOURCE_ROOT; };
-		FC39260C1E92455A00935022 /* YAViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAViewUtils.swift; sourceTree = "<group>"; };
+		FC39260C1E92455A00935022 /* YAView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAView.swift; sourceTree = "<group>"; };
 		FC8BB4EC1E9289BE00AE8A73 /* YACellCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YACellCollectionView.swift; path = YASwiftLib/YALeftMenu/YACell/YACellCollectionView.swift; sourceTree = SOURCE_ROOT; };
 		FC92D4701E9273D600FD1263 /* YAData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YAData.swift; path = YASwiftLib/Model/YAData.swift; sourceTree = SOURCE_ROOT; };
 		FC95ED1A1E8D11A00019CF08 /* YASwiftLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YASwiftLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,14 +59,14 @@
 		FC95ED291E8D11A00019CF08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCCFD6431E8D2B5700E928AB /* YAAPIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAAPIKeys.swift; sourceTree = "<group>"; };
 		FCCFD6441E8D2B5700E928AB /* YAAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAAPIManager.swift; sourceTree = "<group>"; };
-		FCCFD6451E8D2B5700E928AB /* YAArrayUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAArrayUtils.swift; sourceTree = "<group>"; };
+		FCCFD6451E8D2B5700E928AB /* YAArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAArray.swift; sourceTree = "<group>"; };
 		FCCFD6461E8D2B5700E928AB /* YAConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAConstant.swift; sourceTree = "<group>"; };
 		FCCFD6471E8D2B5700E928AB /* YACustomPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YACustomPicker.swift; sourceTree = "<group>"; };
 		FCCFD6481E8D2B5700E928AB /* YACustomRatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YACustomRatingControl.swift; sourceTree = "<group>"; };
 		FCCFD6491E8D2B5700E928AB /* YAFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAFonts.swift; sourceTree = "<group>"; };
 		FCCFD64A1E8D2B5700E928AB /* YAMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAMessage.swift; sourceTree = "<group>"; };
-		FCCFD64B1E8D2B5700E928AB /* YAStringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAStringUtils.swift; sourceTree = "<group>"; };
-		FCCFD64C1E8D2B5700E928AB /* YATextFieldUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YATextFieldUtils.swift; sourceTree = "<group>"; };
+		FCCFD64B1E8D2B5700E928AB /* YAString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAString.swift; sourceTree = "<group>"; };
+		FCCFD64C1E8D2B5700E928AB /* YATextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YATextField.swift; sourceTree = "<group>"; };
 		FCCFD64D1E8D2B5700E928AB /* YAUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAUtility.swift; sourceTree = "<group>"; };
 		FCD7829A1E9379F500B66099 /* YAImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YAImage.swift; path = YASwiftLib/Model/YAImage.swift; sourceTree = SOURCE_ROOT; };
 		FCD782A11E93B7C900B66099 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -99,6 +101,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FC0228D71E94B76E00A33C8B /* YAModel */ = {
+			isa = PBXGroup;
+			children = (
+				FC92D4701E9273D600FD1263 /* YAData.swift */,
+				FCD7829A1E9379F500B66099 /* YAImage.swift */,
+			);
+			name = YAModel;
+			path = YASwiftUtils;
+			sourceTree = "<group>";
+		};
+		FC0228D81E94B7A500A33C8B /* YACell */ = {
+			isa = PBXGroup;
+			children = (
+				FC8BB4EC1E9289BE00AE8A73 /* YACellCollectionView.swift */,
+			);
+			name = YACell;
+			sourceTree = "<group>";
+		};
 		FC3925FF1E92214100935022 /* YALeftMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,9 +127,7 @@
 				FC3926061E92225100935022 /* YAImagePickerViewVC.swift */,
 				FC3926081E92243400935022 /* YASearchTableVC.swift */,
 				FC39260A1E9224A900935022 /* YACollectionViewVC.swift */,
-				FC92D4701E9273D600FD1263 /* YAData.swift */,
-				FCD7829A1E9379F500B66099 /* YAImage.swift */,
-				FC8BB4EC1E9289BE00AE8A73 /* YACellCollectionView.swift */,
+				FC0228D81E94B7A500A33C8B /* YACell */,
 			);
 			name = YALeftMenu;
 			path = YASwiftUtils;
@@ -137,8 +155,9 @@
 		FC95ED1C1E8D11A00019CF08 /* YASwiftLib */ = {
 			isa = PBXGroup;
 			children = (
-				FC3925FF1E92214100935022 /* YALeftMenu */,
+				FC0228D71E94B76E00A33C8B /* YAModel */,
 				FCCFD6421E8D2B5700E928AB /* YASwiftUtils */,
+				FC3925FF1E92214100935022 /* YALeftMenu */,
 				FC95ED1D1E8D11A00019CF08 /* YAAppDelegate.swift */,
 				FC95ED1F1E8D11A00019CF08 /* YAMainVC.swift */,
 				FC95ED211E8D11A00019CF08 /* Main.storyboard */,
@@ -153,7 +172,6 @@
 			isa = PBXGroup;
 			children = (
 				FCCFD6461E8D2B5700E928AB /* YAConstant.swift */,
-				FCCFD6491E8D2B5700E928AB /* YAFonts.swift */,
 				FCCFD64A1E8D2B5700E928AB /* YAMessage.swift */,
 				FCCFD64D1E8D2B5700E928AB /* YAUtility.swift */,
 				FCD7829C1E93A76600B66099 /* API */,
@@ -175,10 +193,11 @@
 		FCD7829D1E93A79D00B66099 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				FCCFD64B1E8D2B5700E928AB /* YAStringUtils.swift */,
-				FCCFD64C1E8D2B5700E928AB /* YATextFieldUtils.swift */,
-				FC39260C1E92455A00935022 /* YAViewUtils.swift */,
-				FCCFD6451E8D2B5700E928AB /* YAArrayUtils.swift */,
+				FCCFD6491E8D2B5700E928AB /* YAFonts.swift */,
+				FCCFD64B1E8D2B5700E928AB /* YAString.swift */,
+				FCCFD64C1E8D2B5700E928AB /* YATextField.swift */,
+				FC39260C1E92455A00935022 /* YAView.swift */,
+				FCCFD6451E8D2B5700E928AB /* YAArray.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -188,6 +207,7 @@
 			children = (
 				FCCFD6471E8D2B5700E928AB /* YACustomPicker.swift */,
 				FCCFD6481E8D2B5700E928AB /* YACustomRatingControl.swift */,
+				FC0228D91E94B95400A33C8B /* YACustomNavigationBar.swift */,
 			);
 			name = CustomControl;
 			sourceTree = "<group>";
@@ -227,8 +247,9 @@
 				TargetAttributes = {
 					FC95ED191E8D11A00019CF08 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 5VW996B8D2;
 						LastSwiftMigration = 0830;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -318,20 +339,21 @@
 			files = (
 				FC3926011E92218000935022 /* YALeftMenuTVC.swift in Sources */,
 				FCCFD6521E8D2B5700E928AB /* YACustomPicker.swift in Sources */,
-				FC39260D1E92455A00935022 /* YAViewUtils.swift in Sources */,
-				FCCFD6571E8D2B5700E928AB /* YATextFieldUtils.swift in Sources */,
+				FC39260D1E92455A00935022 /* YAView.swift in Sources */,
+				FCCFD6571E8D2B5700E928AB /* YATextField.swift in Sources */,
 				FCCFD6551E8D2B5700E928AB /* YAMessage.swift in Sources */,
 				FC3926071E92225100935022 /* YAImagePickerViewVC.swift in Sources */,
 				FCD782A21E93B7C900B66099 /* README.md in Sources */,
 				FCCFD6541E8D2B5700E928AB /* YAFonts.swift in Sources */,
 				FCCFD6531E8D2B5700E928AB /* YACustomRatingControl.swift in Sources */,
-				FCCFD6501E8D2B5700E928AB /* YAArrayUtils.swift in Sources */,
+				FCCFD6501E8D2B5700E928AB /* YAArray.swift in Sources */,
 				FC3926031E9221ED00935022 /* YAPickerViewInputVC.swift in Sources */,
-				FCCFD6561E8D2B5700E928AB /* YAStringUtils.swift in Sources */,
+				FCCFD6561E8D2B5700E928AB /* YAString.swift in Sources */,
 				FCCFD6581E8D2B5700E928AB /* YAUtility.swift in Sources */,
 				FCCFD6511E8D2B5700E928AB /* YAConstant.swift in Sources */,
 				FC3926091E92243400935022 /* YASearchTableVC.swift in Sources */,
 				FCCFD64F1E8D2B5700E928AB /* YAAPIManager.swift in Sources */,
+				FC0228DA1E94B95400A33C8B /* YACustomNavigationBar.swift in Sources */,
 				FCD7829B1E9379F500B66099 /* YAImage.swift in Sources */,
 				FCCFD64E1E8D2B5700E928AB /* YAAPIKeys.swift in Sources */,
 				FC95ED201E8D11A00019CF08 /* YAMainVC.swift in Sources */,
@@ -405,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -450,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -464,13 +486,17 @@
 			baseConfigurationReference = 8DEEB4A3073B6022DC6B6D73 /* Pods-YASwiftLib.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5VW996B8D2;
 				INFOPLIST_FILE = YASwiftLib/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yashica.YASwiftLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -479,13 +505,16 @@
 			baseConfigurationReference = A40852B90F19F4A8CC6269B7 /* Pods-YASwiftLib.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5VW996B8D2;
 				INFOPLIST_FILE = YASwiftLib/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yashica.YASwiftLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YACollectionViewVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class YACollectionViewVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     let reuseIdentifier = "YACellCollectionView" // also enter this string as the cell identifier in the storyboard
 
@@ -21,16 +21,16 @@ class YACollectionViewVC: UIViewController, UICollectionViewDelegate, UICollecti
         self.title = "Collection View"
 
         arrYAImage = [
-            YAImage(imageURL:"https://ibb.co/eNUzGF", imageName:"Summer 1"),
-            YAImage(imageURL:"https://ibb.co/mfotbF", imageName:"Summer 2"),
-            YAImage(imageURL:"https://ibb.co/cxQH3v", imageName:"Summer 3"),
-            YAImage(imageURL:"https://ibb.co/b4BqOv", imageName:"Summer 4"),
-            YAImage(imageURL:"https://ibb.co/fLavqa", imageName:"Summer 5"),
-            YAImage(imageURL:"https://ibb.co/nnweGF", imageName:"Summer 6"),
-            YAImage(imageURL:"https://ibb.co/dXLjiv", imageName:"Summer 7"),
-            YAImage(imageURL:"https://ibb.co/cK6DbF", imageName:"Summer 8"),
-            YAImage(imageURL:"https://ibb.co/ipeMVa", imageName:"Summer 9"),
-            YAImage(imageURL:"https://ibb.co/dfwDbF", imageName:"Summer 10"),
+            YAImage(imageURL:"http://hdwpro.com/wp-content/uploads/2015/12/Nice-Image.png", imageName:"Colors"),
+            YAImage(imageURL:"http://hdwpro.com/wp-content/uploads/2017/02/Tree-Autumn-Background.jpg", imageName:"Tree Autumn"),
+            YAImage(imageURL:"http://hdwpro.com/wp-content/uploads/2017/03/Beautiful-Mountains-Wallpaper.jpg", imageName:"Beautiful Mountains"),
+            YAImage(imageURL:"http://hdwpro.com/wp-content/uploads/2017/02/Awesome.jpg", imageName:"Autumn"),
+            YAImage(imageURL:"http://hdwpro.com/wp-content/uploads/2017/02/Free-Autumn-Background.png", imageName:"Autumn"),
+            YAImage(imageURL:"http://hdwpro.com/wp-content/uploads/2017/02/Best-Autumn-Background.jpg", imageName:"Autumn"),
+            YAImage(imageURL:"http://hdwpro.com/wp-content/uploads/2016/10/Wallpaper-Of-Niagara-Falls.jpg", imageName:"Niagara Falls.jpg"),
+            YAImage(imageURL:"http://hdwpro.com/wp-content/uploads/2016/10/Widescreen-Niagara-Falls-Wallpaper.jpg", imageName:"Niagara-Falls"),
+            YAImage(imageURL:"http://hdwpro.com/wp-content/uploads/2016/10/Sea-Niagara-Falls.jpg", imageName:"Sea Niagara Falls"),
+            YAImage(imageURL:"http://hdwpro.com/wp-content/uploads/2016/04/Wonderful-Life.jpeg", imageName:"Wonderful-Life"),
             ]
     }
 
@@ -69,6 +69,17 @@ class YACollectionViewVC: UIViewController, UICollectionViewDelegate, UICollecti
         
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        var width:CGFloat
+        if kIS_IPAD {
+            width = kSCREEN_WIDTH/5.5
+        } else {
+            width = kSCREEN_WIDTH/3.5
+        }
+        return CGSize(width: width, height: width*1.2)
+    }
+
     
     // MARK: - UICollectionViewDelegate protocol
     

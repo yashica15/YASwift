@@ -24,20 +24,23 @@ class YAAppDelegate: UIResponder, UIApplicationDelegate {
         return UIApplication.shared.delegate as! YAAppDelegate
     }
 
+    // Avoid warning of Swift 3.1
+    // Method 'initialize()' defines Objective-C class method 'initialize', which is not guaranteed to be invoked by Swift and will be disallowed in future versions
+    override init() {
+        super.init()
+        UIFont.overrideInitialize()
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         
         UISearchBar.appearance().barTintColor = colorLavender
         UISearchBar.appearance().tintColor = colorWhite
-        UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = colorLavender
-
-        let navigationBarAppearace = UINavigationBar.appearance()
-        
-        navigationBarAppearace.tintColor = colorLavender
-        navigationBarAppearace.barTintColor = colorLavender
-
-        // change navigation item title color
-        navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName:colorGrape, NSFontAttributeName:textFontLight18!]
+        if #available(iOS 9.0, *) {
+            UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = colorLavender
+        } else {
+            // Fallback on earlier versions
+        }
         
         return true
     }
@@ -76,7 +79,7 @@ class YAAppDelegate: UIResponder, UIApplicationDelegate {
         case .YAShowToastMessage:
             var style = ToastStyle()
             style.messageAlignment = .center
-            style.messageFont = textFontRegular14!
+            style.messageFont = UIFont.YASystemFont(ofSize: 16.0)
             style.messageColor = colorGrape
             style.backgroundColor = colorLavender
             alertWindow.rootViewController?.view.makeToast(message, duration: 5.0, position: .center, style: style)

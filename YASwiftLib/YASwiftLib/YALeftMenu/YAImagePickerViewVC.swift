@@ -106,7 +106,7 @@ class YAImagePickerViewVC: UIViewController, UIImagePickerControllerDelegate, UI
     func toastView(strToastMessage:String) -> Void {
         var style = ToastStyle()
         style.messageAlignment = .center
-        style.messageFont = textFontRegular14!
+        style.messageFont = UIFont.YASystemFont(ofSize: 16.0)
         style.messageColor = colorGrape
         style.backgroundColor = colorLavender
         self.navigationController?.view.makeToast(strToastMessage, duration: 2.0, position: .center, style: style)

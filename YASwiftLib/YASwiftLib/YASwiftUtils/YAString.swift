@@ -1,5 +1,5 @@
 //
-//  StringUtils.swift
+//  YAString.swift
 //
 
 import Foundation
