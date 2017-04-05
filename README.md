@@ -12,6 +12,7 @@
 		2. ImagePicker from PhotoLibrary, Camera
 		3. TableView Search Controller
 		4. CollectionView using CustomCell
+        5. Custom NavigationBar Height for iPad
 
 	I am using following Library in this project:
 
