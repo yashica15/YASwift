@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		3A752BB3B651672F5D81F05A /* Pods_YASwiftLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACDB767EC98042C19966C4E /* Pods_YASwiftLib.framework */; };
 		FC0228DA1E94B95400A33C8B /* YACustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0228D91E94B95400A33C8B /* YACustomNavigationBar.swift */; };
+		FC0904B21E9797D900DBB696 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0904B01E9797D900DBB696 /* Fabric.framework */; };
+		FC0904B31E9797D900DBB696 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0904B11E9797D900DBB696 /* Crashlytics.framework */; };
 		FC3926011E92218000935022 /* YALeftMenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3926001E92218000935022 /* YALeftMenuTVC.swift */; };
 		FC3926031E9221ED00935022 /* YAPickerViewInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3926021E9221ED00935022 /* YAPickerViewInputVC.swift */; };
 		FC3926071E92225100935022 /* YAImagePickerViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3926061E92225100935022 /* YAImagePickerViewVC.swift */; };
 		FC3926091E92243400935022 /* YASearchTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3926081E92243400935022 /* YASearchTableVC.swift */; };
 		FC39260B1E9224A900935022 /* YACollectionViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39260A1E9224A900935022 /* YACollectionViewVC.swift */; };
 		FC39260D1E92455A00935022 /* YAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39260C1E92455A00935022 /* YAView.swift */; };
+		FC47086C1E97A3A8006115CF /* YARLMPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC47086B1E97A3A8006115CF /* YARLMPerson.swift */; };
+		FC47086E1E97BCC2006115CF /* YARealmTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC47086D1E97BCC2006115CF /* YARealmTVC.swift */; };
 		FC8BB4ED1E9289BE00AE8A73 /* YACellCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8BB4EC1E9289BE00AE8A73 /* YACellCollectionView.swift */; };
+		FC8F59A41E991E0A007D661F /* YARLMManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8F59A31E991E0A007D661F /* YARLMManager.swift */; };
 		FC92D4711E9273D600FD1263 /* YAData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC92D4701E9273D600FD1263 /* YAData.swift */; };
 		FC95ED1E1E8D11A00019CF08 /* YAAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95ED1D1E8D11A00019CF08 /* YAAppDelegate.swift */; };
 		FC95ED201E8D11A00019CF08 /* YAMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95ED1F1E8D11A00019CF08 /* YAMainVC.swift */; };
@@ -33,6 +38,7 @@
 		FCCFD6561E8D2B5700E928AB /* YAString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD64B1E8D2B5700E928AB /* YAString.swift */; };
 		FCCFD6571E8D2B5700E928AB /* YATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD64C1E8D2B5700E928AB /* YATextField.swift */; };
 		FCCFD6581E8D2B5700E928AB /* YAUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD64D1E8D2B5700E928AB /* YAUtility.swift */; };
+		FCD34CD41E9BBBE00067BDC8 /* YARealmDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD34CD31E9BBBE00067BDC8 /* YARealmDetailVC.swift */; };
 		FCD7829B1E9379F500B66099 /* YAImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7829A1E9379F500B66099 /* YAImage.swift */; };
 		FCD782A21E93B7C900B66099 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FCD782A11E93B7C900B66099 /* README.md */; };
 /* End PBXBuildFile section */
@@ -42,13 +48,18 @@
 		9ACDB767EC98042C19966C4E /* Pods_YASwiftLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YASwiftLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40852B90F19F4A8CC6269B7 /* Pods-YASwiftLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YASwiftLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-YASwiftLib/Pods-YASwiftLib.release.xcconfig"; sourceTree = "<group>"; };
 		FC0228D91E94B95400A33C8B /* YACustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YACustomNavigationBar.swift; sourceTree = "<group>"; };
+		FC0904B01E9797D900DBB696 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		FC0904B11E9797D900DBB696 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		FC3926001E92218000935022 /* YALeftMenuTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YALeftMenuTVC.swift; sourceTree = "<group>"; };
 		FC3926021E9221ED00935022 /* YAPickerViewInputVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YAPickerViewInputVC.swift; path = YASwiftLib/YALeftMenu/YAPickerViewInputVC.swift; sourceTree = SOURCE_ROOT; };
 		FC3926061E92225100935022 /* YAImagePickerViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YAImagePickerViewVC.swift; path = YASwiftLib/YALeftMenu/YAImagePickerViewVC.swift; sourceTree = SOURCE_ROOT; };
 		FC3926081E92243400935022 /* YASearchTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YASearchTableVC.swift; path = YASwiftLib/YALeftMenu/YASearchTableVC.swift; sourceTree = SOURCE_ROOT; };
 		FC39260A1E9224A900935022 /* YACollectionViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YACollectionViewVC.swift; path = YASwiftLib/YALeftMenu/YACollectionViewVC.swift; sourceTree = SOURCE_ROOT; };
 		FC39260C1E92455A00935022 /* YAView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAView.swift; sourceTree = "<group>"; };
+		FC47086B1E97A3A8006115CF /* YARLMPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YARLMPerson.swift; path = Model/YARealm/YARLMPerson.swift; sourceTree = "<group>"; };
+		FC47086D1E97BCC2006115CF /* YARealmTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YARealmTVC.swift; path = YASwiftLib/YALeftMenu/YARealmTVC.swift; sourceTree = SOURCE_ROOT; };
 		FC8BB4EC1E9289BE00AE8A73 /* YACellCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YACellCollectionView.swift; path = YASwiftLib/YALeftMenu/YACell/YACellCollectionView.swift; sourceTree = SOURCE_ROOT; };
+		FC8F59A31E991E0A007D661F /* YARLMManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YARLMManager.swift; path = Model/YARealm/YARLMManager.swift; sourceTree = "<group>"; };
 		FC92D4701E9273D600FD1263 /* YAData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YAData.swift; path = YASwiftLib/Model/YAData.swift; sourceTree = SOURCE_ROOT; };
 		FC95ED1A1E8D11A00019CF08 /* YASwiftLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YASwiftLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC95ED1D1E8D11A00019CF08 /* YAAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAAppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +79,7 @@
 		FCCFD64B1E8D2B5700E928AB /* YAString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAString.swift; sourceTree = "<group>"; };
 		FCCFD64C1E8D2B5700E928AB /* YATextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YATextField.swift; sourceTree = "<group>"; };
 		FCCFD64D1E8D2B5700E928AB /* YAUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAUtility.swift; sourceTree = "<group>"; };
+		FCD34CD31E9BBBE00067BDC8 /* YARealmDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YARealmDetailVC.swift; path = YASwiftLib/YALeftMenu/YARealmDetailVC.swift; sourceTree = SOURCE_ROOT; };
 		FCD7829A1E9379F500B66099 /* YAImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YAImage.swift; path = YASwiftLib/Model/YAImage.swift; sourceTree = SOURCE_ROOT; };
 		FCD782A11E93B7C900B66099 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +90,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A752BB3B651672F5D81F05A /* Pods_YASwiftLib.framework in Frameworks */,
+				FC0904B31E9797D900DBB696 /* Crashlytics.framework in Frameworks */,
+				FC0904B21E9797D900DBB696 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +101,8 @@
 		2BAF71CF256977E2D45BA0B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC0904B01E9797D900DBB696 /* Fabric.framework */,
+				FC0904B11E9797D900DBB696 /* Crashlytics.framework */,
 				9ACDB767EC98042C19966C4E /* Pods_YASwiftLib.framework */,
 			);
 			name = Frameworks;
@@ -122,15 +138,26 @@
 		FC3925FF1E92214100935022 /* YALeftMenu */ = {
 			isa = PBXGroup;
 			children = (
+				FC0228D81E94B7A500A33C8B /* YACell */,
 				FC3926001E92218000935022 /* YALeftMenuTVC.swift */,
 				FC3926021E9221ED00935022 /* YAPickerViewInputVC.swift */,
 				FC3926061E92225100935022 /* YAImagePickerViewVC.swift */,
 				FC3926081E92243400935022 /* YASearchTableVC.swift */,
 				FC39260A1E9224A900935022 /* YACollectionViewVC.swift */,
-				FC0228D81E94B7A500A33C8B /* YACell */,
+				FC47086D1E97BCC2006115CF /* YARealmTVC.swift */,
+				FCD34CD31E9BBBE00067BDC8 /* YARealmDetailVC.swift */,
 			);
 			name = YALeftMenu;
 			path = YASwiftUtils;
+			sourceTree = "<group>";
+		};
+		FC47086A1E97A337006115CF /* YARealm */ = {
+			isa = PBXGroup;
+			children = (
+				FC47086B1E97A3A8006115CF /* YARLMPerson.swift */,
+				FC8F59A31E991E0A007D661F /* YARLMManager.swift */,
+			);
+			name = YARealm;
 			sourceTree = "<group>";
 		};
 		FC95ED111E8D11A00019CF08 = {
@@ -155,6 +182,7 @@
 		FC95ED1C1E8D11A00019CF08 /* YASwiftLib */ = {
 			isa = PBXGroup;
 			children = (
+				FC47086A1E97A337006115CF /* YARealm */,
 				FC0228D71E94B76E00A33C8B /* YAModel */,
 				FCCFD6421E8D2B5700E928AB /* YASwiftUtils */,
 				FC3925FF1E92214100935022 /* YALeftMenu */,
@@ -225,6 +253,7 @@
 				FC95ED181E8D11A00019CF08 /* Resources */,
 				87D59258AA4ABEF630A04258 /* [CP] Embed Pods Frameworks */,
 				E6F83F16D487E2F6EEA3D562 /* [CP] Copy Pods Resources */,
+				FC0904AF1E9797C000DBB696 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -330,6 +359,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YASwiftLib/Pods-YASwiftLib-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FC0904AF1E9797C000DBB696 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run f8caba2ef2b53b7e10b6ba486729593a81efd9af 7cd5c8a993855df6aa25a2654ed91932547902cba6f9d1c4ad8397397a513bd3\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -355,8 +397,12 @@
 				FCCFD64F1E8D2B5700E928AB /* YAAPIManager.swift in Sources */,
 				FC0228DA1E94B95400A33C8B /* YACustomNavigationBar.swift in Sources */,
 				FCD7829B1E9379F500B66099 /* YAImage.swift in Sources */,
+				FC47086C1E97A3A8006115CF /* YARLMPerson.swift in Sources */,
+				FCD34CD41E9BBBE00067BDC8 /* YARealmDetailVC.swift in Sources */,
 				FCCFD64E1E8D2B5700E928AB /* YAAPIKeys.swift in Sources */,
+				FC8F59A41E991E0A007D661F /* YARLMManager.swift in Sources */,
 				FC95ED201E8D11A00019CF08 /* YAMainVC.swift in Sources */,
+				FC47086E1E97BCC2006115CF /* YARealmTVC.swift in Sources */,
 				FC39260B1E9224A900935022 /* YACollectionViewVC.swift in Sources */,
 				FC95ED1E1E8D11A00019CF08 /* YAAppDelegate.swift in Sources */,
 				FC92D4711E9273D600FD1263 /* YAData.swift in Sources */,
@@ -488,6 +534,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 5VW996B8D2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = YASwiftLib/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -507,6 +557,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 5VW996B8D2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = YASwiftLib/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

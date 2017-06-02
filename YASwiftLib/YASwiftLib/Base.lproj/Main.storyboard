@@ -51,7 +51,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_clear" translatesAutoresizingMaskIntoConstraints="NO" id="I10-d3-St4">
                                 <rect key="frame" x="10" y="74" width="394" height="189.33333333333331"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EwZ-OK-dnd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EwZ-OK-dnd">
                                 <rect key="frame" x="10" y="273.33333333333331" width="394" height="189.33333333333337"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -61,7 +61,7 @@
                                             <color key="NSColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="48" name="HelveticaNeue"/>
                                             <font key="NSOriginalFont" size="48" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -71,7 +71,7 @@
                                             <color key="NSColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="60" name="HelveticaNeue-Bold"/>
                                             <font key="NSOriginalFont" size="60" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="Swift Library">
@@ -79,7 +79,7 @@
                                             <color key="NSColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="48" name="HelveticaNeue"/>
                                             <font key="NSOriginalFont" size="48" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -95,7 +95,7 @@
                                                 <color key="NSColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" size="24" name="HelveticaNeue"/>
                                                 <font key="NSOriginalFont" size="48" name="HelveticaNeue"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                         <fragment>
@@ -105,7 +105,7 @@
                                                 <color key="NSColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" size="30" name="HelveticaNeue-Bold"/>
                                                 <font key="NSOriginalFont" size="30" name="HelveticaNeue-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                         <fragment content="Swift Library">
@@ -113,7 +113,7 @@
                                                 <color key="NSColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" size="24" name="HelveticaNeue"/>
                                                 <font key="NSOriginalFont" size="24" name="HelveticaNeue"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -165,7 +165,7 @@
         <scene sceneID="fxz-Iq-I5c">
             <objects>
                 <navigationController id="DZe-Sb-xNv" customClass="UISideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="hta-FM-7vT" customClass="YACustomNavigationBar" customModule="YASwiftLib" customModuleProvider="target">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hta-FM-7vT" customClass="YACustomNavigationBar" customModule="YASwiftLib" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -296,6 +296,30 @@
                                             <segue destination="r2p-Fo-qTr" kind="show" id="bge-L2-Pxm"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" textLabel="1fO-Iy-sxY" style="IBUITableViewCellStyleDefault" id="WIc-Oh-L0P">
+                                        <rect key="frame" x="0.0" y="200" width="414" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WIc-Oh-L0P" id="VTC-bd-8bX">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Realm Database" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1fO-Iy-sxY">
+                                                    <rect key="frame" x="15" y="0.0" width="384" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="textColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="C0a-ed-gSs" kind="show" id="KEu-uB-Oyn"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -414,7 +438,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OvT-VN-Qdv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3604" y="-1216"/>
+            <point key="canvasLocation" x="3603" y="-919"/>
         </scene>
         <!--Image Picker ViewVC-->
         <scene sceneID="9Yz-Np-Aqq">
@@ -475,6 +499,76 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4508" y="-918"/>
+        </scene>
+        <!--Search TableVC-->
+        <scene sceneID="wIw-HM-KbW">
+            <objects>
+                <viewController storyboardIdentifier="YASearchTableVC" id="p4l-7d-vYz" customClass="YASearchTableVC" customModule="YASwiftLib" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sk5-7m-l8S"/>
+                        <viewControllerLayoutGuide type="bottom" id="HNa-KH-lbJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kgB-Bh-gj0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cKu-oC-r5Q">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YADataCell" textLabel="CGA-sC-Urk" detailTextLabel="sRk-oL-Z5j" style="IBUITableViewCellStyleSubtitle" id="pwJ-BO-ExV">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pwJ-BO-ExV" id="OdM-94-7dB">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CGA-sC-Urk">
+                                                    <rect key="frame" x="14.999999999999998" y="15.000000000000002" width="28.333333333333332" height="17.666666666666668"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                                    <color key="textColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sRk-oL-Z5j">
+                                                    <rect key="frame" x="15" y="32.666666666666671" width="41" height="14"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                    <color key="textColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="p4l-7d-vYz" id="aOY-54-MLc"/>
+                                    <outlet property="delegate" destination="p4l-7d-vYz" id="Ry3-cA-vYM"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cKu-oC-r5Q" firstAttribute="width" secondItem="kgB-Bh-gj0" secondAttribute="width" id="lnE-DT-4Tu"/>
+                            <constraint firstItem="cKu-oC-r5Q" firstAttribute="height" secondItem="kgB-Bh-gj0" secondAttribute="height" id="x2A-xD-m5R"/>
+                            <constraint firstItem="cKu-oC-r5Q" firstAttribute="centerX" secondItem="kgB-Bh-gj0" secondAttribute="centerX" id="xN1-4g-Xas"/>
+                            <constraint firstItem="cKu-oC-r5Q" firstAttribute="centerY" secondItem="kgB-Bh-gj0" secondAttribute="centerY" id="yjQ-fK-J85"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tblYAData" destination="cKu-oC-r5Q" id="Q4B-6H-Ln1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W6i-9C-LMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5448" y="-919"/>
         </scene>
         <!--Collection ViewVC-->
         <scene sceneID="1Lf-kt-lov">
@@ -559,77 +653,83 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g2W-ny-3xd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3604" y="283"/>
+            <point key="canvasLocation" x="3603" y="-214"/>
         </scene>
-        <!--Search TableVC-->
-        <scene sceneID="wIw-HM-KbW">
+        <!--RealmTVC-->
+        <scene sceneID="RW1-iH-zsV">
             <objects>
-                <viewController storyboardIdentifier="YASearchTableVC" id="p4l-7d-vYz" customClass="YASearchTableVC" customModule="YASwiftLib" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Sk5-7m-l8S"/>
-                        <viewControllerLayoutGuide type="bottom" id="HNa-KH-lbJ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kgB-Bh-gj0">
+                <tableViewController storyboardIdentifier="YARealmTVC" id="C0a-ed-gSs" customClass="YARealmTVC" customModule="YASwiftLib" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ao2-wo-kQD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cKu-oC-r5Q">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YADataCell" textLabel="CGA-sC-Urk" detailTextLabel="sRk-oL-Z5j" style="IBUITableViewCellStyleSubtitle" id="pwJ-BO-ExV">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pwJ-BO-ExV" id="OdM-94-7dB">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CGA-sC-Urk">
-                                                    <rect key="frame" x="14.999999999999998" y="15.000000000000002" width="28.333333333333332" height="17.666666666666668"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
-                                                    <color key="textColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <variation key="heightClass=regular-widthClass=compact">
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                                    </variation>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sRk-oL-Z5j">
-                                                    <rect key="frame" x="15" y="32.666666666666671" width="41" height="14"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                                    <color key="textColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <variation key="heightClass=regular-widthClass=compact">
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                                                    </variation>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="p4l-7d-vYz" id="aOY-54-MLc"/>
-                                    <outlet property="delegate" destination="p4l-7d-vYz" id="Ry3-cA-vYM"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="cKu-oC-r5Q" firstAttribute="width" secondItem="kgB-Bh-gj0" secondAttribute="width" id="lnE-DT-4Tu"/>
-                            <constraint firstItem="cKu-oC-r5Q" firstAttribute="height" secondItem="kgB-Bh-gj0" secondAttribute="height" id="x2A-xD-m5R"/>
-                            <constraint firstItem="cKu-oC-r5Q" firstAttribute="centerX" secondItem="kgB-Bh-gj0" secondAttribute="centerX" id="xN1-4g-Xas"/>
-                            <constraint firstItem="cKu-oC-r5Q" firstAttribute="centerY" secondItem="kgB-Bh-gj0" secondAttribute="centerY" id="yjQ-fK-J85"/>
-                        </constraints>
-                    </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="YARealmCell" editingAccessoryType="detailDisclosureButton" textLabel="Nfg-D5-GFx" detailTextLabel="3nN-Wb-J4u" style="IBUITableViewCellStyleSubtitle" id="4jl-0o-DWt">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4jl-0o-DWt" id="0Ot-fO-wau">
+                                    <rect key="frame" x="0.0" y="0.0" width="347" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nfg-D5-GFx">
+                                            <rect key="frame" x="15" y="5" width="33.333333333333336" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3nN-Wb-J4u">
+                                            <rect key="frame" x="14.999999999999996" y="25.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="tintColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="C0a-ed-gSs" id="Rhd-fK-RYb"/>
+                            <outlet property="delegate" destination="C0a-ed-gSs" id="d1r-t5-syK"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="jUh-1c-EVo">
+                        <barButtonItem key="backBarButtonItem" title=" " id="wKJ-EY-yGq"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="LX1-W0-2et">
+                            <connections>
+                                <action selector="btnRightBarButtonAdd_Clicked:" destination="C0a-ed-gSs" id="SGA-yJ-Mcv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="tblYAData" destination="cKu-oC-r5Q" id="Q4B-6H-Ln1"/>
+                        <outlet property="btnRightBarButtonAdd" destination="LX1-W0-2et" id="nMK-4Z-PAU"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W6i-9C-LMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LZd-Tf-HaO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4509" y="-209"/>
+            <point key="canvasLocation" x="4507" y="-214"/>
+        </scene>
+        <!--Realm DetailVC-->
+        <scene sceneID="PfX-yg-tJK">
+            <objects>
+                <viewController storyboardIdentifier="YARealmDetailVC" id="lpb-c0-RT0" customClass="YARealmDetailVC" customModule="YASwiftLib" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eD2-5u-zAd"/>
+                        <viewControllerLayoutGuide type="bottom" id="bqS-mb-asu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LS3-e1-4ba">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jhe-ad-Bh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5448" y="-214"/>
         </scene>
     </scenes>
     <resources>

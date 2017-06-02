@@ -8,6 +8,10 @@
 
 import UIKit
 import Toast_Swift
+import Fabric
+import Crashlytics
+import RealmSwift
+import CocoaLumberjack
 
 enum YACustomHudStyle: Int {
     case YAShowToastMessage = 1,
@@ -32,7 +36,20 @@ class YAAppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        Fabric.with([Crashlytics.self])
+        
+        DDLog.add(DDTTYLogger.sharedInstance) // TTY = Xcode console
+        DDLog.add(DDASLLogger.sharedInstance) // ASL = Apple System Logs
 
+        let fileLogger: DDFileLogger = DDFileLogger() // File Logger
+        fileLogger.rollingFrequency = TimeInterval(60*60*24)  // 24 hours
+        fileLogger.logFileManager.maximumNumberOfLogFiles = 7
+        DDLog.add(fileLogger)
+
+        var config = Realm.Configuration()
+        config.fileURL = config.fileURL!.deletingLastPathComponent().appendingPathComponent("YASwiftLib.realm")
+        Realm.Configuration.defaultConfiguration = config
+        DDLogDebug("Realm.Configuration == \(config)")
         
         UISearchBar.appearance().barTintColor = colorLavender
         UISearchBar.appearance().tintColor = colorWhite
@@ -67,28 +84,24 @@ class YAAppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-    func showToastView(hudType:YACustomHudStyle, message:String) -> Void {
-        print("hudType == \(hudType), message == \(message)");
-
-        let alertWindow = UIWindow(frame: UIScreen.main.bounds)
-        alertWindow.windowLevel = UIWindowLevelAlert
-        alertWindow.rootViewController = UIViewController()
-        alertWindow.makeKeyAndVisible()
-        
+    func toastView(hudType:YACustomHudStyle, strToastMessage:String) -> Void {
+        DDLogDebug("hudType == \(hudType), message == \(strToastMessage)");
         switch hudType {
         case .YAShowToastMessage:
+            self.window?.hideToastActivity()
+            
             var style = ToastStyle()
-            style.messageAlignment = .center
             style.messageFont = UIFont.YASystemFont(ofSize: 16.0)
-            style.messageColor = colorGrape
-            style.backgroundColor = colorLavender
-            alertWindow.rootViewController?.view.makeToast(message, duration: 5.0, position: .center, style: style)
+            style.messageColor = UIColor.red
+            style.messageAlignment = .center
+            style.backgroundColor = colorWhite
+            self.window?.makeToast(strToastMessage, duration: 5.0, position: .center, style: style)
             
         case .YAShowActivityIndicator:
-            alertWindow.rootViewController?.view.makeToastActivity(.center)
+            self.window?.makeToastActivity(.center)
             
         case .YAHideActivityIndicator:
-            alertWindow.rootViewController?.view.hideToastActivity()
+            self.window?.hideToastActivity()
             
         }
     }

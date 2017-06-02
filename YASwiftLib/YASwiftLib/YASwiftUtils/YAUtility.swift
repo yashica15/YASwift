@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CocoaLumberjack
 
 class Utility: NSObject {
     
@@ -29,7 +30,7 @@ class Utility: NSObject {
         if (defaults != nil) {
             defaults!.set(value, forKey: key)
         } else {
-            print("Unable to save \(key) = \(value) to user defaults")
+            DDLogDebug("Unable to save \(key) = \(value) to user defaults")
         }
     }
     
@@ -56,12 +57,10 @@ class Utility: NSObject {
         var value = UserDefaults.standard.value(forKey: key)
         if value == nil {
             value = "" as AnyObject?
-            print("user defaults may not have been exist...")
-            // defaults!.synchronize()
+            DDLogDebug("user defaults may not have been exist...")
         }
         return value! as AnyObject
     }
-    
     
     func checkNullObject(key : String, dict : NSDictionary) -> AnyObject {
         var value = dict.value(forKey: key)
@@ -109,7 +108,6 @@ class Utility: NSObject {
         return image
     }
     
-    ////
     func heightOfAttrbuitedText(_ width: CGFloat, string:NSMutableAttributedString) -> CGFloat {
         let rect: CGSize = string.boundingRect(with: CGSize(width: width, height: 10000), options:NSStringDrawingOptions.usesLineFragmentOrigin, context: nil).size as CGSize
         return rect.height

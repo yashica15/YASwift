@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CocoaLumberjack
 
 class YAPickerViewInputVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
@@ -65,7 +66,7 @@ class YAPickerViewInputVC: UIViewController, UIPickerViewDataSource, UIPickerVie
         pickerView.isHidden = true
     }
     
-    //MARK: textFielf Delegate
+    //MARK: textField Delegate
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         
         arrPicker.removeAll()
@@ -99,7 +100,7 @@ class YAPickerViewInputVC: UIViewController, UIPickerViewDataSource, UIPickerVie
             alert.view.tintColor = colorGrape
 
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{ (ACTION :UIAlertAction!)in
-                print("User click Ok button")
+                DDLogDebug("User click Ok button")
                 
                 self.txtSelectCity.text = ""
                 self.txtSelectZipcode.text = ""
