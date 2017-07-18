@@ -47,7 +47,8 @@ class YAImagePickerViewVC: UIViewController, UIImagePickerControllerDelegate, UI
     @IBAction func yaImageView_Tap(_ sender: UITapGestureRecognizer) {
 
         let actionSheet: UIAlertController = UIAlertController(title: "Upload Picture", message: "Choose an Option!", preferredStyle: .actionSheet)
-        
+        actionSheet.view.tintColor = colorGrape
+
         let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .cancel) { action -> Void in
             //Just dismiss the action sheet
         }
@@ -91,7 +92,9 @@ class YAImagePickerViewVC: UIViewController, UIImagePickerControllerDelegate, UI
         actionSheet.addAction(savedPhotoAction)
         actionSheet.addAction(cameraAction)
 
-        self.present(actionSheet, animated: true, completion: nil)
+        self.present(actionSheet, animated: true, completion: {
+            actionSheet.view.tintColor = colorGrape
+        })
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {

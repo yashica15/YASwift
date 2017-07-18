@@ -12,6 +12,7 @@ import Fabric
 import Crashlytics
 import RealmSwift
 import CocoaLumberjack
+import IQKeyboardManagerSwift
 
 enum YACustomHudStyle: Int {
     case YAShowToastMessage = 1,
@@ -59,6 +60,11 @@ class YAAppDelegate: UIResponder, UIApplicationDelegate {
             // Fallback on earlier versions
         }
         
+        //MARK: IQKeyboardManager Enable setting
+        IQKeyboardManager.sharedManager().enable = true
+        IQKeyboardManager.sharedManager().enableAutoToolbar = false
+        IQKeyboardManager.sharedManager().previousNextDisplayMode = .alwaysHide
+
         return true
     }
 

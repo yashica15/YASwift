@@ -10,6 +10,7 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 import CocoaLumberjack
+import ReachabilitySwift
 
 class APIManager {
     
@@ -35,6 +36,19 @@ class APIManager {
         return self
     }
     
+    func reachabilityChanged(note: NSNotification) {
+        let reachability = note.object as! Reachability
+        if reachability.isReachable {
+            if reachability.isReachableViaWiFi {
+                DDLogDebug("Reachable via WiFi")
+            } else {
+                DDLogDebug("Reachable via Cellular")
+            }
+        } else {
+            DDLogDebug("Network not reachable")
+        }
+    }
+    
     func getFromServer(requestURL : String, completion: ((_ responseObj: JSON?) -> Void)?) {
         let URL = kAPI_SERVERBASEURL + requestURL
         Alamofire.request(URL).responseJSON { (responseData) -> Void in
@@ -46,6 +60,27 @@ class APIManager {
         }
     }
     
+    func getFromServer(requestURL : String, completion: @escaping ((_ responseObj: APIResponse) -> Void)) {
+        var strURL = kAPI_SERVERBASEURL + requestURL
+        strURL = strURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+        DDLogDebug("\nrequestURL == \(strURL)")
+        Alamofire.request(strURL).responseJSON { (responseData) -> Void in
+            if (responseData.result.error != nil) {
+                let objResponse = APIResponse.init()
+                objResponse.status = false
+                objResponse.message = responseData.result.error?.localizedDescription
+                completion(objResponse)
+            } else {
+                if((responseData.result.value) != nil) {
+                    let swiftyJsonVar = JSON(responseData.result.value!)
+                    let objResponse = APIResponse.init(dictResp: swiftyJsonVar)
+                    DDLogDebug("\(objResponse ?? APIResponse.init())")
+                    completion(objResponse!)
+                }
+            }
+        }
+    }
+
     func postOnServer(requestURL : String, requestParameter : Dictionary <String, AnyObject>, completion: @escaping ((_ responseObj: JSON?) -> Void) ) {
         DDLogDebug("requestParameter \(#function) : \(requestParameter)")
 
@@ -57,6 +92,28 @@ class APIManager {
                     let swiftyJsonVar = JSON(json)
                     DDLogDebug("swiftyJsonVar \(#function) : \(swiftyJsonVar)")
                     completion(swiftyJsonVar)
+                }
+        }
+    }
+    
+    func postOnServer(requestURL : String, requestParameter : Dictionary <String, AnyObject>, completion: @escaping ((_ responseObj: APIResponse) -> Void) ) {
+        var strURL = kAPI_SERVERBASEURL + requestURL
+        strURL = strURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+        DDLogDebug("\n requestURL == \(strURL), requestParameter == \(requestParameter)")
+        Alamofire.request(strURL, method: .post, parameters: requestParameter, encoding: JSONEncoding.default)
+            .responseJSON { responseData in
+                if (responseData.result.error != nil) {
+                    let objResponse = APIResponse.init()
+                    objResponse.status = false
+                    objResponse.message = responseData.result.error?.localizedDescription
+                    completion(objResponse)
+                } else {
+                    if((responseData.result.value) != nil) {
+                        let swiftyJsonVar = JSON(responseData.result.value!)
+                        let objResponse = APIResponse.init(dictResp: swiftyJsonVar)
+                        DDLogDebug("\(objResponse ?? APIResponse.init())")
+                        completion(objResponse!)
+                    }
                 }
         }
     }

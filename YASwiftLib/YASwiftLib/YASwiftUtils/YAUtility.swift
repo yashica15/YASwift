@@ -24,7 +24,7 @@ class Utility: NSObject {
     }
     
     // Set NSUserDefaults
-    func setUserDefault(_ key:String, value:String) {
+    func setUserDefault(_ key:String, value:Any) {
         let defaults : AnyObject? = UserDefaults.standard
         
         if (defaults != nil) {

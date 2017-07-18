@@ -11,6 +11,7 @@
 		FC0228DA1E94B95400A33C8B /* YACustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0228D91E94B95400A33C8B /* YACustomNavigationBar.swift */; };
 		FC0904B21E9797D900DBB696 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0904B01E9797D900DBB696 /* Fabric.framework */; };
 		FC0904B31E9797D900DBB696 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0904B11E9797D900DBB696 /* Crashlytics.framework */; };
+		FC0BFE761F1DDDBC008C91B1 /* YAAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BFE751F1DDDBC008C91B1 /* YAAPIResponse.swift */; };
 		FC3926011E92218000935022 /* YALeftMenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3926001E92218000935022 /* YALeftMenuTVC.swift */; };
 		FC3926031E9221ED00935022 /* YAPickerViewInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3926021E9221ED00935022 /* YAPickerViewInputVC.swift */; };
 		FC3926071E92225100935022 /* YAImagePickerViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3926061E92225100935022 /* YAImagePickerViewVC.swift */; };
@@ -40,7 +41,6 @@
 		FCCFD6581E8D2B5700E928AB /* YAUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD64D1E8D2B5700E928AB /* YAUtility.swift */; };
 		FCD34CD41E9BBBE00067BDC8 /* YARealmDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD34CD31E9BBBE00067BDC8 /* YARealmDetailVC.swift */; };
 		FCD7829B1E9379F500B66099 /* YAImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7829A1E9379F500B66099 /* YAImage.swift */; };
-		FCD782A21E93B7C900B66099 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FCD782A11E93B7C900B66099 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +50,7 @@
 		FC0228D91E94B95400A33C8B /* YACustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YACustomNavigationBar.swift; sourceTree = "<group>"; };
 		FC0904B01E9797D900DBB696 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		FC0904B11E9797D900DBB696 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		FC0BFE751F1DDDBC008C91B1 /* YAAPIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAAPIResponse.swift; sourceTree = "<group>"; };
 		FC3926001E92218000935022 /* YALeftMenuTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YALeftMenuTVC.swift; sourceTree = "<group>"; };
 		FC3926021E9221ED00935022 /* YAPickerViewInputVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YAPickerViewInputVC.swift; path = YASwiftLib/YALeftMenu/YAPickerViewInputVC.swift; sourceTree = SOURCE_ROOT; };
 		FC3926061E92225100935022 /* YAImagePickerViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YAImagePickerViewVC.swift; path = YASwiftLib/YALeftMenu/YAImagePickerViewVC.swift; sourceTree = SOURCE_ROOT; };
@@ -81,7 +82,6 @@
 		FCCFD64D1E8D2B5700E928AB /* YAUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAUtility.swift; sourceTree = "<group>"; };
 		FCD34CD31E9BBBE00067BDC8 /* YARealmDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YARealmDetailVC.swift; path = YASwiftLib/YALeftMenu/YARealmDetailVC.swift; sourceTree = SOURCE_ROOT; };
 		FCD7829A1E9379F500B66099 /* YAImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YAImage.swift; path = YASwiftLib/Model/YAImage.swift; sourceTree = SOURCE_ROOT; };
-		FCD782A11E93B7C900B66099 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +163,6 @@
 		FC95ED111E8D11A00019CF08 = {
 			isa = PBXGroup;
 			children = (
-				FCD782A11E93B7C900B66099 /* README.md */,
 				FC95ED1C1E8D11A00019CF08 /* YASwiftLib */,
 				FC95ED1B1E8D11A00019CF08 /* Products */,
 				6DC82382C20C00AB6A0BD0A0 /* Pods */,
@@ -212,6 +211,7 @@
 		FCD7829C1E93A76600B66099 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				FC0BFE751F1DDDBC008C91B1 /* YAAPIResponse.swift */,
 				FCCFD6431E8D2B5700E928AB /* YAAPIKeys.swift */,
 				FCCFD6441E8D2B5700E928AB /* YAAPIManager.swift */,
 			);
@@ -385,7 +385,7 @@
 				FCCFD6571E8D2B5700E928AB /* YATextField.swift in Sources */,
 				FCCFD6551E8D2B5700E928AB /* YAMessage.swift in Sources */,
 				FC3926071E92225100935022 /* YAImagePickerViewVC.swift in Sources */,
-				FCD782A21E93B7C900B66099 /* README.md in Sources */,
+				FC0BFE761F1DDDBC008C91B1 /* YAAPIResponse.swift in Sources */,
 				FCCFD6541E8D2B5700E928AB /* YAFonts.swift in Sources */,
 				FCCFD6531E8D2B5700E928AB /* YACustomRatingControl.swift in Sources */,
 				FCCFD6501E8D2B5700E928AB /* YAArray.swift in Sources */,

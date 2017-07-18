@@ -32,7 +32,7 @@ class YACustomNavigationBar: UINavigationBar {
         
         if kIS_IPAD {
             let insets:UIEdgeInsets = UIEdgeInsetsMake(0, 0, kInsetBottom, 0)
-            let imgBackArrow:UIImage = (UIImage(named: "back")?.withAlignmentRectInsets(insets))!
+            let imgBackArrow:UIImage = (UIImage(named: "icon_back")?.withAlignmentRectInsets(insets))!
             
             navigationBarAppearance.backIndicatorImage = imgBackArrow
             navigationBarAppearance.backIndicatorTransitionMaskImage = imgBackArrow

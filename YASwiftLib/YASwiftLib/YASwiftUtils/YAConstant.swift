@@ -59,6 +59,7 @@ let kSCREEN_MIN_LENGTH = min(kSCREEN_WIDTH, kSCREEN_HEIGHT)
 
 let kIS_IPHONE_4_OR_LESS = (kIS_IPHONE && kSCREEN_MAX_LENGTH < 568.0)
 let kIS_IPHONE_5 = (kIS_IPHONE && kSCREEN_MAX_LENGTH == 568.0)
+let kIS_IPHONE_5_OR_LESS    = (kIS_IPHONE_4_OR_LESS || kIS_IPHONE_5)
 let kIS_IPHONE_6 = (kIS_IPHONE && kSCREEN_MAX_LENGTH == 667.0)
 let kIS_IPHONE_6P = (kIS_IPHONE && kSCREEN_MAX_LENGTH == 736.0)
 
@@ -75,7 +76,8 @@ let kRATIO_6_PLUS = 1.10
 
 //for Padding
 let padding: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: 40))
-////////////// Common Color Code ///////////////
+
+// Common Color Code
 let colorClear = UIColor.clear
 let colorWhite = UIColor.white
 let colorBlack = UIColor.black
@@ -95,9 +97,43 @@ let colorLavender = UIColor(red: 204/255.0, green: 102.0/255.0, blue: 255.0/255.
 
 
 // Constant Images
-let imageLogo = UIImage(named: "logo_clear")
+let imageLogo       = UIImage(named: "logo_clear")
+let imageIconBack   = UIImage(named: "icon_back")
 
 // TextField left padding frame.
 let textPaddingFrame = CGRect(x: 0, y: 0, width: 10, height: 10)
 
 
+//MARK: Attributed Font
+let blackTitleAttribute16 : [String: Any] = [
+    NSFontAttributeName : UIFont.YASystemFont(ofSize: 16.0),
+    NSForegroundColorAttributeName : colorGrape]
+
+let blueTitleAttribute16 : [String: Any] = [
+    NSFontAttributeName : UIFont.YASystemFont(ofSize: 16.0),
+    NSForegroundColorAttributeName : colorGrape]
+
+let blackUnderlineTitleAttribute16 : [String: Any] = [
+    NSFontAttributeName : UIFont.YASystemFont(ofSize: 16.0),
+    NSForegroundColorAttributeName : colorGrape,
+    NSUnderlineStyleAttributeName : NSUnderlineStyle.styleSingle.rawValue]
+
+let blueUnderlineTitleAttribute16 : [String: Any] = [
+    NSFontAttributeName : UIFont.YASystemFont(ofSize: 16.0),
+    NSForegroundColorAttributeName : colorGrape,
+    NSUnderlineStyleAttributeName : NSUnderlineStyle.styleSingle.rawValue]
+
+let blueUnderlineBoldTitleAttribute15 : [String: Any] = [
+    NSFontAttributeName : UIFont.YABoldSystemFont(ofSize: 14.0),
+    NSForegroundColorAttributeName : colorGrape,
+    NSUnderlineStyleAttributeName : NSUnderlineStyle.styleSingle.rawValue]
+
+let blueUnderlineBoldTitleAttribute16 : [String: Any] = [
+    NSFontAttributeName : UIFont.YABoldSystemFont(ofSize: 16.0),
+    NSForegroundColorAttributeName : colorGrape,
+    NSUnderlineStyleAttributeName : NSUnderlineStyle.styleSingle.rawValue]
+
+
+//MARK: Pagination Constant
+let kPageIndex  = 0
+let kPageSize   = 50
