@@ -2,7 +2,6 @@
 //  YARealmTVC.swift
 //  YASwiftLib
 //
-//  Created by Yashica Agrawal on 07/04/17.
 //  Copyright © 2017 Yashica Agrawal. All rights reserved.
 //
 

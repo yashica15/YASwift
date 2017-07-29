@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "221797BBD6AADE1276DBC0DB9D217EC378B30B89",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "4cfd7ea9-5df6-4bca-8b05-8e04c9f5ac1a++2870" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "221797BBD6AADE1276DBC0DB9D217EC378B30B89" : 9223372036854775807,
+    "4cfd7ea9-5df6-4bca-8b05-8e04c9f5ac1a++2870" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "335C425E-A8FF-4C16-B5BA-1940570EE155",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "221797BBD6AADE1276DBC0DB9D217EC378B30B89" : "YASwift\/",
+    "4cfd7ea9-5df6-4bca-8b05-8e04c9f5ac1a++2870" : "YASwift\/YASwiftLib\/YASwiftLib\/YASwiftUtils\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "YASwiftLib",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "YASwiftLib\/YASwiftLib.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yashica15\/YASwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "221797BBD6AADE1276DBC0DB9D217EC378B30B89"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/dev.galaxyweblinks.com\/home\/svn\/iPhone-repository",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4cfd7ea9-5df6-4bca-8b05-8e04c9f5ac1a++2870"
+    }
+  ]
+}

@@ -8,80 +8,80 @@
 
 /* Begin PBXBuildFile section */
 		3A752BB3B651672F5D81F05A /* Pods_YASwiftLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACDB767EC98042C19966C4E /* Pods_YASwiftLib.framework */; };
-		FC0228DA1E94B95400A33C8B /* YACustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0228D91E94B95400A33C8B /* YACustomNavigationBar.swift */; };
 		FC0904B21E9797D900DBB696 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0904B01E9797D900DBB696 /* Fabric.framework */; };
 		FC0904B31E9797D900DBB696 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0904B11E9797D900DBB696 /* Crashlytics.framework */; };
-		FC0BFE761F1DDDBC008C91B1 /* YAAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BFE751F1DDDBC008C91B1 /* YAAPIResponse.swift */; };
-		FC3926011E92218000935022 /* YALeftMenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3926001E92218000935022 /* YALeftMenuTVC.swift */; };
-		FC3926031E9221ED00935022 /* YAPickerViewInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3926021E9221ED00935022 /* YAPickerViewInputVC.swift */; };
-		FC3926071E92225100935022 /* YAImagePickerViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3926061E92225100935022 /* YAImagePickerViewVC.swift */; };
-		FC3926091E92243400935022 /* YASearchTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3926081E92243400935022 /* YASearchTableVC.swift */; };
-		FC39260B1E9224A900935022 /* YACollectionViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39260A1E9224A900935022 /* YACollectionViewVC.swift */; };
-		FC39260D1E92455A00935022 /* YAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39260C1E92455A00935022 /* YAView.swift */; };
-		FC47086C1E97A3A8006115CF /* YARLMPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC47086B1E97A3A8006115CF /* YARLMPerson.swift */; };
-		FC47086E1E97BCC2006115CF /* YARealmTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC47086D1E97BCC2006115CF /* YARealmTVC.swift */; };
-		FC8BB4ED1E9289BE00AE8A73 /* YACellCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8BB4EC1E9289BE00AE8A73 /* YACellCollectionView.swift */; };
-		FC8F59A41E991E0A007D661F /* YARLMManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8F59A31E991E0A007D661F /* YARLMManager.swift */; };
-		FC92D4711E9273D600FD1263 /* YAData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC92D4701E9273D600FD1263 /* YAData.swift */; };
-		FC95ED1E1E8D11A00019CF08 /* YAAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95ED1D1E8D11A00019CF08 /* YAAppDelegate.swift */; };
-		FC95ED201E8D11A00019CF08 /* YAMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95ED1F1E8D11A00019CF08 /* YAMainVC.swift */; };
 		FC95ED231E8D11A00019CF08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC95ED211E8D11A00019CF08 /* Main.storyboard */; };
 		FC95ED251E8D11A00019CF08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC95ED241E8D11A00019CF08 /* Assets.xcassets */; };
 		FC95ED281E8D11A00019CF08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC95ED261E8D11A00019CF08 /* LaunchScreen.storyboard */; };
-		FCCFD64E1E8D2B5700E928AB /* YAAPIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD6431E8D2B5700E928AB /* YAAPIKeys.swift */; };
-		FCCFD64F1E8D2B5700E928AB /* YAAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD6441E8D2B5700E928AB /* YAAPIManager.swift */; };
-		FCCFD6501E8D2B5700E928AB /* YAArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD6451E8D2B5700E928AB /* YAArray.swift */; };
-		FCCFD6511E8D2B5700E928AB /* YAConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD6461E8D2B5700E928AB /* YAConstant.swift */; };
-		FCCFD6521E8D2B5700E928AB /* YACustomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD6471E8D2B5700E928AB /* YACustomPicker.swift */; };
-		FCCFD6531E8D2B5700E928AB /* YACustomRatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD6481E8D2B5700E928AB /* YACustomRatingControl.swift */; };
-		FCCFD6541E8D2B5700E928AB /* YAFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD6491E8D2B5700E928AB /* YAFonts.swift */; };
-		FCCFD6551E8D2B5700E928AB /* YAMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD64A1E8D2B5700E928AB /* YAMessage.swift */; };
-		FCCFD6561E8D2B5700E928AB /* YAString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD64B1E8D2B5700E928AB /* YAString.swift */; };
-		FCCFD6571E8D2B5700E928AB /* YATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD64C1E8D2B5700E928AB /* YATextField.swift */; };
-		FCCFD6581E8D2B5700E928AB /* YAUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCFD64D1E8D2B5700E928AB /* YAUtility.swift */; };
-		FCD34CD41E9BBBE00067BDC8 /* YARealmDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD34CD31E9BBBE00067BDC8 /* YARealmDetailVC.swift */; };
-		FCD7829B1E9379F500B66099 /* YAImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7829A1E9379F500B66099 /* YAImage.swift */; };
+		FCC71B1F1F2CC17A0062086E /* YAAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71AFE1F2CC17A0062086E /* YAAppDelegate.swift */; };
+		FCC71B201F2CC17A0062086E /* YAMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71AFF1F2CC17A0062086E /* YAMainVC.swift */; };
+		FCC71B211F2CC17A0062086E /* YACellCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B021F2CC17A0062086E /* YACellCollectionView.swift */; };
+		FCC71B221F2CC17A0062086E /* YACollectionViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B031F2CC17A0062086E /* YACollectionViewVC.swift */; };
+		FCC71B231F2CC17A0062086E /* YAImagePickerViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B041F2CC17A0062086E /* YAImagePickerViewVC.swift */; };
+		FCC71B241F2CC17A0062086E /* YALeftMenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B051F2CC17A0062086E /* YALeftMenuTVC.swift */; };
+		FCC71B251F2CC17A0062086E /* YAPickerViewInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B061F2CC17A0062086E /* YAPickerViewInputVC.swift */; };
+		FCC71B261F2CC17A0062086E /* YARealmDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B071F2CC17A0062086E /* YARealmDetailVC.swift */; };
+		FCC71B271F2CC17A0062086E /* YARealmTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B081F2CC17A0062086E /* YARealmTVC.swift */; };
+		FCC71B281F2CC17A0062086E /* YASearchTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B091F2CC17A0062086E /* YASearchTableVC.swift */; };
+		FCC71B291F2CC17A0062086E /* YAData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B0B1F2CC17A0062086E /* YAData.swift */; };
+		FCC71B2A1F2CC17A0062086E /* YAImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B0C1F2CC17A0062086E /* YAImage.swift */; };
+		FCC71B2B1F2CC17A0062086E /* YARLMManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B0E1F2CC17A0062086E /* YARLMManager.swift */; };
+		FCC71B2C1F2CC17A0062086E /* YARLMPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B0F1F2CC17A0062086E /* YARLMPerson.swift */; };
+		FCC71B2D1F2CC17A0062086E /* YAAPIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B111F2CC17A0062086E /* YAAPIKeys.swift */; };
+		FCC71B2E1F2CC17A0062086E /* YAAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B121F2CC17A0062086E /* YAAPIManager.swift */; };
+		FCC71B2F1F2CC17A0062086E /* YAAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B131F2CC17A0062086E /* YAAPIResponse.swift */; };
+		FCC71B301F2CC17A0062086E /* YAArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B141F2CC17A0062086E /* YAArray.swift */; };
+		FCC71B311F2CC17A0062086E /* YAConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B151F2CC17A0062086E /* YAConstant.swift */; };
+		FCC71B321F2CC17A0062086E /* YAFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B161F2CC17A0062086E /* YAFonts.swift */; };
+		FCC71B331F2CC17A0062086E /* YAMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B171F2CC17A0062086E /* YAMessage.swift */; };
+		FCC71B341F2CC17A0062086E /* YANavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B181F2CC17A0062086E /* YANavigationBar.swift */; };
+		FCC71B351F2CC17A0062086E /* YAPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B191F2CC17A0062086E /* YAPicker.swift */; };
+		FCC71B361F2CC17A0062086E /* YARatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B1A1F2CC17A0062086E /* YARatingControl.swift */; };
+		FCC71B371F2CC17A0062086E /* YAString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B1B1F2CC17A0062086E /* YAString.swift */; };
+		FCC71B381F2CC17A0062086E /* YATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B1C1F2CC17A0062086E /* YATextField.swift */; };
+		FCC71B391F2CC17A0062086E /* YAUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B1D1F2CC17A0062086E /* YAUtility.swift */; };
+		FCC71B3A1F2CC17A0062086E /* YAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC71B1E1F2CC17A0062086E /* YAView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8DEEB4A3073B6022DC6B6D73 /* Pods-YASwiftLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YASwiftLib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YASwiftLib/Pods-YASwiftLib.debug.xcconfig"; sourceTree = "<group>"; };
 		9ACDB767EC98042C19966C4E /* Pods_YASwiftLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YASwiftLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40852B90F19F4A8CC6269B7 /* Pods-YASwiftLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YASwiftLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-YASwiftLib/Pods-YASwiftLib.release.xcconfig"; sourceTree = "<group>"; };
-		FC0228D91E94B95400A33C8B /* YACustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YACustomNavigationBar.swift; sourceTree = "<group>"; };
 		FC0904B01E9797D900DBB696 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		FC0904B11E9797D900DBB696 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
-		FC0BFE751F1DDDBC008C91B1 /* YAAPIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAAPIResponse.swift; sourceTree = "<group>"; };
-		FC3926001E92218000935022 /* YALeftMenuTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YALeftMenuTVC.swift; sourceTree = "<group>"; };
-		FC3926021E9221ED00935022 /* YAPickerViewInputVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YAPickerViewInputVC.swift; path = YASwiftLib/YALeftMenu/YAPickerViewInputVC.swift; sourceTree = SOURCE_ROOT; };
-		FC3926061E92225100935022 /* YAImagePickerViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YAImagePickerViewVC.swift; path = YASwiftLib/YALeftMenu/YAImagePickerViewVC.swift; sourceTree = SOURCE_ROOT; };
-		FC3926081E92243400935022 /* YASearchTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YASearchTableVC.swift; path = YASwiftLib/YALeftMenu/YASearchTableVC.swift; sourceTree = SOURCE_ROOT; };
-		FC39260A1E9224A900935022 /* YACollectionViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YACollectionViewVC.swift; path = YASwiftLib/YALeftMenu/YACollectionViewVC.swift; sourceTree = SOURCE_ROOT; };
-		FC39260C1E92455A00935022 /* YAView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAView.swift; sourceTree = "<group>"; };
-		FC47086B1E97A3A8006115CF /* YARLMPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YARLMPerson.swift; path = Model/YARealm/YARLMPerson.swift; sourceTree = "<group>"; };
-		FC47086D1E97BCC2006115CF /* YARealmTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YARealmTVC.swift; path = YASwiftLib/YALeftMenu/YARealmTVC.swift; sourceTree = SOURCE_ROOT; };
-		FC8BB4EC1E9289BE00AE8A73 /* YACellCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YACellCollectionView.swift; path = YASwiftLib/YALeftMenu/YACell/YACellCollectionView.swift; sourceTree = SOURCE_ROOT; };
-		FC8F59A31E991E0A007D661F /* YARLMManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YARLMManager.swift; path = Model/YARealm/YARLMManager.swift; sourceTree = "<group>"; };
-		FC92D4701E9273D600FD1263 /* YAData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YAData.swift; path = YASwiftLib/Model/YAData.swift; sourceTree = SOURCE_ROOT; };
 		FC95ED1A1E8D11A00019CF08 /* YASwiftLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YASwiftLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC95ED1D1E8D11A00019CF08 /* YAAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAAppDelegate.swift; sourceTree = "<group>"; };
-		FC95ED1F1E8D11A00019CF08 /* YAMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = YAMainVC.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FC95ED221E8D11A00019CF08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC95ED241E8D11A00019CF08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC95ED271E8D11A00019CF08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC95ED291E8D11A00019CF08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FCCFD6431E8D2B5700E928AB /* YAAPIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAAPIKeys.swift; sourceTree = "<group>"; };
-		FCCFD6441E8D2B5700E928AB /* YAAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAAPIManager.swift; sourceTree = "<group>"; };
-		FCCFD6451E8D2B5700E928AB /* YAArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAArray.swift; sourceTree = "<group>"; };
-		FCCFD6461E8D2B5700E928AB /* YAConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAConstant.swift; sourceTree = "<group>"; };
-		FCCFD6471E8D2B5700E928AB /* YACustomPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YACustomPicker.swift; sourceTree = "<group>"; };
-		FCCFD6481E8D2B5700E928AB /* YACustomRatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YACustomRatingControl.swift; sourceTree = "<group>"; };
-		FCCFD6491E8D2B5700E928AB /* YAFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAFonts.swift; sourceTree = "<group>"; };
-		FCCFD64A1E8D2B5700E928AB /* YAMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAMessage.swift; sourceTree = "<group>"; };
-		FCCFD64B1E8D2B5700E928AB /* YAString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAString.swift; sourceTree = "<group>"; };
-		FCCFD64C1E8D2B5700E928AB /* YATextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YATextField.swift; sourceTree = "<group>"; };
-		FCCFD64D1E8D2B5700E928AB /* YAUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAUtility.swift; sourceTree = "<group>"; };
-		FCD34CD31E9BBBE00067BDC8 /* YARealmDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YARealmDetailVC.swift; path = YASwiftLib/YALeftMenu/YARealmDetailVC.swift; sourceTree = SOURCE_ROOT; };
-		FCD7829A1E9379F500B66099 /* YAImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YAImage.swift; path = YASwiftLib/Model/YAImage.swift; sourceTree = SOURCE_ROOT; };
+		FCC71AFE1F2CC17A0062086E /* YAAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAAppDelegate.swift; sourceTree = "<group>"; };
+		FCC71AFF1F2CC17A0062086E /* YAMainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAMainVC.swift; sourceTree = "<group>"; };
+		FCC71B021F2CC17A0062086E /* YACellCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YACellCollectionView.swift; sourceTree = "<group>"; };
+		FCC71B031F2CC17A0062086E /* YACollectionViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YACollectionViewVC.swift; sourceTree = "<group>"; };
+		FCC71B041F2CC17A0062086E /* YAImagePickerViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAImagePickerViewVC.swift; sourceTree = "<group>"; };
+		FCC71B051F2CC17A0062086E /* YALeftMenuTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YALeftMenuTVC.swift; sourceTree = "<group>"; };
+		FCC71B061F2CC17A0062086E /* YAPickerViewInputVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAPickerViewInputVC.swift; sourceTree = "<group>"; };
+		FCC71B071F2CC17A0062086E /* YARealmDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YARealmDetailVC.swift; sourceTree = "<group>"; };
+		FCC71B081F2CC17A0062086E /* YARealmTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YARealmTVC.swift; sourceTree = "<group>"; };
+		FCC71B091F2CC17A0062086E /* YASearchTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YASearchTableVC.swift; sourceTree = "<group>"; };
+		FCC71B0B1F2CC17A0062086E /* YAData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAData.swift; sourceTree = "<group>"; };
+		FCC71B0C1F2CC17A0062086E /* YAImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAImage.swift; sourceTree = "<group>"; };
+		FCC71B0E1F2CC17A0062086E /* YARLMManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YARLMManager.swift; sourceTree = "<group>"; };
+		FCC71B0F1F2CC17A0062086E /* YARLMPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YARLMPerson.swift; sourceTree = "<group>"; };
+		FCC71B111F2CC17A0062086E /* YAAPIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAAPIKeys.swift; sourceTree = "<group>"; };
+		FCC71B121F2CC17A0062086E /* YAAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAAPIManager.swift; sourceTree = "<group>"; };
+		FCC71B131F2CC17A0062086E /* YAAPIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAAPIResponse.swift; sourceTree = "<group>"; };
+		FCC71B141F2CC17A0062086E /* YAArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAArray.swift; sourceTree = "<group>"; };
+		FCC71B151F2CC17A0062086E /* YAConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAConstant.swift; sourceTree = "<group>"; };
+		FCC71B161F2CC17A0062086E /* YAFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAFonts.swift; sourceTree = "<group>"; };
+		FCC71B171F2CC17A0062086E /* YAMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAMessage.swift; sourceTree = "<group>"; };
+		FCC71B181F2CC17A0062086E /* YANavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YANavigationBar.swift; sourceTree = "<group>"; };
+		FCC71B191F2CC17A0062086E /* YAPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAPicker.swift; sourceTree = "<group>"; };
+		FCC71B1A1F2CC17A0062086E /* YARatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YARatingControl.swift; sourceTree = "<group>"; };
+		FCC71B1B1F2CC17A0062086E /* YAString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAString.swift; sourceTree = "<group>"; };
+		FCC71B1C1F2CC17A0062086E /* YATextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YATextField.swift; sourceTree = "<group>"; };
+		FCC71B1D1F2CC17A0062086E /* YAUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAUtility.swift; sourceTree = "<group>"; };
+		FCC71B1E1F2CC17A0062086E /* YAView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,49 +117,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		FC0228D71E94B76E00A33C8B /* YAModel */ = {
-			isa = PBXGroup;
-			children = (
-				FC92D4701E9273D600FD1263 /* YAData.swift */,
-				FCD7829A1E9379F500B66099 /* YAImage.swift */,
-			);
-			name = YAModel;
-			path = YASwiftUtils;
-			sourceTree = "<group>";
-		};
-		FC0228D81E94B7A500A33C8B /* YACell */ = {
-			isa = PBXGroup;
-			children = (
-				FC8BB4EC1E9289BE00AE8A73 /* YACellCollectionView.swift */,
-			);
-			name = YACell;
-			sourceTree = "<group>";
-		};
-		FC3925FF1E92214100935022 /* YALeftMenu */ = {
-			isa = PBXGroup;
-			children = (
-				FC0228D81E94B7A500A33C8B /* YACell */,
-				FC3926001E92218000935022 /* YALeftMenuTVC.swift */,
-				FC3926021E9221ED00935022 /* YAPickerViewInputVC.swift */,
-				FC3926061E92225100935022 /* YAImagePickerViewVC.swift */,
-				FC3926081E92243400935022 /* YASearchTableVC.swift */,
-				FC39260A1E9224A900935022 /* YACollectionViewVC.swift */,
-				FC47086D1E97BCC2006115CF /* YARealmTVC.swift */,
-				FCD34CD31E9BBBE00067BDC8 /* YARealmDetailVC.swift */,
-			);
-			name = YALeftMenu;
-			path = YASwiftUtils;
-			sourceTree = "<group>";
-		};
-		FC47086A1E97A337006115CF /* YARealm */ = {
-			isa = PBXGroup;
-			children = (
-				FC47086B1E97A3A8006115CF /* YARLMPerson.swift */,
-				FC8F59A31E991E0A007D661F /* YARLMManager.swift */,
-			);
-			name = YARealm;
-			sourceTree = "<group>";
-		};
 		FC95ED111E8D11A00019CF08 = {
 			isa = PBXGroup;
 			children = (
@@ -181,12 +138,10 @@
 		FC95ED1C1E8D11A00019CF08 /* YASwiftLib */ = {
 			isa = PBXGroup;
 			children = (
-				FC47086A1E97A337006115CF /* YARealm */,
-				FC0228D71E94B76E00A33C8B /* YAModel */,
-				FCCFD6421E8D2B5700E928AB /* YASwiftUtils */,
-				FC3925FF1E92214100935022 /* YALeftMenu */,
-				FC95ED1D1E8D11A00019CF08 /* YAAppDelegate.swift */,
-				FC95ED1F1E8D11A00019CF08 /* YAMainVC.swift */,
+				FCC71AFD1F2CC17A0062086E /* YAInitials */,
+				FCC71B001F2CC17A0062086E /* YALeftMenu */,
+				FCC71B0A1F2CC17A0062086E /* YAModel */,
+				FCC71B101F2CC17A0062086E /* YAUtils */,
 				FC95ED211E8D11A00019CF08 /* Main.storyboard */,
 				FC95ED241E8D11A00019CF08 /* Assets.xcassets */,
 				FC95ED261E8D11A00019CF08 /* LaunchScreen.storyboard */,
@@ -195,49 +150,76 @@
 			path = YASwiftLib;
 			sourceTree = "<group>";
 		};
-		FCCFD6421E8D2B5700E928AB /* YASwiftUtils */ = {
+		FCC71AFD1F2CC17A0062086E /* YAInitials */ = {
 			isa = PBXGroup;
 			children = (
-				FCCFD6461E8D2B5700E928AB /* YAConstant.swift */,
-				FCCFD64A1E8D2B5700E928AB /* YAMessage.swift */,
-				FCCFD64D1E8D2B5700E928AB /* YAUtility.swift */,
-				FCD7829C1E93A76600B66099 /* API */,
-				FCD7829E1E93A7B400B66099 /* CustomControl */,
-				FCD7829D1E93A79D00B66099 /* Extensions */,
+				FCC71AFE1F2CC17A0062086E /* YAAppDelegate.swift */,
+				FCC71AFF1F2CC17A0062086E /* YAMainVC.swift */,
 			);
-			path = YASwiftUtils;
+			path = YAInitials;
 			sourceTree = "<group>";
 		};
-		FCD7829C1E93A76600B66099 /* API */ = {
+		FCC71B001F2CC17A0062086E /* YALeftMenu */ = {
 			isa = PBXGroup;
 			children = (
-				FC0BFE751F1DDDBC008C91B1 /* YAAPIResponse.swift */,
-				FCCFD6431E8D2B5700E928AB /* YAAPIKeys.swift */,
-				FCCFD6441E8D2B5700E928AB /* YAAPIManager.swift */,
+				FCC71B011F2CC17A0062086E /* YACell */,
+				FCC71B031F2CC17A0062086E /* YACollectionViewVC.swift */,
+				FCC71B041F2CC17A0062086E /* YAImagePickerViewVC.swift */,
+				FCC71B051F2CC17A0062086E /* YALeftMenuTVC.swift */,
+				FCC71B061F2CC17A0062086E /* YAPickerViewInputVC.swift */,
+				FCC71B071F2CC17A0062086E /* YARealmDetailVC.swift */,
+				FCC71B081F2CC17A0062086E /* YARealmTVC.swift */,
+				FCC71B091F2CC17A0062086E /* YASearchTableVC.swift */,
 			);
-			name = API;
+			path = YALeftMenu;
 			sourceTree = "<group>";
 		};
-		FCD7829D1E93A79D00B66099 /* Extensions */ = {
+		FCC71B011F2CC17A0062086E /* YACell */ = {
 			isa = PBXGroup;
 			children = (
-				FCCFD6491E8D2B5700E928AB /* YAFonts.swift */,
-				FCCFD64B1E8D2B5700E928AB /* YAString.swift */,
-				FCCFD64C1E8D2B5700E928AB /* YATextField.swift */,
-				FC39260C1E92455A00935022 /* YAView.swift */,
-				FCCFD6451E8D2B5700E928AB /* YAArray.swift */,
+				FCC71B021F2CC17A0062086E /* YACellCollectionView.swift */,
 			);
-			name = Extensions;
+			path = YACell;
 			sourceTree = "<group>";
 		};
-		FCD7829E1E93A7B400B66099 /* CustomControl */ = {
+		FCC71B0A1F2CC17A0062086E /* YAModel */ = {
 			isa = PBXGroup;
 			children = (
-				FCCFD6471E8D2B5700E928AB /* YACustomPicker.swift */,
-				FCCFD6481E8D2B5700E928AB /* YACustomRatingControl.swift */,
-				FC0228D91E94B95400A33C8B /* YACustomNavigationBar.swift */,
+				FCC71B0B1F2CC17A0062086E /* YAData.swift */,
+				FCC71B0C1F2CC17A0062086E /* YAImage.swift */,
+				FCC71B0D1F2CC17A0062086E /* YARealm */,
 			);
-			name = CustomControl;
+			path = YAModel;
+			sourceTree = "<group>";
+		};
+		FCC71B0D1F2CC17A0062086E /* YARealm */ = {
+			isa = PBXGroup;
+			children = (
+				FCC71B0E1F2CC17A0062086E /* YARLMManager.swift */,
+				FCC71B0F1F2CC17A0062086E /* YARLMPerson.swift */,
+			);
+			path = YARealm;
+			sourceTree = "<group>";
+		};
+		FCC71B101F2CC17A0062086E /* YAUtils */ = {
+			isa = PBXGroup;
+			children = (
+				FCC71B111F2CC17A0062086E /* YAAPIKeys.swift */,
+				FCC71B121F2CC17A0062086E /* YAAPIManager.swift */,
+				FCC71B131F2CC17A0062086E /* YAAPIResponse.swift */,
+				FCC71B141F2CC17A0062086E /* YAArray.swift */,
+				FCC71B151F2CC17A0062086E /* YAConstant.swift */,
+				FCC71B161F2CC17A0062086E /* YAFonts.swift */,
+				FCC71B171F2CC17A0062086E /* YAMessage.swift */,
+				FCC71B181F2CC17A0062086E /* YANavigationBar.swift */,
+				FCC71B191F2CC17A0062086E /* YAPicker.swift */,
+				FCC71B1A1F2CC17A0062086E /* YARatingControl.swift */,
+				FCC71B1B1F2CC17A0062086E /* YAString.swift */,
+				FCC71B1C1F2CC17A0062086E /* YATextField.swift */,
+				FCC71B1D1F2CC17A0062086E /* YAUtility.swift */,
+				FCC71B1E1F2CC17A0062086E /* YAView.swift */,
+			);
+			path = YAUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,34 +361,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC3926011E92218000935022 /* YALeftMenuTVC.swift in Sources */,
-				FCCFD6521E8D2B5700E928AB /* YACustomPicker.swift in Sources */,
-				FC39260D1E92455A00935022 /* YAView.swift in Sources */,
-				FCCFD6571E8D2B5700E928AB /* YATextField.swift in Sources */,
-				FCCFD6551E8D2B5700E928AB /* YAMessage.swift in Sources */,
-				FC3926071E92225100935022 /* YAImagePickerViewVC.swift in Sources */,
-				FC0BFE761F1DDDBC008C91B1 /* YAAPIResponse.swift in Sources */,
-				FCCFD6541E8D2B5700E928AB /* YAFonts.swift in Sources */,
-				FCCFD6531E8D2B5700E928AB /* YACustomRatingControl.swift in Sources */,
-				FCCFD6501E8D2B5700E928AB /* YAArray.swift in Sources */,
-				FC3926031E9221ED00935022 /* YAPickerViewInputVC.swift in Sources */,
-				FCCFD6561E8D2B5700E928AB /* YAString.swift in Sources */,
-				FCCFD6581E8D2B5700E928AB /* YAUtility.swift in Sources */,
-				FCCFD6511E8D2B5700E928AB /* YAConstant.swift in Sources */,
-				FC3926091E92243400935022 /* YASearchTableVC.swift in Sources */,
-				FCCFD64F1E8D2B5700E928AB /* YAAPIManager.swift in Sources */,
-				FC0228DA1E94B95400A33C8B /* YACustomNavigationBar.swift in Sources */,
-				FCD7829B1E9379F500B66099 /* YAImage.swift in Sources */,
-				FC47086C1E97A3A8006115CF /* YARLMPerson.swift in Sources */,
-				FCD34CD41E9BBBE00067BDC8 /* YARealmDetailVC.swift in Sources */,
-				FCCFD64E1E8D2B5700E928AB /* YAAPIKeys.swift in Sources */,
-				FC8F59A41E991E0A007D661F /* YARLMManager.swift in Sources */,
-				FC95ED201E8D11A00019CF08 /* YAMainVC.swift in Sources */,
-				FC47086E1E97BCC2006115CF /* YARealmTVC.swift in Sources */,
-				FC39260B1E9224A900935022 /* YACollectionViewVC.swift in Sources */,
-				FC95ED1E1E8D11A00019CF08 /* YAAppDelegate.swift in Sources */,
-				FC92D4711E9273D600FD1263 /* YAData.swift in Sources */,
-				FC8BB4ED1E9289BE00AE8A73 /* YACellCollectionView.swift in Sources */,
+				FCC71B1F1F2CC17A0062086E /* YAAppDelegate.swift in Sources */,
+				FCC71B251F2CC17A0062086E /* YAPickerViewInputVC.swift in Sources */,
+				FCC71B2B1F2CC17A0062086E /* YARLMManager.swift in Sources */,
+				FCC71B351F2CC17A0062086E /* YAPicker.swift in Sources */,
+				FCC71B341F2CC17A0062086E /* YANavigationBar.swift in Sources */,
+				FCC71B2F1F2CC17A0062086E /* YAAPIResponse.swift in Sources */,
+				FCC71B221F2CC17A0062086E /* YACollectionViewVC.swift in Sources */,
+				FCC71B231F2CC17A0062086E /* YAImagePickerViewVC.swift in Sources */,
+				FCC71B241F2CC17A0062086E /* YALeftMenuTVC.swift in Sources */,
+				FCC71B311F2CC17A0062086E /* YAConstant.swift in Sources */,
+				FCC71B281F2CC17A0062086E /* YASearchTableVC.swift in Sources */,
+				FCC71B201F2CC17A0062086E /* YAMainVC.swift in Sources */,
+				FCC71B2C1F2CC17A0062086E /* YARLMPerson.swift in Sources */,
+				FCC71B2D1F2CC17A0062086E /* YAAPIKeys.swift in Sources */,
+				FCC71B291F2CC17A0062086E /* YAData.swift in Sources */,
+				FCC71B211F2CC17A0062086E /* YACellCollectionView.swift in Sources */,
+				FCC71B3A1F2CC17A0062086E /* YAView.swift in Sources */,
+				FCC71B361F2CC17A0062086E /* YARatingControl.swift in Sources */,
+				FCC71B371F2CC17A0062086E /* YAString.swift in Sources */,
+				FCC71B331F2CC17A0062086E /* YAMessage.swift in Sources */,
+				FCC71B2E1F2CC17A0062086E /* YAAPIManager.swift in Sources */,
+				FCC71B2A1F2CC17A0062086E /* YAImage.swift in Sources */,
+				FCC71B391F2CC17A0062086E /* YAUtility.swift in Sources */,
+				FCC71B381F2CC17A0062086E /* YATextField.swift in Sources */,
+				FCC71B321F2CC17A0062086E /* YAFonts.swift in Sources */,
+				FCC71B301F2CC17A0062086E /* YAArray.swift in Sources */,
+				FCC71B271F2CC17A0062086E /* YARealmTVC.swift in Sources */,
+				FCC71B261F2CC17A0062086E /* YARealmDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
