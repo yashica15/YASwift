@@ -11,7 +11,7 @@
  
 ### Build
  
-Xcode 8.0 or later; iOS 10.0 SDK or later
+Xcode 10.0 or later; iOS 10.0 SDK or later
  
 ### Runtime
  
@@ -19,11 +19,11 @@ iOS 10.0 or later on an iOS device
 
 ### Dependent Cocoapods Library:
     pod 'ReachabilitySwift'
-    pod 'SideMenu'
-    pod 'Alamofire', '~> 4.4'
+    pod 'SideMenu', '~> 4.0.0'
+    pod 'Alamofire'
     pod 'SwiftyJSON'
-    pod 'Toast-Swift', '~> 2.0.0'
-    pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
+    pod 'Toast-Swift'
+    pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
     pod 'RealmSwift'
     pod 'CocoaLumberjack/Swift'
     pod 'IQKeyboardManagerSwift'
