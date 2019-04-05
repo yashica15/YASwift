@@ -105,32 +105,32 @@ let textPaddingFrame = CGRect(x: 0, y: 0, width: 10, height: 10)
 
 //MARK: Attributed Font
 let blackTitleAttribute16 : [String: Any] = [
-    NSFontAttributeName : UIFont.YASystemFont(ofSize: 16.0),
-    NSForegroundColorAttributeName : colorGrape]
+    NSAttributedString.Key.font.rawValue : UIFont.YASystemFont(ofSize: 16.0),
+    NSAttributedString.Key.foregroundColor.rawValue : colorGrape]
 
 let blueTitleAttribute16 : [String: Any] = [
-    NSFontAttributeName : UIFont.YASystemFont(ofSize: 16.0),
-    NSForegroundColorAttributeName : colorGrape]
+    NSAttributedString.Key.font.rawValue : UIFont.YASystemFont(ofSize: 16.0),
+    NSAttributedString.Key.foregroundColor.rawValue : colorGrape]
 
 let blackUnderlineTitleAttribute16 : [String: Any] = [
-    NSFontAttributeName : UIFont.YASystemFont(ofSize: 16.0),
-    NSForegroundColorAttributeName : colorGrape,
-    NSUnderlineStyleAttributeName : NSUnderlineStyle.styleSingle.rawValue]
+    NSAttributedString.Key.font.rawValue : UIFont.YASystemFont(ofSize: 16.0),
+    NSAttributedString.Key.foregroundColor.rawValue : colorGrape,
+    NSAttributedString.Key.underlineStyle.rawValue : NSUnderlineStyle.single.rawValue]
 
 let blueUnderlineTitleAttribute16 : [String: Any] = [
-    NSFontAttributeName : UIFont.YASystemFont(ofSize: 16.0),
-    NSForegroundColorAttributeName : colorGrape,
-    NSUnderlineStyleAttributeName : NSUnderlineStyle.styleSingle.rawValue]
+    NSAttributedString.Key.font.rawValue : UIFont.YASystemFont(ofSize: 16.0),
+    NSAttributedString.Key.foregroundColor.rawValue : colorGrape,
+    NSAttributedString.Key.underlineStyle.rawValue : NSUnderlineStyle.single.rawValue]
 
 let blueUnderlineBoldTitleAttribute15 : [String: Any] = [
-    NSFontAttributeName : UIFont.YABoldSystemFont(ofSize: 14.0),
-    NSForegroundColorAttributeName : colorGrape,
-    NSUnderlineStyleAttributeName : NSUnderlineStyle.styleSingle.rawValue]
+    NSAttributedString.Key.font.rawValue : UIFont.YABoldSystemFont(ofSize: 14.0),
+    NSAttributedString.Key.foregroundColor.rawValue : colorGrape,
+    NSAttributedString.Key.underlineStyle.rawValue : NSUnderlineStyle.single.rawValue]
 
 let blueUnderlineBoldTitleAttribute16 : [String: Any] = [
-    NSFontAttributeName : UIFont.YABoldSystemFont(ofSize: 16.0),
-    NSForegroundColorAttributeName : colorGrape,
-    NSUnderlineStyleAttributeName : NSUnderlineStyle.styleSingle.rawValue]
+    NSAttributedString.Key.font.rawValue : UIFont.YABoldSystemFont(ofSize: 16.0),
+    NSAttributedString.Key.foregroundColor.rawValue : colorGrape,
+    NSAttributedString.Key.underlineStyle.rawValue : NSUnderlineStyle.single.rawValue]
 
 
 //MARK: Pagination Constant

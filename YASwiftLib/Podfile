@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '8.0'
+platform :ios, '10.0'
 
 target 'YASwiftLib' do
     # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -7,11 +7,11 @@ target 'YASwiftLib' do
     
     # Pods for YASwiftLib
     pod 'ReachabilitySwift'
-    pod 'SideMenu'
-    pod 'Alamofire', '~> 4.4'
+    pod 'SideMenu', '~> 4.0.0'
+    pod 'Alamofire'
     pod 'SwiftyJSON'
-    pod 'Toast-Swift', '~> 2.0.0'
-    pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
+    pod 'Toast-Swift'
+    pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
     pod 'RealmSwift'
     pod 'CocoaLumberjack/Swift'
     pod 'IQKeyboardManagerSwift'
@@ -24,7 +24,7 @@ end
 post_install do |installer|
     installer.pods_project.targets.each do |target|
         target.build_configurations.each do |config|
-            config.build_settings['SWIFT_VERSION'] = '3.0'
+            config.build_settings['SWIFT_VERSION'] = '4.0'
         end
     end
 end

@@ -78,7 +78,7 @@ class Utility: NSObject {
     }
     
     func encodeToBase64String(_ image:UIImage) -> String {
-        return UIImagePNGRepresentation(image)!.base64EncodedString(options: .lineLength64Characters)
+        return image.pngData()!.base64EncodedString(options: .lineLength64Characters)
     }
     
     func decodeToBase64String(_ base64String:String) -> Data {

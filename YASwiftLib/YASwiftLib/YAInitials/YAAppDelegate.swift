@@ -35,7 +35,7 @@ class YAAppDelegate: UIResponder, UIApplicationDelegate {
         UIFont.overrideInitialize()
     }
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         Fabric.with([Crashlytics.self])
         
         DDLog.add(DDTTYLogger.sharedInstance) // TTY = Xcode console
@@ -60,9 +60,9 @@ class YAAppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         //MARK: IQKeyboardManager Enable setting
-        IQKeyboardManager.sharedManager().enable = true
-        IQKeyboardManager.sharedManager().enableAutoToolbar = false
-        IQKeyboardManager.sharedManager().previousNextDisplayMode = .alwaysHide
+//        IQKeyboardManager.sharedManager().enable = true
+//        IQKeyboardManager.sharedManager().enableAutoToolbar = false
+//        IQKeyboardManager.sharedManager().previousNextDisplayMode = .alwaysHide
 
         return true
     }

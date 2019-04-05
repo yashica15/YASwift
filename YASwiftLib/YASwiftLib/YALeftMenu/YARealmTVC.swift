@@ -83,9 +83,9 @@ class YARealmTVC: UITableViewController, UITextFieldDelegate {
         toolBar.tintColor = colorGrape
         toolBar.sizeToFit()
         
-        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.donePicker))
-        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
-        let cancelButton = UIBarButtonItem(title: "Cancel", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelPicker))
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItem.Style.plain, target: self, action: #selector(self.donePicker))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: UIBarButtonItem.Style.plain, target: self, action: #selector(self.cancelPicker))
         
         toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
@@ -153,7 +153,7 @@ class YARealmTVC: UITableViewController, UITextFieldDelegate {
         })
     }
     
-    func textChanged(_ sender:UITextField) {
+    @objc func textChanged(_ sender:UITextField) {
         let firstTextField = self.alertController.textFields![0] as UITextField
         let secondTextField = self.alertController.textFields![1] as UITextField
 
@@ -162,18 +162,18 @@ class YARealmTVC: UITableViewController, UITextFieldDelegate {
         }
     }
 
-    func YADatePicker_ValueChanged(_ sender: UIDatePicker) {
+    @objc func YADatePicker_ValueChanged(_ sender: UIDatePicker) {
         let secondTextField = self.alertController.textFields![1] as UITextField
         secondTextField.text = dateFormatter.string(from: sender.date)
     }
 
-    func donePicker() {
+    @objc func donePicker() {
         let secondTextField = self.alertController.textFields![1] as UITextField
         secondTextField.text = dateFormatter.string(from: YADatePicker.date)
         secondTextField.resignFirstResponder()
     }
 
-    func cancelPicker() {
+    @objc func cancelPicker() {
         let secondTextField = self.alertController.textFields![1] as UITextField
         secondTextField.resignFirstResponder()
     }
@@ -211,7 +211,7 @@ class YARealmTVC: UITableViewController, UITextFieldDelegate {
 
     
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
             

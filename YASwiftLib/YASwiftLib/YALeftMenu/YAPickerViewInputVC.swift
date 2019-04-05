@@ -91,9 +91,9 @@ class YAPickerViewInputVC: UIViewController, IQDropDownTextFieldDelegate, IQDrop
         toolBar.isTranslucent = true
         toolBar.tintColor = colorGrape
         toolBar.sizeToFit()
-        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneClicked))
-        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
-        let cancelButton = UIBarButtonItem(title: "Cancel", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.cancelClicked))
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItem.Style.done, target: self, action: #selector(self.doneClicked))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: UIBarButtonItem.Style.plain, target: self, action: #selector(self.cancelClicked))
         toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
         
@@ -120,12 +120,12 @@ class YAPickerViewInputVC: UIViewController, IQDropDownTextFieldDelegate, IQDrop
         print("\(NSStringFromSelector(#function)): \(String(describing: date))")
     }
     
-    func textField(_ textField: IQDropDownTextField, canSelectItem item: String?) -> Bool {
+    func textField(_ textField: IQDropDownTextField, canSelectItem item: String) -> Bool {
         print("\(NSStringFromSelector(#function)): \(String(describing: item))")
         return true
     }
     
-    func textField(_ textField: IQDropDownTextField, proposedSelectionModeForItem item: String?) -> IQProposedSelection {
+    func textField(_ textField: IQDropDownTextField, proposedSelectionModeForItem item: String) -> IQProposedSelection {
         print("\(NSStringFromSelector(#function)): \(String(describing: item))")
         return .both
     }
@@ -139,11 +139,11 @@ class YAPickerViewInputVC: UIViewController, IQDropDownTextFieldDelegate, IQDrop
         print("\(NSStringFromSelector(#function))")
     }
     
-    func cancelClicked(button: UIBarButtonItem) {
+    @objc func cancelClicked(button: UIBarButtonItem) {
         self.view.endEditing(true)
     }
     
-    func doneClicked(button: UIBarButtonItem) {
+    @objc func doneClicked(button: UIBarButtonItem) {
         self.view.endEditing(true)
     }
     
@@ -189,9 +189,9 @@ class YAPickerViewInputVC: UIViewController, IQDropDownTextFieldDelegate, IQDrop
         
         if isValid {
             let alert = UIAlertController(title: "Info you have selected:", message: "\nCountry: \(self.arrPickerCountry[self.viewSelectCountry.selectedIndex!]) \nCity: \(self.txtSelectCity.selectedItem ?? "") \nZipcode: \(self.txtSelectZipcode.selectedItem ?? "") \nDate: \(self.txtSelectDate.selectedItem ?? "") \nTime: \(self.txtSelectTime.selectedItem ?? "") \nDateTime: \(self.txtSelectDateTime.selectedItem ?? "")",
-                preferredStyle: UIAlertControllerStyle.alert)
+                preferredStyle: UIAlertController.Style.alert)
             alert.view.tintColor = colorGrape
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{ (ACTION :UIAlertAction!)in
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{ (ACTION :UIAlertAction!)in
                 DDLogDebug("User click Ok button")
 //                self.txtSelectCity.selectedRow = 0
 //                self.txtSelectZipcode.selectedRow = -1

@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 import CocoaLumberjack
-import ReachabilitySwift
+import Reachability
 
 class APIManager {
     

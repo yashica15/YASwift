@@ -22,8 +22,8 @@ extension UINavigationBar {
     
     open override func layoutIfNeeded() {
         super.layoutIfNeeded()
-        UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(0, -200), for: .default)
-        let insets: UIEdgeInsets = UIEdgeInsetsMake(0, 0, -5, 0)
+        UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffset.init(horizontal: 0, vertical: -200), for: .default)
+        let insets: UIEdgeInsets = UIEdgeInsets.init(top: 0, left: 0, bottom: -5, right: 0)
         let backArrowImage = imageIconBack?.withAlignmentRectInsets(insets)
         UINavigationBar.appearance().backIndicatorImage = backArrowImage
         UINavigationBar.appearance().backIndicatorTransitionMaskImage = backArrowImage
@@ -32,13 +32,13 @@ extension UINavigationBar {
         
         if kIS_IPHONE_5_OR_LESS {
             UINavigationBar.appearance().titleTextAttributes = [
-                NSForegroundColorAttributeName : colorWhite,
-                NSFontAttributeName : UIFont.YALightSystemFont(ofSize: 18.0)
+                NSAttributedString.Key.foregroundColor : colorWhite,
+                NSAttributedString.Key.font : UIFont.YALightSystemFont(ofSize: 18.0)
             ]
         } else {
             UINavigationBar.appearance().titleTextAttributes = [
-                NSForegroundColorAttributeName : colorWhite,
-                NSFontAttributeName : UIFont.YALightSystemFont(ofSize: 20.0)
+                NSAttributedString.Key.foregroundColor : colorWhite,
+                NSAttributedString.Key.font : UIFont.YALightSystemFont(ofSize: 20.0)
             ]
         }
     }
@@ -87,13 +87,13 @@ extension UIView {
     }
     
     func fadeInWithCompletion(_ duration: TimeInterval = 1.0, delay: TimeInterval = 0.0, completion: @escaping ((Bool) -> Void) = {(finished: Bool) -> Void in}) {
-        UIView.animate(withDuration: duration, delay: delay, options: UIViewAnimationOptions.curveEaseIn, animations: {
+        UIView.animate(withDuration: duration, delay: delay, options: UIView.AnimationOptions.curveEaseIn, animations: {
             self.alpha = 1.0
         }, completion: completion)
     }
     
     func fadeOutWithCompletion(_ duration: TimeInterval = 1.0, delay: TimeInterval = 0.0, completion: @escaping (Bool) -> Void = {(finished: Bool) -> Void in}) {
-        UIView.animate(withDuration: duration, delay: delay, options: UIViewAnimationOptions.curveEaseIn, animations: {
+        UIView.animate(withDuration: duration, delay: delay, options: UIView.AnimationOptions.curveEaseIn, animations: {
             self.alpha = 0.0
         }, completion: completion)
     }

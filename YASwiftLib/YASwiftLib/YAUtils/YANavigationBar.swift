@@ -30,16 +30,16 @@ class YANavigationBar: UINavigationBar {
         navigationBarAppearance.tintColor = colorEggplant
         
         if kIS_IPAD {
-            let insets:UIEdgeInsets = UIEdgeInsetsMake(0, 0, kInsetBottom, 0)
+            let insets:UIEdgeInsets = UIEdgeInsets.init(top: 0, left: 0, bottom: kInsetBottom, right: 0)
             let imgBackArrow:UIImage = (UIImage(named: "icon_back")?.withAlignmentRectInsets(insets))!
             
             navigationBarAppearance.backIndicatorImage = imgBackArrow
             navigationBarAppearance.backIndicatorTransitionMaskImage = imgBackArrow
             
-            barButtonItemAppearance.setBackButtonTitlePositionAdjustment(UIOffsetMake(0, kInsetBottom), for: .default)
+            barButtonItemAppearance.setBackButtonTitlePositionAdjustment(UIOffset.init(horizontal: 0, vertical: kInsetBottom), for: .default)
 
             // change navigation item title color
-            navigationBarAppearance.titleTextAttributes = [NSForegroundColorAttributeName:colorEggplant, NSFontAttributeName:UIFont.YALightSystemFont(ofSize: 36.0)]
+            navigationBarAppearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor:colorEggplant, NSAttributedString.Key.font:UIFont.YALightSystemFont(ofSize: 36.0)]
             
             navigationBarAppearance.setTitleVerticalPositionAdjustment(kInsetBottom, for: .default)
             
@@ -55,7 +55,7 @@ class YANavigationBar: UINavigationBar {
             
         } else {
             // change navigation item title color
-            navigationBarAppearance.titleTextAttributes = [NSForegroundColorAttributeName:colorEggplant, NSFontAttributeName:UIFont.YALightSystemFont(ofSize: 24.0)]
+            navigationBarAppearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor:colorEggplant, NSAttributedString.Key.font:UIFont.YALightSystemFont(ofSize: 24.0)]
         }
     }
     

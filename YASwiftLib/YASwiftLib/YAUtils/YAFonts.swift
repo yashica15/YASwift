@@ -23,11 +23,11 @@ struct YAAppFontName {
 
 extension UIFont {
     
-    class func YASystemFont(ofSize size: CGFloat) -> UIFont {
+    @objc class func YASystemFont(ofSize size: CGFloat) -> UIFont {
         return UIFont(name: YAAppFontName.regular, size: size)!
     }
     
-    class func YAItalicSystemFont(ofSize size: CGFloat) -> UIFont {
+    @objc class func YAItalicSystemFont(ofSize size: CGFloat) -> UIFont {
         return UIFont(name: YAAppFontName.italic, size: size)!
     }
 
@@ -47,7 +47,7 @@ extension UIFont {
         return UIFont(name: YAAppFontName.semiBoldItalic, size: size)!
     }
     
-    class func YABoldSystemFont(ofSize size: CGFloat) -> UIFont {
+    @objc class func YABoldSystemFont(ofSize size: CGFloat) -> UIFont {
         return UIFont(name: YAAppFontName.bold, size: size)!
     }
 
@@ -63,9 +63,9 @@ extension UIFont {
         return UIFont(name: YAAppFontName.extraBoldItalic, size: size)!
     }
 
-    convenience init(YACoder aDecoder: NSCoder) {
+    @objc convenience init(YACoder aDecoder: NSCoder) {
         if let fontDescriptor = aDecoder.decodeObject(forKey: "UIFontDescriptor") as? UIFontDescriptor {
-            if let fontAttribute = fontDescriptor.fontAttributes["NSCTFontUIUsageAttribute"] as? String {
+            if let fontAttribute = fontDescriptor.fontAttributes[UIFontDescriptor.AttributeName(rawValue: "NSCTFontUIUsageAttribute")] as? String {
                 var fontName = ""
                 switch fontAttribute {
                 case "CTFontRegularUsage":
@@ -92,19 +92,19 @@ extension UIFont {
         if self == UIFont.self {
             let systemFontMethod = class_getClassMethod(self, #selector(systemFont(ofSize:)))
             let mySystemFontMethod = class_getClassMethod(self, #selector(YASystemFont(ofSize:)))
-            method_exchangeImplementations(systemFontMethod, mySystemFontMethod)
+            method_exchangeImplementations(systemFontMethod!, mySystemFontMethod!)
             
             let boldSystemFontMethod = class_getClassMethod(self, #selector(boldSystemFont(ofSize:)))
             let myBoldSystemFontMethod = class_getClassMethod(self, #selector(YABoldSystemFont(ofSize:)))
-            method_exchangeImplementations(boldSystemFontMethod, myBoldSystemFontMethod)
+            method_exchangeImplementations(boldSystemFontMethod!, myBoldSystemFontMethod!)
             
             let italicSystemFontMethod = class_getClassMethod(self, #selector(italicSystemFont(ofSize:)))
             let myItalicSystemFontMethod = class_getClassMethod(self, #selector(YAItalicSystemFont(ofSize:)))
-            method_exchangeImplementations(italicSystemFontMethod, myItalicSystemFontMethod)
+            method_exchangeImplementations(italicSystemFontMethod!, myItalicSystemFontMethod!)
             
             let initCoderMethod = class_getInstanceMethod(self, #selector(UIFontDescriptor.init(coder:))) // Trick to get over the lack of UIFont.init(coder:))
             let myInitCoderMethod = class_getInstanceMethod(self, #selector(UIFont.init(YACoder:)))
-            method_exchangeImplementations(initCoderMethod, myInitCoderMethod)
+            method_exchangeImplementations(initCoderMethod!, myInitCoderMethod!)
         }
     }
 }

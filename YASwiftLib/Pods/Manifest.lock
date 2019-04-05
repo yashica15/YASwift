@@ -1,67 +1,82 @@
 PODS:
-  - Alamofire (4.5.0)
-  - CocoaLumberjack/Default (3.2.0)
-  - CocoaLumberjack/Swift (3.2.0):
-    - CocoaLumberjack/Default
-  - IQDropDownTextField (1.1.0)
-  - IQKeyboardManagerSwift (4.0.11)
-  - NVActivityIndicatorView (3.7.0):
-    - NVActivityIndicatorView/Presenter (= 3.7.0)
-  - NVActivityIndicatorView/Presenter (3.7.0)
-  - ReachabilitySwift (3)
-  - Realm (2.9.0):
-    - Realm/Headers (= 2.9.0)
-  - Realm/Headers (2.9.0)
-  - RealmSwift (2.9.0):
-    - Realm (= 2.9.0)
-  - SideMenu (2.3.3)
-  - Spring (1.0.3)
-  - StringExtensionHTML (0.2.0)
-  - SwiftyJSON (3.1.4)
-  - Toast-Swift (2.0.0)
+  - Alamofire (4.8.2)
+  - CocoaLumberjack/Core (3.5.2)
+  - CocoaLumberjack/Swift (3.5.2):
+    - CocoaLumberjack/Core
+  - IQDropDownTextField (1.1.1)
+  - IQKeyboardManagerSwift (6.2.1)
+  - NVActivityIndicatorView (4.7.0):
+    - NVActivityIndicatorView/Presenter (= 4.7.0)
+  - NVActivityIndicatorView/Presenter (4.7.0)
+  - ReachabilitySwift (4.3.1)
+  - Realm (3.14.1):
+    - Realm/Headers (= 3.14.1)
+  - Realm/Headers (3.14.1)
+  - RealmSwift (3.14.1):
+    - Realm (= 3.14.1)
+  - SideMenu (4.0.0)
+  - Spring (1.0.6)
+  - StringExtensionHTML (1.0.2)
+  - SwiftyJSON (4.3.0)
+  - Toast-Swift (4.0.1)
   - UIDropDown (1.1.1)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.4)
+  - Alamofire
   - CocoaLumberjack/Swift
   - IQDropDownTextField
   - IQKeyboardManagerSwift
   - NVActivityIndicatorView
   - ReachabilitySwift
   - RealmSwift
-  - SideMenu
-  - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift3`)
+  - SideMenu (~> 4.0.0)
+  - Spring (from `https://github.com/MengTo/Spring.git`)
   - StringExtensionHTML
   - SwiftyJSON
-  - Toast-Swift (~> 2.0.0)
+  - Toast-Swift
   - UIDropDown
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - CocoaLumberjack
+    - IQDropDownTextField
+    - IQKeyboardManagerSwift
+    - NVActivityIndicatorView
+    - ReachabilitySwift
+    - Realm
+    - RealmSwift
+    - SideMenu
+    - StringExtensionHTML
+    - SwiftyJSON
+    - Toast-Swift
+    - UIDropDown
 
 EXTERNAL SOURCES:
   Spring:
-    :branch: swift3
     :git: https://github.com/MengTo/Spring.git
 
 CHECKOUT OPTIONS:
   Spring:
-    :commit: 8201b5c93bd7ebdf4cd18160bcde1e6e88c2be64
+    :commit: fafd0b2e8d4d46405bd86fa7ba84bb7f73a20b13
     :git: https://github.com/MengTo/Spring.git
 
 SPEC CHECKSUMS:
-  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
-  CocoaLumberjack: 9b4aed7073d242f29cc2f62068d995faf67f703a
-  IQDropDownTextField: 614f79ca905529c992045eaa112d0fc9ebb875d1
-  IQKeyboardManagerSwift: 10f0a6b8ea2904c8943c0e1a116c99f5b8ad83af
-  NVActivityIndicatorView: d3738df7e2e476aca0ba6bf32a8c9fbcfc33d64b
-  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
-  Realm: f14ab1673502559cb16592ddb8f383c474c13e05
-  RealmSwift: 16ad2c187042c4934f49750375582fe508627dcb
-  SideMenu: a447554ae5c982e8077666389e1c8b0c8656e065
-  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
-  StringExtensionHTML: 80fdb1b3a83669e371d27bfe2f208f067e2db328
-  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
-  Toast-Swift: 5b2f8f720f7e78e48511f693df1f9c9a6e38a25a
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  CocoaLumberjack: 118bf4a820efc641f79fa487b75ed928dccfae23
+  IQDropDownTextField: 3d2e5728a2b83ff5dbb14cb9b497a80005124cbe
+  IQKeyboardManagerSwift: 0f0ae8935360b4003e6ea1ac7c19898f01e2f7c7
+  NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
+  ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
+  Realm: e12c9c2387d05c5bba3a9c394838f5870e85763b
+  RealmSwift: a82eab9b04c3e1616082c7e17aa300740847769c
+  SideMenu: 70ee5657df63ec3382660ec4ef470bf1cf5db07d
+  Spring: 3d113f14575ef79aec9c5f906dfa4f5001c03254
+  StringExtensionHTML: 856dcc0c705012ae2f9c29c7413b015b82133e52
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  Toast-Swift: e42a638589a2f95036b4bb7626cfbdde7daf0393
   UIDropDown: 22e6e3e22d419884c8f21d95ea9be36aac905ed4
 
-PODFILE CHECKSUM: a2940c3e00a98b256bdfbec3555ee0ef5ee8d529
+PODFILE CHECKSUM: 953e0323a085ee518667490803e044d49b17fdf6
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.5.3

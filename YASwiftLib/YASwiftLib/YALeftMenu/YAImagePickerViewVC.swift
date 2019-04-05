@@ -73,7 +73,7 @@ class YAImagePickerViewVC: UIViewController, UIImagePickerControllerDelegate, UI
         }
         
         let cameraAction:UIAlertAction = UIAlertAction(title: "Take through Camera", style: .default) { (action) in
-            if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
+            if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.camera) {
                 
                 self.imagePicker.sourceType = .camera
                 
@@ -96,12 +96,15 @@ class YAImagePickerViewVC: UIViewController, UIImagePickerControllerDelegate, UI
         })
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+// Local variable inserted by Swift 4.2 migrator.
+let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
+
         
         DispatchQueue.main.async(execute: {
             self.imagePicker.dismiss(animated: true, completion: nil)
         })
-        yaImageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        yaImageView.image = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.originalImage)] as? UIImage
         
     }
 
@@ -113,4 +116,14 @@ class YAImagePickerViewVC: UIViewController, UIImagePickerControllerDelegate, UI
         style.backgroundColor = colorLavender
         self.navigationController?.view.makeToast(strToastMessage, duration: 2.0, position: .center, style: style)
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromUIImagePickerControllerInfoKeyDictionary(_ input: [UIImagePickerController.InfoKey: Any]) -> [String: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map {key, value in (key.rawValue, value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromUIImagePickerControllerInfoKey(_ input: UIImagePickerController.InfoKey) -> String {
+	return input.rawValue
 }

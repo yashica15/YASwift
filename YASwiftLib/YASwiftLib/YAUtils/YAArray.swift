@@ -15,8 +15,8 @@ extension NSMutableArray {
 
 extension Results {
     
-    func toArray() -> [T] {
-        return self.map{$0}
+    func toArray<T>(type: T.Type) -> [T] {
+        return compactMap { $0 as? T }
     }
     
     func toArray<T>(ofType: T.Type) -> [T] {
@@ -33,7 +33,7 @@ extension Results {
 
 extension RealmSwift.List {
     
-    func toArray() -> [T] {
-        return self.map{$0}
+    func toArray<T>(type: T.Type) -> [T] {
+        return compactMap { $0 as? T }
     }
 }

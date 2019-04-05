@@ -10,13 +10,13 @@ import RealmSwift
 
 // Picture model
 class Picture: Object {
-    dynamic var picture = UIImagePNGRepresentation(imageLogo!)! as NSData
-    dynamic var owner: Person? // Properties can be optional
+    @objc dynamic var picture = imageLogo!.pngData()! as NSData
+    @objc dynamic var owner: Person? // Properties can be optional
 }
 
 // Person model
 class Person: Object {
-    dynamic var name = ""
-    dynamic var birthdate = NSDate(timeIntervalSince1970: 1)
+    @objc dynamic var name = ""
+    @objc dynamic var birthdate = NSDate(timeIntervalSince1970: 1)
     let pictures = List<Picture>()
 }

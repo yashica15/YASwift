@@ -59,7 +59,7 @@ class Picker: UIPickerView ,UIPickerViewDelegate,UIPickerViewDataSource,UITextFi
         toolbar.sizeToFit()
         let cancelButton=UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(Picker.onTap_Cancel))
         let doneButton=UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(Picker.onTap_Done(_:)))
-        let flexibleSpace=UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace , target: nil, action: nil)
+        let flexibleSpace=UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace , target: nil, action: nil)
         toolbar.setItems([cancelButton,flexibleSpace,doneButton], animated: true)
         self.superview?.addSubview(toolbar)
         let nameArrayLength = arrData!.count
@@ -113,14 +113,14 @@ class Picker: UIPickerView ,UIPickerViewDelegate,UIPickerViewDataSource,UITextFi
     }
     
     
-    func onTap_Cancel() {
+    @objc func onTap_Cancel() {
         print("Cancel")
         tfInputField?.resignFirstResponder()
         toolbar.removeFromSuperview();
     }
     
     
-    func onTap_Done(_ sender: UIBarButtonItem) {
+    @objc func onTap_Done(_ sender: UIBarButtonItem) {
         print("Done")
         if arrData?.count>0 {
         if let strDta:NSString  = arrData?.object(at: self.selectedRow(inComponent: 0)) as? NSString {
