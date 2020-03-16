@@ -1,0 +1,91 @@
+PODS:
+  - Alamofire (5.0.2)
+  - CocoaLumberjack/Core (3.6.1)
+  - CocoaLumberjack/Swift (3.6.1):
+    - CocoaLumberjack/Core
+  - Crashlytics (3.14.0):
+    - Fabric (~> 1.10.2)
+  - Fabric (1.10.2)
+  - IQDropDownTextField (2.0)
+  - IQKeyboardManagerSwift (6.5.5)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - ReachabilitySwift (5.0.0)
+  - Realm (4.3.2):
+    - Realm/Headers (= 4.3.2)
+  - Realm/Headers (4.3.2)
+  - RealmSwift (4.3.2):
+    - Realm (= 4.3.2)
+  - SideMenu (6.4.7)
+  - Spring (1.0.6)
+  - StringExtensionHTML (1.0.2)
+  - SwiftyJSON (5.0.0)
+  - Toast-Swift (5.0.1)
+  - UIDropDown (1.1.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - CocoaLumberjack/Swift
+  - Crashlytics
+  - Fabric
+  - IQDropDownTextField
+  - IQKeyboardManagerSwift
+  - NVActivityIndicatorView
+  - ReachabilitySwift
+  - RealmSwift
+  - SideMenu
+  - Spring (from `https://github.com/MengTo/Spring.git`)
+  - StringExtensionHTML
+  - SwiftyJSON
+  - Toast-Swift
+  - UIDropDown
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CocoaLumberjack
+    - Crashlytics
+    - Fabric
+    - IQDropDownTextField
+    - IQKeyboardManagerSwift
+    - NVActivityIndicatorView
+    - ReachabilitySwift
+    - Realm
+    - RealmSwift
+    - SideMenu
+    - StringExtensionHTML
+    - SwiftyJSON
+    - Toast-Swift
+    - UIDropDown
+
+EXTERNAL SOURCES:
+  Spring:
+    :git: https://github.com/MengTo/Spring.git
+
+CHECKOUT OPTIONS:
+  Spring:
+    :commit: 50d92a5b9e08848387ae95bf44c6ad20834f7083
+    :git: https://github.com/MengTo/Spring.git
+
+SPEC CHECKSUMS:
+  Alamofire: 3ba7a4db18b4f62c4a1c0e1cb39d7f3d52e10ada
+  CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
+  Crashlytics: 540b7e5f5da5a042647227a5e3ac51d85eed06df
+  Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
+  IQDropDownTextField: 79293d19042b6f2ee6f02decf4a0e68e59e4f327
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  Realm: 5e92902e2875dff4bb0fd02f67bb737c3d5db2bc
+  RealmSwift: 9a360fc7bae04fc2e308a34fbd899d5faa2d6b22
+  SideMenu: 928a015669c3afc201e1fe3a87f1b0bc8993a664
+  Spring: 3d113f14575ef79aec9c5f906dfa4f5001c03254
+  StringExtensionHTML: 856dcc0c705012ae2f9c29c7413b015b82133e52
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  UIDropDown: 22e6e3e22d419884c8f21d95ea9be36aac905ed4
+
+PODFILE CHECKSUM: 009cb6044e443dfee03d5c3575ddc4065c88c25f
+
+COCOAPODS: 1.8.4
