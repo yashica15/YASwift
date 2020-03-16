@@ -1,8 +1,8 @@
 //
-//  APIResponse.swift
-//  ACNApp
+//  YAAPIResponse.swift
+//  Yashica Agrawal
 //
-//  Copyright © 2017 Rave Infosys Inc. All rights reserved.
+//  Copyright © 2017 Yashica Agrawal. All rights reserved.
 //
 
 import Foundation

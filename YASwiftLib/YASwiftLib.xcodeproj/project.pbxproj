@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A752BB3B651672F5D81F05A /* Pods_YASwiftLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACDB767EC98042C19966C4E /* Pods_YASwiftLib.framework */; };
-		FC0904B21E9797D900DBB696 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0904B01E9797D900DBB696 /* Fabric.framework */; };
-		FC0904B31E9797D900DBB696 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0904B11E9797D900DBB696 /* Crashlytics.framework */; };
+		88BF8E7E240FC1B60025D06E /* YARightMenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BF8E7D240FC1B60025D06E /* YARightMenuTVC.swift */; };
 		FC95ED231E8D11A00019CF08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC95ED211E8D11A00019CF08 /* Main.storyboard */; };
 		FC95ED251E8D11A00019CF08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC95ED241E8D11A00019CF08 /* Assets.xcassets */; };
 		FC95ED281E8D11A00019CF08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC95ED261E8D11A00019CF08 /* LaunchScreen.storyboard */; };
@@ -44,11 +43,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		88BF8E7D240FC1B60025D06E /* YARightMenuTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YARightMenuTVC.swift; sourceTree = "<group>"; };
 		8DEEB4A3073B6022DC6B6D73 /* Pods-YASwiftLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YASwiftLib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YASwiftLib/Pods-YASwiftLib.debug.xcconfig"; sourceTree = "<group>"; };
 		9ACDB767EC98042C19966C4E /* Pods_YASwiftLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YASwiftLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40852B90F19F4A8CC6269B7 /* Pods-YASwiftLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YASwiftLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-YASwiftLib/Pods-YASwiftLib.release.xcconfig"; sourceTree = "<group>"; };
-		FC0904B01E9797D900DBB696 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
-		FC0904B11E9797D900DBB696 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		FC95ED1A1E8D11A00019CF08 /* YASwiftLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YASwiftLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC95ED221E8D11A00019CF08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC95ED241E8D11A00019CF08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -90,8 +88,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A752BB3B651672F5D81F05A /* Pods_YASwiftLib.framework in Frameworks */,
-				FC0904B31E9797D900DBB696 /* Crashlytics.framework in Frameworks */,
-				FC0904B21E9797D900DBB696 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,8 +97,6 @@
 		2BAF71CF256977E2D45BA0B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FC0904B01E9797D900DBB696 /* Fabric.framework */,
-				FC0904B11E9797D900DBB696 /* Crashlytics.framework */,
 				9ACDB767EC98042C19966C4E /* Pods_YASwiftLib.framework */,
 			);
 			name = Frameworks;
@@ -115,6 +109,14 @@
 				A40852B90F19F4A8CC6269B7 /* Pods-YASwiftLib.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		88BF8E7C240FC1920025D06E /* YARightMenu */ = {
+			isa = PBXGroup;
+			children = (
+				88BF8E7D240FC1B60025D06E /* YARightMenuTVC.swift */,
+			);
+			path = YARightMenu;
 			sourceTree = "<group>";
 		};
 		FC95ED111E8D11A00019CF08 = {
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				FCC71AFD1F2CC17A0062086E /* YAInitials */,
+				88BF8E7C240FC1920025D06E /* YARightMenu */,
 				FCC71B001F2CC17A0062086E /* YALeftMenu */,
 				FCC71B0A1F2CC17A0062086E /* YAModel */,
 				FCC71B101F2CC17A0062086E /* YAUtils */,
@@ -234,6 +237,7 @@
 				FC95ED171E8D11A00019CF08 /* Frameworks */,
 				FC95ED181E8D11A00019CF08 /* Resources */,
 				FC0904AF1E9797C000DBB696 /* ShellScript */,
+				485EC74C6C03165BE29A0FC8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,7 +261,7 @@
 					FC95ED191E8D11A00019CF08 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 5VW996B8D2;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1130;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -267,6 +271,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -294,6 +299,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		485EC74C6C03165BE29A0FC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YASwiftLib/Pods-YASwiftLib-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/IQDropDownTextField/IQDropDownTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
+				"${BUILT_PRODUCTS_DIR}/StringExtensionHTML/StringExtensionHTML.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/UIDropDown/UIDropDown.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQDropDownTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StringExtensionHTML.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIDropDown.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YASwiftLib/Pods-YASwiftLib-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BDE9916A68AC2C3311F5AF81 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -355,6 +404,7 @@
 				FCC71B2E1F2CC17A0062086E /* YAAPIManager.swift in Sources */,
 				FCC71B2A1F2CC17A0062086E /* YAImage.swift in Sources */,
 				FCC71B391F2CC17A0062086E /* YAUtility.swift in Sources */,
+				88BF8E7E240FC1B60025D06E /* YARightMenuTVC.swift in Sources */,
 				FCC71B381F2CC17A0062086E /* YATextField.swift in Sources */,
 				FCC71B321F2CC17A0062086E /* YAFonts.swift in Sources */,
 				FCC71B301F2CC17A0062086E /* YAArray.swift in Sources */,
@@ -516,7 +566,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -538,7 +588,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yashica.YASwiftLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

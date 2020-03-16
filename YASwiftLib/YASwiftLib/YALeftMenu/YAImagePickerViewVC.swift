@@ -1,6 +1,6 @@
 //
 //  YAImagePickerViewVC.swift
-//  YASwiftLib
+//  Yashica Agrawal
 //
 //  Copyright © 2017 Yashica Agrawal. All rights reserved.
 //
@@ -20,7 +20,7 @@ class YAImagePickerViewVC: UIViewController, UIImagePickerControllerDelegate, UI
         super.viewDidLoad()
         self.title = "Image PickerView"
 
-        yaImageView.addBorderAndRoundedCorner(color: colorGrape, borderWidth: 2.0, cornerRadius: 10.0)
+        yaImageView.addBorderAndRoundedCorner(color: colorThemeLight, borderWidth: 2.0, cornerRadius: 10.0)
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,13 +40,13 @@ class YAImagePickerViewVC: UIViewController, UIImagePickerControllerDelegate, UI
     */
 
     @IBAction func yaButtonReset_Clicked(_ sender: UIButton) {
-        yaImageView.image = imageLogo
+        yaImageView.image = imageLogoPlaceholder
     }
     
     @IBAction func yaImageView_Tap(_ sender: UITapGestureRecognizer) {
 
         let actionSheet: UIAlertController = UIAlertController(title: "Upload Picture", message: "Choose an Option!", preferredStyle: .actionSheet)
-        actionSheet.view.tintColor = colorGrape
+        actionSheet.view.tintColor = colorThemeLight
 
         let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .cancel) { action -> Void in
             //Just dismiss the action sheet
@@ -92,7 +92,7 @@ class YAImagePickerViewVC: UIViewController, UIImagePickerControllerDelegate, UI
         actionSheet.addAction(cameraAction)
 
         self.present(actionSheet, animated: true, completion: {
-            actionSheet.view.tintColor = colorGrape
+            actionSheet.view.tintColor = colorThemeLight
         })
     }
     
@@ -112,8 +112,8 @@ let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
         var style = ToastStyle()
         style.messageAlignment = .center
         style.messageFont = UIFont.YASystemFont(ofSize: 16.0)
-        style.messageColor = colorGrape
-        style.backgroundColor = colorLavender
+        style.messageColor = colorThemeLight
+        style.backgroundColor = colorThemeLightest
         self.navigationController?.view.makeToast(strToastMessage, duration: 2.0, position: .center, style: style)
     }
 }

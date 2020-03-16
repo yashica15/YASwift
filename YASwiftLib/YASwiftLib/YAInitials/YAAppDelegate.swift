@@ -1,6 +1,6 @@
 //
 //  YAAppDelegate.swift
-//  YASwiftLib
+//  Yashica Agrawal
 //
 //  Copyright © 2017 Yashica Agrawal. All rights reserved.
 //
@@ -38,8 +38,8 @@ class YAAppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         Fabric.with([Crashlytics.self])
         
-        DDLog.add(DDTTYLogger.sharedInstance) // TTY = Xcode console
-        DDLog.add(DDASLLogger.sharedInstance) // ASL = Apple System Logs
+        DDLog.add(DDTTYLogger.sharedInstance!) // TTY = Xcode console
+//        DDLog.add(DDASLLogger.sharedInstance) // ASL = Apple System Logs
 
         let fileLogger: DDFileLogger = DDFileLogger() // File Logger
         fileLogger.rollingFrequency = TimeInterval(60*60*24)  // 24 hours
@@ -51,18 +51,18 @@ class YAAppDelegate: UIResponder, UIApplicationDelegate {
         Realm.Configuration.defaultConfiguration = config
         DDLogDebug("Realm.Configuration == \(config)")
         
-        UISearchBar.appearance().barTintColor = colorLavender
-        UISearchBar.appearance().tintColor = colorWhite
-        if #available(iOS 9.0, *) {
-            UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = colorLavender
-        } else {
-            // Fallback on earlier versions
-        }
+//        UISearchBar.appearance().barTintColor = colorThemeLightest
+//        UISearchBar.appearance().tintColor = colorWhite
+//        if #available(iOS 9.0, *) {
+//            UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = colorThemeLightest
+//        } else {
+//            // Fallback on earlier versions
+//        }
         
         //MARK: IQKeyboardManager Enable setting
-//        IQKeyboardManager.sharedManager().enable = true
-//        IQKeyboardManager.sharedManager().enableAutoToolbar = false
-//        IQKeyboardManager.sharedManager().previousNextDisplayMode = .alwaysHide
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.enableAutoToolbar = false
+        IQKeyboardManager.shared.previousNextDisplayMode = .alwaysHide
 
         return true
     }

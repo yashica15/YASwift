@@ -1,6 +1,6 @@
 //
 //  YARealmTVC.swift
-//  YASwiftLib
+//  Yashica Agrawal
 //
 //  Copyright © 2017 Yashica Agrawal. All rights reserved.
 //
@@ -58,7 +58,7 @@ class YARealmTVC: UITableViewController, UITextFieldDelegate {
         }
         
         alertController = UIAlertController(title: titleText, message: "", preferredStyle: .alert)
-        self.alertController.view.tintColor = colorGrape
+        self.alertController.view.tintColor = colorThemeLight
         
         alertController.addTextField { (textField : UITextField!) -> Void in
             textField.placeholder = "Enter Name"
@@ -80,7 +80,7 @@ class YARealmTVC: UITableViewController, UITextFieldDelegate {
         let toolBar = UIToolbar()
         toolBar.barStyle = UIBarStyle.default
         toolBar.isTranslucent = true
-        toolBar.tintColor = colorGrape
+        toolBar.tintColor = colorThemeLight
         toolBar.sizeToFit()
         
         let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItem.Style.plain, target: self, action: #selector(self.donePicker))
@@ -149,7 +149,7 @@ class YARealmTVC: UITableViewController, UITextFieldDelegate {
         saveAction?.isEnabled = false
         
         self.present(alertController, animated: true, completion: {
-            self.alertController.view.tintColor = colorGrape
+            self.alertController.view.tintColor = colorThemeLight
         })
     }
     

@@ -1,6 +1,6 @@
 //
 //  YACollectionViewVC.swift
-//  YASwiftLib
+//  Yashica Agrawal
 //
 //  Copyright © 2017 Yashica Agrawal. All rights reserved.
 //
@@ -62,7 +62,7 @@ class YACollectionViewVC: UIViewController, UICollectionViewDelegate, UICollecti
         // get a reference to our storyboard cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! YACellCollectionView
         
-        cell.imgYACellAsync.placeholderImage = imageLogo
+        cell.imgYACellAsync.placeholderImage = imageLogoPlaceholder
         let objImage:YAImage = self.arrYAImage[indexPath.item]
         cell.imgYACellAsync.url = URL(string: objImage.imageURL)! as NSURL
         cell.lblYACell.text = objImage.imageName

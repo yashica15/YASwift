@@ -1,6 +1,6 @@
 //
 //  YARLMManager.swift
-//  YASwiftLib
+//  Yashica Agrawal
 //
 //  Copyright © 2017 Yashica Agrawal. All rights reserved.
 //

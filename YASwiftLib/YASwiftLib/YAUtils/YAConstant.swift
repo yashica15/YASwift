@@ -1,5 +1,5 @@
 //
-//  Constant.swift
+//  YAConstant.swift
 //  Yashica Agrawal
 //
 //  Copyright © 2017 Yashica Agrawal. All rights reserved.
@@ -88,49 +88,18 @@ let colorYellow = UIColor.yellow
 let colorGreen = UIColor.green
 let colorCyan = UIColor.cyan
 
-let colorPurple = UIColor.purple //  UIColor(red: 128.0/255.0, green: 0.0/255.0, blue: 128.0/255.0, alpha: 1)
-let colorEggplant = UIColor(red: 64.0/255.0, green: 0.0/255.0, blue: 128.0/255.0, alpha: 1)
-let colorGrape = UIColor(red: 128.0/255.0, green: 0.0/255.0, blue: 255.0/255.0, alpha: 1)
-let colorLavender = UIColor(red: 204/255.0, green: 102.0/255.0, blue: 255.0/255.0, alpha: 1)
-
-
+let colorThemeDarkest = UIColor.systemBlue
+let colorThemeDark = UIColor.systemBlue.withAlphaComponent(0.75)
+let colorThemeLight = UIColor.systemBlue.withAlphaComponent(0.5)
+let colorThemeLightest = UIColor.systemBlue.withAlphaComponent(0.25)
 
 // Constant Images
-let imageLogo       = UIImage(named: "logo_clear")
+let imageLogo       = UIImage(named: "iTunesArtwork")
 let imageIconBack   = UIImage(named: "icon_back")
+let imageLogoPlaceholder    = UIImage(named: "placeholder")
 
 // TextField left padding frame.
 let textPaddingFrame = CGRect(x: 0, y: 0, width: 10, height: 10)
-
-
-//MARK: Attributed Font
-let blackTitleAttribute16 : [String: Any] = [
-    NSAttributedString.Key.font.rawValue : UIFont.YASystemFont(ofSize: 16.0),
-    NSAttributedString.Key.foregroundColor.rawValue : colorGrape]
-
-let blueTitleAttribute16 : [String: Any] = [
-    NSAttributedString.Key.font.rawValue : UIFont.YASystemFont(ofSize: 16.0),
-    NSAttributedString.Key.foregroundColor.rawValue : colorGrape]
-
-let blackUnderlineTitleAttribute16 : [String: Any] = [
-    NSAttributedString.Key.font.rawValue : UIFont.YASystemFont(ofSize: 16.0),
-    NSAttributedString.Key.foregroundColor.rawValue : colorGrape,
-    NSAttributedString.Key.underlineStyle.rawValue : NSUnderlineStyle.single.rawValue]
-
-let blueUnderlineTitleAttribute16 : [String: Any] = [
-    NSAttributedString.Key.font.rawValue : UIFont.YASystemFont(ofSize: 16.0),
-    NSAttributedString.Key.foregroundColor.rawValue : colorGrape,
-    NSAttributedString.Key.underlineStyle.rawValue : NSUnderlineStyle.single.rawValue]
-
-let blueUnderlineBoldTitleAttribute15 : [String: Any] = [
-    NSAttributedString.Key.font.rawValue : UIFont.YABoldSystemFont(ofSize: 14.0),
-    NSAttributedString.Key.foregroundColor.rawValue : colorGrape,
-    NSAttributedString.Key.underlineStyle.rawValue : NSUnderlineStyle.single.rawValue]
-
-let blueUnderlineBoldTitleAttribute16 : [String: Any] = [
-    NSAttributedString.Key.font.rawValue : UIFont.YABoldSystemFont(ofSize: 16.0),
-    NSAttributedString.Key.foregroundColor.rawValue : colorGrape,
-    NSAttributedString.Key.underlineStyle.rawValue : NSUnderlineStyle.single.rawValue]
 
 
 //MARK: Pagination Constant

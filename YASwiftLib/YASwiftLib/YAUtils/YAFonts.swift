@@ -1,5 +1,5 @@
 //
-//  Fonts.swift
+//  YAFonts.swift
 //  Yashica Agrawal
 //
 //  Copyright © 2017 Yashica Agrawal. All rights reserved.
@@ -20,6 +20,35 @@ struct YAAppFontName {
     static let extraBold        = "Helvetica-ExtraBold"
     static let extraBoldItalic  = "Helvetica-ExtraBoldItalic"
 }
+
+//MARK: Attributed Font
+let blackTitleAttribute16 : [String: Any] = [
+    NSAttributedString.Key.font.rawValue : UIFont.YASystemFont(ofSize: 16.0),
+    NSAttributedString.Key.foregroundColor.rawValue : colorThemeLight]
+
+let blueTitleAttribute16 : [String: Any] = [
+    NSAttributedString.Key.font.rawValue : UIFont.YASystemFont(ofSize: 16.0),
+    NSAttributedString.Key.foregroundColor.rawValue : colorThemeLight]
+
+let blackUnderlineTitleAttribute16 : [String: Any] = [
+    NSAttributedString.Key.font.rawValue : UIFont.YASystemFont(ofSize: 16.0),
+    NSAttributedString.Key.foregroundColor.rawValue : colorThemeLight,
+    NSAttributedString.Key.underlineStyle.rawValue : NSUnderlineStyle.single.rawValue]
+
+let blueUnderlineTitleAttribute16 : [String: Any] = [
+    NSAttributedString.Key.font.rawValue : UIFont.YASystemFont(ofSize: 16.0),
+    NSAttributedString.Key.foregroundColor.rawValue : colorThemeLight,
+    NSAttributedString.Key.underlineStyle.rawValue : NSUnderlineStyle.single.rawValue]
+
+let blueUnderlineBoldTitleAttribute15 : [String: Any] = [
+    NSAttributedString.Key.font.rawValue : UIFont.YABoldSystemFont(ofSize: 14.0),
+    NSAttributedString.Key.foregroundColor.rawValue : colorThemeLight,
+    NSAttributedString.Key.underlineStyle.rawValue : NSUnderlineStyle.single.rawValue]
+
+let blueUnderlineBoldTitleAttribute16 : [String: Any] = [
+    NSAttributedString.Key.font.rawValue : UIFont.YABoldSystemFont(ofSize: 16.0),
+    NSAttributedString.Key.foregroundColor.rawValue : colorThemeLight,
+    NSAttributedString.Key.underlineStyle.rawValue : NSUnderlineStyle.single.rawValue]
 
 extension UIFont {
     

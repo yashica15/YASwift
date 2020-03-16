@@ -1,5 +1,5 @@
 //
-//  RatingControl.swift
+//  YARatingControl.swift
 //  Yashica Agrawal
 //
 //  Copyright © 2017 Yashica Agrawal. All rights reserved.
@@ -79,7 +79,7 @@ class RatingControl: UIView {
     
     // MARK: Button Action
     @objc func ratingButtonTapped(_ button: UIButton) {
-        rating = ratingButtons.index(of: button)! + 1
+        rating = ratingButtons.firstIndex(of: button)! + 1
         
         updateButtonSelectionStates()
 

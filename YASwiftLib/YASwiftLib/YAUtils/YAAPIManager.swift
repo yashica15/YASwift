@@ -1,5 +1,5 @@
 //
-//  APIManager.swift
+//  YAAPIManager.swift
 //  Yashica Agrawal
 //
 //  Copyright © 2017 Yashica Agrawal. All rights reserved.
@@ -50,12 +50,13 @@ class APIManager {
     
     func getFromServer(requestURL : String, completion: ((_ responseObj: JSON?) -> Void)?) {
         let URL = kAPI_SERVERBASEURL + requestURL
-        Alamofire.request(URL).responseJSON { (responseData) -> Void in
-            if let json = responseData.result.value {
-                let swiftyJsonVar = JSON(json)
-                DDLogDebug("swiftyJsonVar \(#function) : \(swiftyJsonVar)")
-                completion!(swiftyJsonVar)
-            }
+                
+        (AF.request(URL)).response { (responseData) -> Void in
+//            if let json = responseData.result.value {
+//                let swiftyJsonVar = JSON(json)
+//                DDLogDebug("swiftyJsonVar \(#function) : \(swiftyJsonVar)")
+//                completion!(swiftyJsonVar)
+//            }
         }
     }
     
@@ -63,58 +64,58 @@ class APIManager {
         var strURL = kAPI_SERVERBASEURL + requestURL
         strURL = strURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
         DDLogDebug("\nrequestURL == \(strURL)")
-        Alamofire.request(strURL).responseJSON { (responseData) -> Void in
-            if (responseData.result.error != nil) {
-                let objResponse = APIResponse.init()
-                objResponse.status = false
-                objResponse.message = responseData.result.error?.localizedDescription
-                completion(objResponse)
-            } else {
-                if((responseData.result.value) != nil) {
-                    let swiftyJsonVar = JSON(responseData.result.value!)
-                    let objResponse = APIResponse.init(dictResp: swiftyJsonVar)
-                    DDLogDebug("\(objResponse ?? APIResponse.init())")
-                    completion(objResponse!)
-                }
-            }
-        }
+//        Alamofire.request(strURL).responseJSON { (responseData) -> Void in
+//            if (responseData.result.error != nil) {
+//                let objResponse = APIResponse.init()
+//                objResponse.status = false
+//                objResponse.message = responseData.result.error?.localizedDescription
+//                completion(objResponse)
+//            } else {
+//                if((responseData.result.value) != nil) {
+//                    let swiftyJsonVar = JSON(responseData.result.value!)
+//                    let objResponse = APIResponse.init(dictResp: swiftyJsonVar)
+//                    DDLogDebug("\(objResponse ?? APIResponse.init())")
+//                    completion(objResponse!)
+//                }
+//            }
+//        }
     }
 
     func postOnServer(requestURL : String, requestParameter : Dictionary <String, AnyObject>, completion: @escaping ((_ responseObj: JSON?) -> Void) ) {
         DDLogDebug("requestParameter \(#function) : \(requestParameter)")
 
         let URL = kAPI_SERVERBASEURL + requestURL
-        Alamofire.request(URL, method: .post, parameters: requestParameter, encoding: JSONEncoding.default)
-            .responseJSON {
-                responseData in
-                if let json = responseData.result.value {
-                    let swiftyJsonVar = JSON(json)
-                    DDLogDebug("swiftyJsonVar \(#function) : \(swiftyJsonVar)")
-                    completion(swiftyJsonVar)
-                }
-        }
+//        Alamofire.request(URL, method: .post, parameters: requestParameter, encoding: JSONEncoding.default)
+//            .responseJSON {
+//                responseData in
+//                if let json = responseData.result.value {
+//                    let swiftyJsonVar = JSON(json)
+//                    DDLogDebug("swiftyJsonVar \(#function) : \(swiftyJsonVar)")
+//                    completion(swiftyJsonVar)
+//                }
+//        }
     }
     
     func postOnServer(requestURL : String, requestParameter : Dictionary <String, AnyObject>, completion: @escaping ((_ responseObj: APIResponse) -> Void) ) {
         var strURL = kAPI_SERVERBASEURL + requestURL
         strURL = strURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
         DDLogDebug("\n requestURL == \(strURL), requestParameter == \(requestParameter)")
-        Alamofire.request(strURL, method: .post, parameters: requestParameter, encoding: JSONEncoding.default)
-            .responseJSON { responseData in
-                if (responseData.result.error != nil) {
-                    let objResponse = APIResponse.init()
-                    objResponse.status = false
-                    objResponse.message = responseData.result.error?.localizedDescription
-                    completion(objResponse)
-                } else {
-                    if((responseData.result.value) != nil) {
-                        let swiftyJsonVar = JSON(responseData.result.value!)
-                        let objResponse = APIResponse.init(dictResp: swiftyJsonVar)
-                        DDLogDebug("\(objResponse ?? APIResponse.init())")
-                        completion(objResponse!)
-                    }
-                }
-        }
+//        Alamofire.request(strURL, method: .post, parameters: requestParameter, encoding: JSONEncoding.default)
+//            .responseJSON { responseData in
+//                if (responseData.result.error != nil) {
+//                    let objResponse = APIResponse.init()
+//                    objResponse.status = false
+//                    objResponse.message = responseData.result.error?.localizedDescription
+//                    completion(objResponse)
+//                } else {
+//                    if((responseData.result.value) != nil) {
+//                        let swiftyJsonVar = JSON(responseData.result.value!)
+//                        let objResponse = APIResponse.init(dictResp: swiftyJsonVar)
+//                        DDLogDebug("\(objResponse ?? APIResponse.init())")
+//                        completion(objResponse!)
+//                    }
+//                }
+//        }
     }
 
 }

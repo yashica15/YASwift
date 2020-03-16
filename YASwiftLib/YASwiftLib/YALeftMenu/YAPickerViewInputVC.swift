@@ -1,6 +1,6 @@
 //
 //  YAPickerViewInputVC.swift
-//  YASwiftLib
+//  Yashica Agrawal
 //
 //  Copyright © 2017 Yashica Agrawal. All rights reserved.
 //
@@ -38,40 +38,40 @@ class YAPickerViewInputVC: UIViewController, IQDropDownTextFieldDelegate, IQDrop
     
     //MARK: Dropdown Setting
     func dropdownViewSetting() -> Void {
-        self.viewSelectCountry.tint = colorLavender
+        self.viewSelectCountry.tint = colorThemeDarkest
         self.viewSelectCountry.arrowPadding = 10.0
         self.viewSelectCountry.placeholder = "Select country"
         self.viewSelectCountry.options = arrPickerCountry
         self.viewSelectCountry.animationType = .Classic
-        self.viewSelectCountry.borderColor = colorGrape
+        self.viewSelectCountry.borderColor = colorThemeLight
         self.viewSelectCountry.borderWidth = 1.0
         self.viewSelectCountry.cornerRadius = 5.0
         self.viewSelectCountry.fontSize = 15.0
-        self.viewSelectCountry.textColor = colorLavender
+        self.viewSelectCountry.textColor = colorThemeDarkest
         self.viewSelectCountry.textAlignment = .center
         
         self.viewSelectCountry.tableHeight = 200.0
         self.viewSelectCountry.rowHeight = kSCREEN_HEIGHT*0.05
         
-        // viewSelectCountry.optionsBorderColor = colorGrape
-        // viewSelectCountry.optionsBorderWidth = 1.0
-        // viewSelectCountry.optionsCornerRadius = 5.0
+//        self.viewSelectCountry.optionsBorderColor = colorThemeLight
+//        self.viewSelectCountry.optionsBorderWidth = 1.0
+//        self.viewSelectCountry.optionsCornerRadius = 5.0
         self.viewSelectCountry.optionsSize = 15.0
-        self.viewSelectCountry.optionsTextColor = colorLavender
+        self.viewSelectCountry.optionsTextColor = colorThemeDarkest
         self.viewSelectCountry.hideOptionsWhenSelect = true
         self.viewSelectCountry.didSelect { (option, index) in
             print("You just select: \(option) at index: \(index)")
-            self.viewSelectCountry.addBorder(color: colorGrape, borderWidth: 1.0)
+            self.viewSelectCountry.addBorder(color: colorThemeLight, borderWidth: 1.0)
         }
     }
     
     //MARK: Textfield Setting
     func textFieldPickerSetting() -> Void {
-        self.txtSelectCity.addBorderAndRoundedCorner(color: colorGrape, borderWidth: 1.0, cornerRadius: 5.0)
-        self.txtSelectZipcode.addBorderAndRoundedCorner(color: colorGrape, borderWidth: 1.0, cornerRadius: 5.0)
-        self.txtSelectDate.addBorderAndRoundedCorner(color: colorGrape, borderWidth: 1.0, cornerRadius: 5.0)
-        self.txtSelectTime.addBorderAndRoundedCorner(color: colorGrape, borderWidth: 1.0, cornerRadius: 5.0)
-        self.txtSelectDateTime.addBorderAndRoundedCorner(color: colorGrape, borderWidth: 1.0, cornerRadius: 5.0)
+        self.txtSelectCity.addBorderAndRoundedCorner(color: colorThemeLight, borderWidth: 1.0, cornerRadius: 5.0)
+        self.txtSelectZipcode.addBorderAndRoundedCorner(color: colorThemeLight, borderWidth: 1.0, cornerRadius: 5.0)
+        self.txtSelectDate.addBorderAndRoundedCorner(color: colorThemeLight, borderWidth: 1.0, cornerRadius: 5.0)
+        self.txtSelectTime.addBorderAndRoundedCorner(color: colorThemeLight, borderWidth: 1.0, cornerRadius: 5.0)
+        self.txtSelectDateTime.addBorderAndRoundedCorner(color: colorThemeLight, borderWidth: 1.0, cornerRadius: 5.0)
         
         let formatter: DateFormatter = DateFormatter.init()
         formatter.dateFormat = "EEE MMMM dd yyyy"
@@ -89,7 +89,7 @@ class YAPickerViewInputVC: UIViewController, IQDropDownTextFieldDelegate, IQDrop
         let toolBar = UIToolbar()
         toolBar.barStyle = UIBarStyle.default
         toolBar.isTranslucent = true
-        toolBar.tintColor = colorGrape
+        toolBar.tintColor = colorThemeLight
         toolBar.sizeToFit()
         let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItem.Style.done, target: self, action: #selector(self.doneClicked))
         let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
@@ -113,7 +113,7 @@ class YAPickerViewInputVC: UIViewController, IQDropDownTextFieldDelegate, IQDrop
     //MARK: IQDropdownTextField Delegate
     func textField(_ textField: IQDropDownTextField, didSelectItem item: String?) {
         print("\(NSStringFromSelector(#function)): \(String(describing: item))")
-        textField.addBorder(color: colorGrape, borderWidth: 1.0)
+        textField.addBorder(color: colorThemeLight, borderWidth: 1.0)
     }
     
     func textField(_ textField: IQDropDownTextField, didSelect date: Date?) {
@@ -190,14 +190,14 @@ class YAPickerViewInputVC: UIViewController, IQDropDownTextFieldDelegate, IQDrop
         if isValid {
             let alert = UIAlertController(title: "Info you have selected:", message: "\nCountry: \(self.arrPickerCountry[self.viewSelectCountry.selectedIndex!]) \nCity: \(self.txtSelectCity.selectedItem ?? "") \nZipcode: \(self.txtSelectZipcode.selectedItem ?? "") \nDate: \(self.txtSelectDate.selectedItem ?? "") \nTime: \(self.txtSelectTime.selectedItem ?? "") \nDateTime: \(self.txtSelectDateTime.selectedItem ?? "")",
                 preferredStyle: UIAlertController.Style.alert)
-            alert.view.tintColor = colorGrape
+            alert.view.tintColor = colorThemeLight
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{ (ACTION :UIAlertAction!)in
                 DDLogDebug("User click Ok button")
 //                self.txtSelectCity.selectedRow = 0
 //                self.txtSelectZipcode.selectedRow = -1
             }))
             self.present(alert, animated: true, completion: { 
-                alert.view.tintColor = colorGrape
+                alert.view.tintColor = colorThemeLight
             })
         }
     }
