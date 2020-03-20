@@ -268,10 +268,9 @@
 			};
 			buildConfigurationList = FC95ED151E8D11A00019CF08 /* Build configuration list for PBXProject "YASwiftSample" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);

@@ -37,26 +37,33 @@ class APIManager {
     
     func reachabilityChanged(note: NSNotification) {
         let reachability = note.object as! Reachability
-        if reachability.isReachable {
-            if reachability.isReachableViaWiFi {
-                DDLogDebug("Reachable via WiFi")
-            } else {
-                DDLogDebug("Reachable via Cellular")
-            }
-        } else {
+        DDLogDebug("Reachability status as : \(reachability.connection.description)")
+        switch reachability.connection {
+        case .cellular:
+            DDLogDebug("Reachable via Cellular")
+        case .wifi:
+            DDLogDebug("Reachable via WiFi")
+        case .unavailable:
             DDLogDebug("Network not reachable")
+        case.none:
+            DDLogDebug("Network unavailable")
         }
     }
-    
-    func getFromServer(requestURL : String, completion: ((_ responseObj: JSON?) -> Void)?) {
-        let URL = kAPI_SERVERBASEURL + requestURL
-                
-        (AF.request(URL)).response { (responseData) -> Void in
-//            if let json = responseData.result.value {
-//                let swiftyJsonVar = JSON(json)
-//                DDLogDebug("swiftyJsonVar \(#function) : \(swiftyJsonVar)")
-//                completion!(swiftyJsonVar)
-//            }
+        
+    func getFromServer(requestURL : String, success: @escaping (_ responseObject: JSON?) -> Void, failure: @escaping (_ error: Error?) -> Void) {
+        let strURL = kAPI_SERVERBASEURL + requestURL
+        DDLogDebug("\nrequestURL == \(strURL)")
+
+        (AF.request(strURL)).response { (responseData) -> Void in
+            switch responseData.result {
+            case .success(let value):
+                let swiftyJsonVar = JSON(value as Any)
+                DDLogDebug("swiftyJsonVar \(#function) : \(swiftyJsonVar)")
+                success(swiftyJsonVar)
+            case .failure(let error):
+                print(error)
+                failure(error)
+            }
         }
     }
     
@@ -64,58 +71,63 @@ class APIManager {
         var strURL = kAPI_SERVERBASEURL + requestURL
         strURL = strURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
         DDLogDebug("\nrequestURL == \(strURL)")
-//        Alamofire.request(strURL).responseJSON { (responseData) -> Void in
-//            if (responseData.result.error != nil) {
-//                let objResponse = APIResponse.init()
-//                objResponse.status = false
-//                objResponse.message = responseData.result.error?.localizedDescription
-//                completion(objResponse)
-//            } else {
-//                if((responseData.result.value) != nil) {
-//                    let swiftyJsonVar = JSON(responseData.result.value!)
-//                    let objResponse = APIResponse.init(dictResp: swiftyJsonVar)
-//                    DDLogDebug("\(objResponse ?? APIResponse.init())")
-//                    completion(objResponse!)
-//                }
-//            }
-//        }
+        
+        (AF.request(strURL)).response { (responseData) -> Void in
+            switch responseData.result {
+            case .success(let value):
+                let swiftyJsonVar = JSON(value as Any)
+                let objResponse = APIResponse.init(dictResp: swiftyJsonVar)
+                DDLogDebug("\(objResponse ?? APIResponse.init())")
+                completion(objResponse!)
+            case .failure(let error):
+                print(error)
+                let objResponse = APIResponse.init()
+                objResponse.status = false
+                objResponse.message = error.localizedDescription
+                completion(objResponse)
+            }
+        }
     }
 
-    func postOnServer(requestURL : String, requestParameter : Dictionary <String, AnyObject>, completion: @escaping ((_ responseObj: JSON?) -> Void) ) {
+    func postOnServer(requestURL : String, requestParameter : Dictionary <String, AnyObject>, success: @escaping (_ responseObject: JSON?) -> Void, failure: @escaping (_ error: Error?) -> Void) {
         DDLogDebug("requestParameter \(#function) : \(requestParameter)")
-
-        let URL = kAPI_SERVERBASEURL + requestURL
-//        Alamofire.request(URL, method: .post, parameters: requestParameter, encoding: JSONEncoding.default)
-//            .responseJSON {
-//                responseData in
-//                if let json = responseData.result.value {
-//                    let swiftyJsonVar = JSON(json)
-//                    DDLogDebug("swiftyJsonVar \(#function) : \(swiftyJsonVar)")
-//                    completion(swiftyJsonVar)
-//                }
-//        }
+        let strURL = kAPI_SERVERBASEURL + requestURL
+        
+        AF.request(strURL, method: .post, parameters: requestParameter).response {
+            (responseData) in
+            switch responseData.result {
+            case .success(let value):
+                let swiftyJsonVar = JSON(value as Any)
+                DDLogDebug("swiftyJsonVar \(#function) : \(swiftyJsonVar)")
+                success(swiftyJsonVar)
+            case .failure(let error):
+                print(error)
+                failure(error)
+            }
+        }
     }
     
     func postOnServer(requestURL : String, requestParameter : Dictionary <String, AnyObject>, completion: @escaping ((_ responseObj: APIResponse) -> Void) ) {
         var strURL = kAPI_SERVERBASEURL + requestURL
         strURL = strURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
         DDLogDebug("\n requestURL == \(strURL), requestParameter == \(requestParameter)")
-//        Alamofire.request(strURL, method: .post, parameters: requestParameter, encoding: JSONEncoding.default)
-//            .responseJSON { responseData in
-//                if (responseData.result.error != nil) {
-//                    let objResponse = APIResponse.init()
-//                    objResponse.status = false
-//                    objResponse.message = responseData.result.error?.localizedDescription
-//                    completion(objResponse)
-//                } else {
-//                    if((responseData.result.value) != nil) {
-//                        let swiftyJsonVar = JSON(responseData.result.value!)
-//                        let objResponse = APIResponse.init(dictResp: swiftyJsonVar)
-//                        DDLogDebug("\(objResponse ?? APIResponse.init())")
-//                        completion(objResponse!)
-//                    }
-//                }
-//        }
+        
+        AF.request(strURL, method: .post, parameters: requestParameter).response {
+            (responseData) in
+            switch responseData.result {
+            case .success(let value):
+                let swiftyJsonVar = JSON(value as Any)
+                let objResponse = APIResponse.init(dictResp: swiftyJsonVar)
+                DDLogDebug("\(objResponse ?? APIResponse.init())")
+                completion(objResponse!)
+            case .failure(let error):
+                print(error)
+                let objResponse = APIResponse.init()
+                objResponse.status = false
+                objResponse.message = error.localizedDescription
+                completion(objResponse)
+            }
+        }
     }
 
 }
