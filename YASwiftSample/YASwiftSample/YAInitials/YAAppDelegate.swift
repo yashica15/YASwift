@@ -7,11 +7,10 @@
 
 import UIKit
 import Toast_Swift
-import Fabric
-import Crashlytics
 import RealmSwift
 import CocoaLumberjack
 import IQKeyboardManagerSwift
+import Firebase
 
 enum YAHudStyle: Int {
     case YAShowToastMessage = 1,
@@ -36,7 +35,8 @@ class YAAppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        Fabric.with([Crashlytics.self])
+        // Firebase setup
+        FirebaseApp.configure()
         
         DDLog.add(DDTTYLogger.sharedInstance!) // TTY = Xcode console
 //        DDLog.add(DDASLLogger.sharedInstance) // ASL = Apple System Logs

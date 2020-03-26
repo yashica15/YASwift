@@ -34,7 +34,7 @@ class YARLMManager {
         return isSuccess
     }
     
-    func fetchPersonList() -> Results<Person> {
+    func fetchPersonList() -> Results<Person>? {
         do {
             // Fetch Person Results
             let persons: Results<Person> = self.realm.objects(Person.self)

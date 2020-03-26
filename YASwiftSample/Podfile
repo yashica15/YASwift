@@ -6,8 +6,6 @@ target 'YASwiftSample' do
     use_frameworks!
     
     # Pods for YASwiftSample
-    pod 'Fabric'
-    pod 'Crashlytics'
     pod 'ReachabilitySwift'
     pod 'SideMenu' #, '~> 4.0.0'
     pod 'Alamofire'
@@ -21,6 +19,11 @@ target 'YASwiftSample' do
     pod 'StringExtensionHTML'
     pod 'NVActivityIndicatorView'
     pod 'UIDropDown'
+    # add the Firebase pod for Google Analytics
+    pod 'Firebase/Analytics'
+    # add pods for any other desired Firebase products
+    # https://firebase.google.com/docs/ios/setup#available-pods
+    
 end
 
 #post_install do |installer|

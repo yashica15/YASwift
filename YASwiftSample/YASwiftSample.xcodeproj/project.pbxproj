@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		881E96C9242BCE3A00E19824 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 881E96C8242BCE3900E19824 /* GoogleService-Info.plist */; };
 		88BF8E7E240FC1B60025D06E /* YARightMenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BF8E7D240FC1B60025D06E /* YARightMenuTVC.swift */; };
 		CD885422C9C04169B4B91E96 /* Pods_YASwiftSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33C313FB7FDBA13E3415AFB /* Pods_YASwiftSample.framework */; };
 		FC95ED231E8D11A00019CF08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC95ED211E8D11A00019CF08 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		11BF569A9F467F4F7D5C1D3E /* Pods-YASwiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YASwiftSample.debug.xcconfig"; path = "Target Support Files/Pods-YASwiftSample/Pods-YASwiftSample.debug.xcconfig"; sourceTree = "<group>"; };
 		40A36CF7757D1A92A1E45759 /* Pods-YASwiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YASwiftSample.release.xcconfig"; path = "Target Support Files/Pods-YASwiftSample/Pods-YASwiftSample.release.xcconfig"; sourceTree = "<group>"; };
+		881E96C8242BCE3900E19824 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		88BF8E7D240FC1B60025D06E /* YARightMenuTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YARightMenuTVC.swift; sourceTree = "<group>"; };
 		A33C313FB7FDBA13E3415AFB /* Pods_YASwiftSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YASwiftSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC95ED1A1E8D11A00019CF08 /* YASwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YASwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +151,7 @@
 				FC95ED241E8D11A00019CF08 /* Assets.xcassets */,
 				FC95ED261E8D11A00019CF08 /* LaunchScreen.storyboard */,
 				FC95ED291E8D11A00019CF08 /* Info.plist */,
+				881E96C8242BCE3900E19824 /* GoogleService-Info.plist */,
 			);
 			path = YASwiftSample;
 			sourceTree = "<group>";
@@ -236,8 +239,6 @@
 				FC95ED161E8D11A00019CF08 /* Sources */,
 				FC95ED171E8D11A00019CF08 /* Frameworks */,
 				FC95ED181E8D11A00019CF08 /* Resources */,
-				FC0904AF1E9797C000DBB696 /* ShellScript */,
-				5DF5B48A949E3965E262D958 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -290,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC95ED281E8D11A00019CF08 /* LaunchScreen.storyboard in Resources */,
+				881E96C9242BCE3A00E19824 /* GoogleService-Info.plist in Resources */,
 				FC95ED251E8D11A00019CF08 /* Assets.xcassets in Resources */,
 				FC95ED231E8D11A00019CF08 /* Main.storyboard in Resources */,
 			);
@@ -298,50 +300,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5DF5B48A949E3965E262D958 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YASwiftSample/Pods-YASwiftSample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
-				"${BUILT_PRODUCTS_DIR}/IQDropDownTextField/IQDropDownTextField.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
-				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
-				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
-				"${BUILT_PRODUCTS_DIR}/StringExtensionHTML/StringExtensionHTML.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
-				"${BUILT_PRODUCTS_DIR}/UIDropDown/UIDropDown.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQDropDownTextField.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StringExtensionHTML.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIDropDown.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YASwiftSample/Pods-YASwiftSample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8210B10B574FF73C54A194FA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -363,19 +321,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		FC0904AF1E9797C000DBB696 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "./Fabric.framework/run f8caba2ef2b53b7e10b6ba486729593a81efd9af 7cd5c8a993855df6aa25a2654ed91932547902cba6f9d1c4ad8397397a513bd3\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
