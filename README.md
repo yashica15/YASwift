@@ -19,7 +19,7 @@ iOS 10.0 or later on an iOS device
 
 ### Dependent Cocoapods Library:
     pod 'ReachabilitySwift'
-    pod 'SideMenu', '~> 4.0.0'
+    pod 'SideMenu'
     pod 'Alamofire'
     pod 'SwiftyJSON'
     pod 'Toast-Swift'
@@ -31,5 +31,7 @@ iOS 10.0 or later on an iOS device
     pod 'StringExtensionHTML'
     pod 'NVActivityIndicatorView'
     pod 'UIDropDown'
+    # add the Firebase pod for Google Analytics
+    pod 'Firebase/Analytics'
   
 Copyright © 2017 Yashica Agrawal. All rights reserved.
