@@ -29,7 +29,7 @@ class Utility: NSObject {
         if (defaults != nil) {
             defaults!.set(value, forKey: key)
         } else {
-            DDLogDebug("Unable to save \(key) = \(value) to user defaults")
+            print("Unable to save \(key) = \(value) to user defaults")
         }
     }
     
@@ -56,7 +56,7 @@ class Utility: NSObject {
         var value = UserDefaults.standard.value(forKey: key)
         if value == nil {
             value = "" as AnyObject?
-            DDLogDebug("user defaults may not have been exist...")
+            print("user defaults may not have been exist...")
         }
         return value! as AnyObject
     }
@@ -122,5 +122,56 @@ class Utility: NSObject {
         UIGraphicsEndImageContext()
         
         return newImage!
+    }
+    
+    public func findId(first: Int, second: Int) -> Int {
+        if (first == 1) {
+            return 1;
+        } else {
+            /* The position returned by josephus(n - 1, k) is adjusted because the
+             recursive call josephus(n - 1, k) considers the original position
+             k%n + 1 as position 1 */
+            return (findId(first: first-1, second: second) + second-1) % first + 1
+        }
+    }
+    
+    public func getDateFrom(dateTime: String?) -> Date? {
+        var formattedDate: Date? = nil
+        let formatter = ISO8601DateFormatter()
+        if let dateTimeString = dateTime {
+            formattedDate = formatter.date(from: dateTimeString)
+        }
+        
+        if formattedDate == nil {
+            if let dateTimeString = dateTime {
+                let enUSPOSIXLocale = Locale(identifier: "en_US_POSIX")
+                
+                let dateFormatter = DateFormatter()
+                dateFormatter.locale = enUSPOSIXLocale
+                dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ssXXXXX"
+                dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone?
+                
+                let dateFormatterSubSeconds = DateFormatter()
+                dateFormatterSubSeconds.locale = enUSPOSIXLocale
+                dateFormatterSubSeconds.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss.SSSSSSXXXXX"
+                dateFormatterSubSeconds.timeZone = NSTimeZone(name: "UTC") as TimeZone?
+                
+                formattedDate = dateFormatter.date(from: dateTimeString)
+                if formattedDate == nil {
+                    formattedDate = dateFormatterSubSeconds.date(from: dateTimeString)
+                }
+            }
+        }
+        
+        if formattedDate == nil {
+            let dateFormatter = DateFormatter()
+            dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+            dateFormatter.dateFormat = "yyyy-M-dd'T'HH:mm:ss"
+            dateFormatter.timeZone = NSTimeZone(name: "IST") as TimeZone?
+            if let dateTimeString = dateTime {
+                formattedDate = dateFormatter.date(from: dateTimeString)
+            }
+        }
+        return formattedDate
     }
 }
