@@ -8,12 +8,12 @@
 import UIKit
 import CocoaLumberjack
 import IQDropDownTextField
-import UIDropDown
+import iOSDropDown
 
 class YAPickerViewInputVC: UIViewController, IQDropDownTextFieldDelegate, IQDropDownTextFieldDataSource {
 
     @IBOutlet weak var lblSelectValues: UILabel!
-    @IBOutlet weak var viewSelectCountry: UIDropDown!
+    @IBOutlet weak var txtSelectCountry: DropDown!
     @IBOutlet weak var txtSelectCity: IQDropDownTextField!
     @IBOutlet weak var txtSelectZipcode: IQDropDownTextField!
     @IBOutlet weak var txtSelectDate: IQDropDownTextField!
@@ -38,30 +38,35 @@ class YAPickerViewInputVC: UIViewController, IQDropDownTextFieldDelegate, IQDrop
     
     //MARK: Dropdown Setting
     func dropdownViewSetting() -> Void {
-        self.viewSelectCountry.tint = colorThemeDarkest
-        self.viewSelectCountry.arrowPadding = 10.0
-        self.viewSelectCountry.placeholder = "Select country"
-        self.viewSelectCountry.options = arrPickerCountry
-        self.viewSelectCountry.animationType = .Classic
-        self.viewSelectCountry.borderColor = colorThemeLight
-        self.viewSelectCountry.borderWidth = 1.0
-        self.viewSelectCountry.cornerRadius = 5.0
-        self.viewSelectCountry.fontSize = 15.0
-        self.viewSelectCountry.textColor = colorThemeDarkest
-        self.viewSelectCountry.textAlignment = .center
+        self.txtSelectCountry.borderColor = colorThemeLight
+        self.txtSelectCountry.borderWidth = 1.0
+        self.txtSelectCountry.cornerRadius = 5.0
         
-        self.viewSelectCountry.tableHeight = 200.0
-        self.viewSelectCountry.rowHeight = kSCREEN_HEIGHT*0.05
+        // The list of array to display. Can be changed dynamically
+        self.txtSelectCountry.optionArray = arrPickerCountry        
+        //  isSearchEnabled : You can Enable or Disable on DropDown .Default value Is true
+        self.txtSelectCountry.isSearchEnable = true
+        //  hideOptionsWhenSelect : This option to hide the list when click option one item. Default value is true
+        self.txtSelectCountry.hideOptionsWhenSelect = true
+        //  selectedRowColor : Color of selected Row item in DropDown Default value is .cyan
+        self.txtSelectCountry.selectedRowColor = .lightGray
+        //  rowBackgroundColor : Color of DropDown Default value is .white
+        //  listHeight: The maximum Height of of List. Default value is 150
+        self.txtSelectCountry.listHeight = kSCREEN_HEIGHT*0.5
+        //  rowHeight: The Height of of List in the List. Default value is 30
+        self.txtSelectCountry.rowHeight = kSCREEN_HEIGHT*0.05
+        //  selectedIndex:For preSelection of any of item in list
+        self.txtSelectCountry.selectedIndex = 0
+        //  Alingment and Fonts are same as TextField You Can change it
+        //  arrowSize: The Size of arrow . Default value is 15
+        //  arrowColor: The Color of arrow . Default value is .black
+        self.txtSelectCountry.arrowColor = colorThemeLight
+        //  checkMarkEnabled: The check Mark Enabled for selection of Row. Default value is true
         
-//        self.viewSelectCountry.optionsBorderColor = colorThemeLight
-//        self.viewSelectCountry.optionsBorderWidth = 1.0
-//        self.viewSelectCountry.optionsCornerRadius = 5.0
-        self.viewSelectCountry.optionsSize = 15.0
-        self.viewSelectCountry.optionsTextColor = colorThemeDarkest
-        self.viewSelectCountry.hideOptionsWhenSelect = true
-        self.viewSelectCountry.didSelect { (option, index) in
-            print("You just select: \(option) at index: \(index)")
-            self.viewSelectCountry.addBorder(color: colorThemeLight, borderWidth: 1.0)
+        // The the Closure returns Selected Index and String
+        self.txtSelectCountry.didSelect{(selectedText , index ,id) in
+            print("Selected String: \(selectedText) \n index: \(index)")
+            self.txtSelectCountry.text = selectedText
         }
     }
     
@@ -153,16 +158,14 @@ class YAPickerViewInputVC: UIViewController, IQDropDownTextFieldDelegate, IQDrop
         
         var isValid:Bool = true
         
-        DDLogDebug("Selected dropdown \(self.viewSelectCountry.selectedIndex ?? -1)")
-        
-        let intSelectCountry:Int = self.viewSelectCountry.selectedIndex ?? -1
-        
-        if intSelectCountry < 0 {
+        DDLogDebug("Selected dropdown \(self.txtSelectCountry.selectedIndex ?? -1)")
+                
+        if let intSelectCountry = self.txtSelectCountry.selectedIndex, intSelectCountry < 0 {
             isValid = false
-            self.viewSelectCountry.addBorder(color: colorRed, borderWidth: 1.0)
+            self.txtSelectCountry.addBorder(color: colorRed, borderWidth: 1.0)
         }
         
-        if (self.txtSelectCity.selectedRow < 0) {
+        if self.txtSelectCity.selectedRow < 0 {
             isValid = false
             self.txtSelectCity.addBorder(color: colorRed, borderWidth: 1.0)
 //            if (txtSelectZipcode.selectedRow < 0) {
@@ -172,23 +175,23 @@ class YAPickerViewInputVC: UIViewController, IQDropDownTextFieldDelegate, IQDrop
 //            txtSelectZipcode.addBorder(color: colorRed, borderWidth: 1.0)
         }
         
-        if (self.txtSelectDate.selectedItem?.isEmpty)! {
+        if let selectDate = self.txtSelectDate.selectedItem, selectDate.isEmpty {
             isValid = false
             self.txtSelectDate.addBorder(color: colorRed, borderWidth: 1.0)
         }
         
-        if (self.txtSelectTime.selectedItem?.isEmpty)! {
+        if let selectTime = self.txtSelectTime.selectedItem, selectTime.isEmpty {
             isValid = false
             self.txtSelectTime.addBorder(color: colorRed, borderWidth: 1.0)
         }
 
-        if (self.txtSelectDateTime.selectedItem?.isEmpty)! {
+        if let selectDateTime = self.txtSelectDateTime.selectedItem, selectDateTime.isEmpty {
             isValid = false
             self.txtSelectDateTime.addBorder(color: colorRed, borderWidth: 1.0)
         }
         
         if isValid {
-            let alert = UIAlertController(title: "Info you have selected:", message: "\nCountry: \(self.arrPickerCountry[self.viewSelectCountry.selectedIndex!]) \nCity: \(self.txtSelectCity.selectedItem ?? "") \nZipcode: \(self.txtSelectZipcode.selectedItem ?? "") \nDate: \(self.txtSelectDate.selectedItem ?? "") \nTime: \(self.txtSelectTime.selectedItem ?? "") \nDateTime: \(self.txtSelectDateTime.selectedItem ?? "")",
+            let alert = UIAlertController(title: "Info you have selected:", message: "\nCountry: \(self.arrPickerCountry[self.txtSelectCountry.selectedIndex!]) \nCity: \(self.txtSelectCity.selectedItem ?? "") \nZipcode: \(self.txtSelectZipcode.selectedItem ?? "") \nDate: \(self.txtSelectDate.selectedItem ?? "") \nTime: \(self.txtSelectTime.selectedItem ?? "") \nDateTime: \(self.txtSelectDateTime.selectedItem ?? "")",
                 preferredStyle: UIAlertController.Style.alert)
             alert.view.tintColor = colorThemeLight
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{ (ACTION :UIAlertAction!)in

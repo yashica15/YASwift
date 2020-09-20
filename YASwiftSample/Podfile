@@ -18,7 +18,7 @@ target 'YASwiftSample' do
     pod 'IQDropDownTextField'
     pod 'StringExtensionHTML'
     pod 'NVActivityIndicatorView'
-    pod 'UIDropDown'
+    pod 'iOSDropDown'
     pod 'SwiftLint'
     # add the Firebase pod for Google Analytics
     pod 'Firebase/Analytics'

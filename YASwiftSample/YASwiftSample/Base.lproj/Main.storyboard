@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KvK-se-ML1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KvK-se-ML1">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -292,7 +292,7 @@ Swift Samples</string>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select City" textAlignment="center" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="CSl-aS-hwb" customClass="IQDropDownTextField">
-                                <rect key="frame" x="36" y="172" width="248" height="32.5"/>
+                                <rect key="frame" x="36" y="173" width="248" height="32.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -303,7 +303,7 @@ Swift Samples</string>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select Zipcode" textAlignment="center" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="7bX-u2-GO5" customClass="IQDropDownTextField">
-                                <rect key="frame" x="36" y="224.5" width="248" height="33"/>
+                                <rect key="frame" x="36" y="225.5" width="248" height="33"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -314,7 +314,7 @@ Swift Samples</string>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select Date" textAlignment="center" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="xkL-Cb-Uxh" customClass="IQDropDownTextField">
-                                <rect key="frame" x="36" y="277.5" width="248" height="33"/>
+                                <rect key="frame" x="36" y="278.5" width="248" height="33"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -325,7 +325,7 @@ Swift Samples</string>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select Time" textAlignment="center" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Axa-9T-85B" customClass="IQDropDownTextField">
-                                <rect key="frame" x="36" y="330.5" width="248" height="33"/>
+                                <rect key="frame" x="36" y="331.5" width="248" height="33"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -336,7 +336,7 @@ Swift Samples</string>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select Date Time" textAlignment="center" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="2TV-tG-Pju" customClass="IQDropDownTextField">
-                                <rect key="frame" x="36" y="383.5" width="248" height="32.5"/>
+                                <rect key="frame" x="36" y="384.5" width="248" height="32.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -346,11 +346,8 @@ Swift Samples</string>
                                     <outlet property="delegate" destination="UFg-wi-dK3" id="Ofh-ho-tAH"/>
                                 </connections>
                             </textField>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="piZ-Zo-mvq" customClass="UIDropDown" customModule="UIDropDown">
-                                <rect key="frame" x="36" y="119" width="248" height="33"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51Q-lW-gmg">
-                                <rect key="frame" x="36" y="436" width="248" height="33"/>
+                                <rect key="frame" x="36" y="437" width="248" height="33"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                 <state key="normal" title="SHOW"/>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -360,45 +357,49 @@ Swift Samples</string>
                                     <action selector="btnShow_Clicked:" destination="UFg-wi-dK3" eventType="touchUpInside" id="sz6-B7-NZg"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0zv-GN-0bs" customClass="DropDown" customModule="iOSDropDown">
+                                <rect key="frame" x="36" y="119" width="248" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="0zv-GN-0bs" firstAttribute="top" secondItem="pwN-5o-X3B" secondAttribute="bottom" constant="20" id="36s-tg-PwX"/>
                             <constraint firstItem="Axa-9T-85B" firstAttribute="top" secondItem="xkL-Cb-Uxh" secondAttribute="bottom" constant="20" id="6Yx-zu-6wr"/>
                             <constraint firstItem="Axa-9T-85B" firstAttribute="width" secondItem="pwN-5o-X3B" secondAttribute="width" id="775-pP-fMR"/>
                             <constraint firstItem="7bX-u2-GO5" firstAttribute="leading" secondItem="pwN-5o-X3B" secondAttribute="leading" id="7Xm-zr-7bn"/>
                             <constraint firstItem="2TV-tG-Pju" firstAttribute="leading" secondItem="pwN-5o-X3B" secondAttribute="leading" id="7pc-Nh-CbT"/>
                             <constraint firstItem="CSl-aS-hwb" firstAttribute="leading" secondItem="pwN-5o-X3B" secondAttribute="leading" id="96c-Aq-Sbb"/>
-                            <constraint firstItem="piZ-Zo-mvq" firstAttribute="width" secondItem="pwN-5o-X3B" secondAttribute="width" id="Bas-RQ-NoK"/>
-                            <constraint firstItem="piZ-Zo-mvq" firstAttribute="top" secondItem="pwN-5o-X3B" secondAttribute="bottom" constant="20" id="CMK-tS-Uz0"/>
+                            <constraint firstItem="0zv-GN-0bs" firstAttribute="height" secondItem="pwN-5o-X3B" secondAttribute="height" multiplier="1.0303" id="9EB-uP-alJ"/>
                             <constraint firstItem="51Q-lW-gmg" firstAttribute="height" secondItem="pwN-5o-X3B" secondAttribute="height" id="Dwg-UY-JWb"/>
+                            <constraint firstItem="CSl-aS-hwb" firstAttribute="top" secondItem="0zv-GN-0bs" secondAttribute="bottom" constant="20" id="HUA-bd-xpH"/>
                             <constraint firstItem="7bX-u2-GO5" firstAttribute="width" secondItem="pwN-5o-X3B" secondAttribute="width" id="Hyy-Xn-uEq"/>
                             <constraint firstItem="Axa-9T-85B" firstAttribute="leading" secondItem="pwN-5o-X3B" secondAttribute="leading" id="NF7-9C-4zF"/>
                             <constraint firstItem="pwN-5o-X3B" firstAttribute="top" secondItem="G8F-iJ-hZr" secondAttribute="bottom" constant="10" id="Nb4-ay-vkG"/>
                             <constraint firstItem="7bX-u2-GO5" firstAttribute="height" secondItem="pwN-5o-X3B" secondAttribute="height" id="OI9-4L-b86"/>
                             <constraint firstItem="xkL-Cb-Uxh" firstAttribute="top" secondItem="7bX-u2-GO5" secondAttribute="bottom" constant="20" id="PIK-iP-AkG"/>
-                            <constraint firstItem="piZ-Zo-mvq" firstAttribute="trailing" secondItem="pwN-5o-X3B" secondAttribute="trailing" id="QHY-3h-bHM"/>
                             <constraint firstItem="CSl-aS-hwb" firstAttribute="trailing" secondItem="pwN-5o-X3B" secondAttribute="trailing" id="QZM-MD-iDc"/>
                             <constraint firstItem="Axa-9T-85B" firstAttribute="trailing" secondItem="pwN-5o-X3B" secondAttribute="trailing" id="QuR-CC-T5h"/>
                             <constraint firstItem="2TV-tG-Pju" firstAttribute="height" secondItem="pwN-5o-X3B" secondAttribute="height" id="RJX-d3-km7"/>
-                            <constraint firstItem="CSl-aS-hwb" firstAttribute="top" secondItem="piZ-Zo-mvq" secondAttribute="bottom" constant="20" id="SAv-4G-rIU"/>
                             <constraint firstItem="51Q-lW-gmg" firstAttribute="leading" secondItem="fhA-kR-Z0J" secondAttribute="leadingMargin" constant="20" id="UFk-v5-z5i"/>
-                            <constraint firstItem="piZ-Zo-mvq" firstAttribute="height" secondItem="pwN-5o-X3B" secondAttribute="height" id="V4N-yI-Mlk"/>
                             <constraint firstItem="pwN-5o-X3B" firstAttribute="leading" secondItem="fhA-kR-Z0J" secondAttribute="leadingMargin" constant="20" id="Vdl-T9-HOm"/>
                             <constraint firstItem="51Q-lW-gmg" firstAttribute="top" secondItem="2TV-tG-Pju" secondAttribute="bottom" constant="20" id="YpK-98-il5"/>
                             <constraint firstItem="CSl-aS-hwb" firstAttribute="height" secondItem="pwN-5o-X3B" secondAttribute="height" id="dFj-m3-Uim"/>
                             <constraint firstItem="7bX-u2-GO5" firstAttribute="top" secondItem="CSl-aS-hwb" secondAttribute="bottom" constant="20" id="dh9-nx-RBn"/>
                             <constraint firstItem="7bX-u2-GO5" firstAttribute="trailing" secondItem="pwN-5o-X3B" secondAttribute="trailing" id="enM-pS-AbJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="51Q-lW-gmg" secondAttribute="trailing" constant="20" id="euC-Iz-S3x"/>
+                            <constraint firstItem="0zv-GN-0bs" firstAttribute="leading" secondItem="pwN-5o-X3B" secondAttribute="leading" id="faP-pq-kmS"/>
                             <constraint firstItem="xkL-Cb-Uxh" firstAttribute="height" secondItem="pwN-5o-X3B" secondAttribute="height" id="fhl-xc-f43"/>
                             <constraint firstItem="xkL-Cb-Uxh" firstAttribute="width" secondItem="pwN-5o-X3B" secondAttribute="width" id="gMS-Tc-lce"/>
                             <constraint firstItem="xkL-Cb-Uxh" firstAttribute="leading" secondItem="pwN-5o-X3B" secondAttribute="leading" id="hFe-yL-KNm"/>
-                            <constraint firstItem="piZ-Zo-mvq" firstAttribute="leading" secondItem="pwN-5o-X3B" secondAttribute="leading" id="iDb-sh-hb0"/>
                             <constraint firstItem="pwN-5o-X3B" firstAttribute="height" secondItem="fhA-kR-Z0J" secondAttribute="height" multiplier="0.06" id="kxx-1q-97g"/>
                             <constraint firstItem="2TV-tG-Pju" firstAttribute="top" secondItem="Axa-9T-85B" secondAttribute="bottom" constant="20" id="mgP-XJ-pVJ"/>
                             <constraint firstItem="2TV-tG-Pju" firstAttribute="width" secondItem="pwN-5o-X3B" secondAttribute="width" id="n6o-1e-ZXB"/>
                             <constraint firstItem="Axa-9T-85B" firstAttribute="height" secondItem="pwN-5o-X3B" secondAttribute="height" id="n9M-m0-Lhy"/>
                             <constraint firstItem="2TV-tG-Pju" firstAttribute="trailing" secondItem="pwN-5o-X3B" secondAttribute="trailing" id="q81-0R-fX3"/>
                             <constraint firstItem="CSl-aS-hwb" firstAttribute="width" secondItem="pwN-5o-X3B" secondAttribute="width" id="vcV-w7-jAB"/>
+                            <constraint firstItem="0zv-GN-0bs" firstAttribute="trailing" secondItem="pwN-5o-X3B" secondAttribute="trailing" id="w6t-D2-Npm"/>
                             <constraint firstItem="xkL-Cb-Uxh" firstAttribute="trailing" secondItem="pwN-5o-X3B" secondAttribute="trailing" id="y0E-Wh-zVq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pwN-5o-X3B" secondAttribute="trailing" constant="20" id="z7B-ig-lYa"/>
                         </constraints>
@@ -407,11 +408,11 @@ Swift Samples</string>
                         <outlet property="btnShow" destination="51Q-lW-gmg" id="fRT-gh-4rB"/>
                         <outlet property="lblSelectValues" destination="pwN-5o-X3B" id="XIf-Sd-QlZ"/>
                         <outlet property="txtSelectCity" destination="CSl-aS-hwb" id="8oM-Jz-eXN"/>
+                        <outlet property="txtSelectCountry" destination="0zv-GN-0bs" id="N3i-Tw-gOk"/>
                         <outlet property="txtSelectDate" destination="xkL-Cb-Uxh" id="bUa-oq-qzI"/>
                         <outlet property="txtSelectDateTime" destination="2TV-tG-Pju" id="j9n-RM-kss"/>
                         <outlet property="txtSelectTime" destination="Axa-9T-85B" id="JR2-Rr-jCD"/>
                         <outlet property="txtSelectZipcode" destination="7bX-u2-GO5" id="zCi-KF-VmM"/>
-                        <outlet property="viewSelectCountry" destination="piZ-Zo-mvq" id="MX8-Qp-SnJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OvT-VN-Qdv" userLabel="First Responder" sceneMemberID="firstResponder"/>
